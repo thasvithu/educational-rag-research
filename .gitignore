@@ -205,3 +205,27 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+research_proposal.txt
+
+# ================================================================
+# Project-Specific Rules — Educational RAG Research
+# ================================================================
+
+# Ignore collected PDF files — they are too large for GitHub.
+# Each team member stores their PDFs locally in data/{name}/
+# The empty folders are tracked using .gitkeep placeholder files.
+data/vithusan/*.pdf
+data/aysha/*.pdf
+data/haleema/*.pdf
+
+# Ignore PDF files without extensions (e.g., URJT_FMAS_HB_2025pdf)
+# These are valid PDFs but have no extension — ignore them too.
+data/vithusan/URJT_FMAS_HB_2025pdf
+
+# Ignore generated output reports — each member runs locally.
+# Output reports are large text files and are personal to each member.
+data/outputs/
+
+# Ignore Python virtual environment folder
+venv/

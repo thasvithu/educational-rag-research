@@ -1,0 +1,101 @@
+# ================================================================
+# Requirements File
+# ================================================================
+# How to install all dependencies at once:
+#   pip install -r requirements.txt
+#
+# NOTE: All versions are pinned to ensure that every team member
+#       and experiment run uses exactly the same library versions.
+#       This is critical for research reproducibility.
+# ================================================================
+
+
+# ----------------------------------------------------------------
+# SECTION 1 — Core RAG Framework
+# ----------------------------------------------------------------
+
+# LangChain: The primary framework used to build our RAG pipeline.
+# It provides high-level abstractions for document loading, text
+# splitting (chunking), vector store integration, and LLM chains.
+langchain==0.3.14
+
+# LangChain Community: Official community-maintained integrations
+# for LangChain. Used in Step 1 to provide PyPDFLoader, which
+# loads PDF documents and extracts text page by page.
+langchain-community==0.3.14
+
+# LangChain OpenAI: Official LangChain integration for OpenAI APIs.
+# Used to connect our RAG pipeline to GPT-4o Mini for answer
+# generation (the "Generation" component of RAG).
+langchain-openai==0.2.14
+
+
+# ----------------------------------------------------------------
+# SECTION 2 — PDF Processing
+# ----------------------------------------------------------------
+
+# pypdf: The underlying PDF text extraction engine.
+# LangChain's PyPDFLoader uses this library internally to open
+# PDF files and extract text content page by page.
+pypdf==4.3.1
+
+
+# ----------------------------------------------------------------
+# SECTION 3 — Embeddings (Sentence Transformers)
+# ----------------------------------------------------------------
+
+# sentence-transformers: Open-source library for computing dense
+# vector embeddings from text. We use the model
+# "all-MiniLM-L6-v2" to convert text chunks into embeddings
+# that are stored in our vector database.
+sentence-transformers==3.3.1
+
+# torch: PyTorch — the deep learning framework required by
+# sentence-transformers to run the embedding model.
+torch==2.5.1
+
+
+# ----------------------------------------------------------------
+# SECTION 4 — Vector Database
+# ----------------------------------------------------------------
+
+# faiss-cpu: Facebook AI Similarity Search (CPU version).
+# Used as our vector database to store and retrieve chunk
+# embeddings efficiently using cosine similarity search.
+faiss-cpu==1.9.0
+
+
+# ----------------------------------------------------------------
+# SECTION 5 — Evaluation Framework
+# ----------------------------------------------------------------
+
+# ragas: The RAGAS (Retrieval-Augmented Generation Assessment)
+# framework. Used to automatically evaluate our RAG pipeline
+# using metrics: Faithfulness, Answer Relevancy, Context
+# Precision, and Context Recall.
+ragas==0.2.6
+
+# datasets: Hugging Face datasets library.
+# Required by RAGAS to format evaluation data into the correct
+# structure for running automated metric calculations.
+datasets==3.2.0
+
+
+# ----------------------------------------------------------------
+# SECTION 6 — Data Analysis & Reporting
+# ----------------------------------------------------------------
+
+# pandas: Data analysis and manipulation library.
+# Used to organize and export evaluation results (metrics tables)
+# across different chunking strategy experiments.
+pandas==2.2.3
+
+# rich: Terminal output formatting library.
+# Used throughout the project to display clean, readable tables,
+# colored logs, and progress indicators during experiments.
+rich==13.9.4
+
+# python-dotenv: Loads environment variables from a .env file.
+# Used to securely store and access the OpenAI API key without
+# hardcoding it into the source code.
+python-dotenv==1.0.1
