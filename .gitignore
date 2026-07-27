@@ -212,20 +212,24 @@ research_proposal.txt
 # Project-Specific Rules — Educational RAG Research
 # ================================================================
 
-# Ignore collected PDF files — they are too large for GitHub.
-# Each team member stores their PDFs locally in data/{name}/
-# The empty folders are tracked using .gitkeep placeholder files.
-data/vithusan/*.pdf
-data/aysha/*.pdf
-data/haleema/*.pdf
+# Ignore ALL files inside each member's data folder.
+# This covers PDFs (with or without .pdf extension), text files,
+# or anything else team members put in their folders.
+# The ONLY exception is .gitkeep — which keeps the empty folders
+# visible on GitHub so team members know where to put their files.
+data/vithusan/*
+!data/vithusan/.gitkeep
 
-# Ignore PDF files without extensions (e.g., URJT_FMAS_HB_2025pdf)
-# These are valid PDFs but have no extension — ignore them too.
-data/vithusan/URJT_FMAS_HB_2025pdf
+data/aysha/*
+!data/aysha/.gitkeep
 
-# Ignore generated output reports — each member runs locally.
-# Output reports are large text files and are personal to each member.
+data/haleema/*
+!data/haleema/.gitkeep
+
+# Ignore generated output reports — each member runs the script
+# locally and gets their own output file. These are not shared.
 data/outputs/
 
-# Ignore Python virtual environment folder
+# Ignore Python virtual environment folder — each member creates
+# their own venv locally using the requirements.txt file.
 venv/
