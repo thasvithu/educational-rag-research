@@ -152,6 +152,26 @@ python 01_Load_pdfs/explore_pdfs.py
 
 ---
 
+## Sharing code through Git
+
+Keep `data/` and `final_data/` on your own computer. Both directories and PDF
+files are ignored by Git, including PDFs placed outside the data folders.
+After cloning, create your own `data/{name}/` folder and add your source PDFs there.
+
+Before committing and pushing code:
+
+```bash
+git status
+git add .
+git diff --cached --stat
+git commit -m "Describe your code changes"
+git push origin main
+```
+
+The staged changes should contain code and documentation. Avoid `git add -f`,
+which bypasses ignore rules. GitHub's web upload also bypasses `.gitignore`;
+upload code through your local Git workflow so these rules take effect.
+
 ## 📄 License
 
 This project is licensed under the MIT License — see [LICENSE](./LICENSE) for details.
