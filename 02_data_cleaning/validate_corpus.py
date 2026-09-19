@@ -11,7 +11,7 @@ import pymupdf
 from clean_pdfs import ROOT, discover_pdfs, sha256_file, write_json_atomic
 
 
-def validate(output_dir: Path, input_dir: Path, allow_subset: bool = False) -> dict:
+def validate(output_dir: Path, input_dir: Path, allow_subset: bool = False, report_path: Path | None = None) -> dict:
     manifest = json.loads((output_dir / "manifest.json").read_text(encoding="utf-8"))
     errors = []
     if manifest["pipeline_sha256"] != sha256_file(Path(__file__).with_name("clean_pdfs.py")):
@@ -88,7 +88,7 @@ def validate(output_dir: Path, input_dir: Path, allow_subset: bool = False) -> d
         "input_pdfs_outside_this_manifest": sorted(all_sources - manifest_sources),
         "errors": errors,
     }
-    write_json_atomic(output_dir / "validation_report.json", result)
+    write_json_atomic(report_path if report_path is not None else output_dir / "validation_report.json", result)
     return result
 
 
@@ -97,7 +97,9 @@ if __name__ == "__main__":
     parser.add_argument("--input-dir", type=Path, default=ROOT / "data")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "final_data")
     parser.add_argument("--allow-subset", action="store_true")
+    parser.add_argument("--report-path", type=Path, help="Write results here to leave the input corpus read-only")
     args = parser.parse_args()
-    result = validate(args.output_dir.resolve(), args.input_dir.resolve(), args.allow_subset)
+    result = validate(args.output_dir.resolve(), args.input_dir.resolve(), args.allow_subset,
+                      args.report_path.resolve() if args.report_path is not None else None)
     print(json.dumps(result, indent=2))
     raise SystemExit(0 if result["passed"] else 1)

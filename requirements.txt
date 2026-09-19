@@ -34,6 +34,9 @@ langchain-openai==0.2.14
 # SECTION 2 — PDF Processing
 # ----------------------------------------------------------------
 
+# Reproducible cleaning and Phase 1 runtime, including transitive dependencies.
+-r requirements-phase1.txt
+
 # pypdf: The underlying PDF text extraction engine.
 # LangChain's PyPDFLoader uses this library internally to open
 # PDF files and extract text content page by page.

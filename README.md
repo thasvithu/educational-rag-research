@@ -1,5 +1,9 @@
 # Impact of Document Chunking Strategies on RAG in Educational Systems
 
+**Implementation roadmap:** See [PLAN.md](PLAN.md) for the phase-by-phase RAG pipeline plan, folder structure, completion checks, and progress tracker.
+
+**Phase 1 implemented:** See [rag_pipeline/README.md](rag_pipeline/README.md) to validate the prepared corpus and inspect source references before chunking.
+
 > **Final Year Research — Group 04**  
 > Department of ICT, Faculty of Technological Studies, University of Vavuniya
 

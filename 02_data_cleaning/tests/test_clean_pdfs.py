@@ -115,6 +115,12 @@ class CorpusIntegrationTests(unittest.TestCase):
             self.assertEqual(summary["documents_in_corpus"], 1)
             self.assertEqual(duplicate_row["duplicate_of"], row["source"])
             self.assertTrue(validate(output, root / "data")["passed"])
+            before = {p.relative_to(output): cleaner.sha256_file(p) for p in output.rglob("*") if p.is_file()}
+            external_report = root / "inspection_validation.json"
+            self.assertTrue(validate(output, root / "data", report_path=external_report)["passed"])
+            self.assertTrue(external_report.is_file())
+            self.assertEqual(before, {p.relative_to(output): cleaner.sha256_file(p)
+                                      for p in output.rglob("*") if p.is_file()})
             with (output / row["text_path"]).open("a", encoding="utf-8") as stream:
                 stream.write("Tampered output")
             self.assertFalse(validate(output, root / "data")["passed"])

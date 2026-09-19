@@ -1,0 +1,6 @@
+# Complete runtime dependency set for corpus preparation/Phase 1 on Python 3.11.
+# Versions match the prepared corpus and verified environment; no model downloads.
+pymupdf==1.26.7
+pymupdf4llm==0.0.27
+markdown-it-py==4.2.0
+mdurl==0.1.2

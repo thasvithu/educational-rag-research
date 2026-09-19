@@ -219,3 +219,5 @@ research_proposal.txt
 
 # Block PDF uploads from other folders too (including uppercase extensions).
 *.[pP][dD][fF]
+
+PLAN.md

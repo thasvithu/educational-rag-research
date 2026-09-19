@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "corpus_dir": "final_data",
+  "source_dir": "data",
+  "output_root": "data/outputs/rag",
+  "expected_documents": 60,
+  "expected_pages": 6215,
+  "expected_members": {"aysha": 12, "haleema": 24, "vithusan": 24},
+  "gap_policy": "excluded_and_blank_pages",
+  "sample_characters": 600,
+  "seed": 42
+}
