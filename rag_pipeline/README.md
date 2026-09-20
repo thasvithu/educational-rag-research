@@ -1,11 +1,34 @@
-# RAG pipeline — Phase 1
+# RAG pipeline — foundation and Phase 2 preparation
 
 Phase 1 supplies the common foundation for the five chunking methods: a verified
 corpus loader, exact source references, eligible text regions, a chunk record
 factory, configuration validation, and inspection reports.
 
-Chunking algorithms and embedding models belong to later phases. No model or API
-is loaded by this phase. The roadmap is in the project's `PLAN.md` when available.
+Phase 1 inspection loads no model or API. Phase 2 adds an explicit offline model
+probe and benchmark validation. Chunking algorithms remain for later phases.
+The roadmap is in the project's `PLAN.md` when available.
+
+## Phase 2: start here
+
+- [Start here: LangChain guide and runnable examples](docs/langchain_guide.md)
+- [Status and next steps](docs/phase2_status.md)
+- [Experiment protocol](docs/experiment_protocol.md)
+- [Model feasibility results and reproduction](docs/model_feasibility.md)
+- [Annotation and review guide](docs/annotation_guide.md)
+
+The hardware decision is **this computer only**; the LLM budget is **free only**.
+CPU and CUDA embedding probes passed. LangChain loader, embedding and Groq
+interfaces are ready. Twenty pilot drafts are under
+`data/benchmark/pilot_review.md`; human review and development/test authoring are due before final evaluation.
+They do not block Phase 3 development with the pilot.
+
+```bash
+.venv/bin/python -m rag_pipeline.evaluation.validate_benchmark
+```
+
+This validates exact reference text and reports unfinished review work. It does
+not generate chunks or scores. Add `--require-ready` to require all freeze gates;
+it currently fails as intended. See the model report for the optional probe command.
 
 ## Run with the existing environment
 
@@ -174,5 +197,5 @@ excluded pages, 172 other blank prepared pages, and 169 eligible text regions.
 The latter counts reflect the selected gap policy, not a new deletion of input.
 
 These checks establish provenance and internal integrity, not semantic accuracy
-of tables, formulas, or image content. The next phase is the experiment protocol,
-benchmark, and embedding-feasibility decision. No chunking or embedding has run.
+of tables, formulas, or image content. Phase 2's narrow model probe has run;
+full-corpus chunking, embeddings, retrieval and generation have not run.

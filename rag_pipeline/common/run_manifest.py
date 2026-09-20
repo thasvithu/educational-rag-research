@@ -35,7 +35,8 @@ def environment(root: Path) -> dict:
     code_files = sorted((root / "rag_pipeline").rglob("*.py"))
     code_files += sorted((root / "rag_pipeline").rglob("*.json"))
     code_files += [root / "02_data_cleaning" / n for n in ("clean_pdfs.py", "prepare_texts.py", "validate_corpus.py")]
-    code_files += [root / n for n in ("requirements.txt", "requirements-phase1.txt", "pyproject.toml")]
+    code_files += sorted(root.glob("requirements*.txt"))
+    code_files += [root / "pyproject.toml"]
     status = git(root, "status", "--porcelain")
     try:
         poppler = subprocess.run(["pdftotext", "-v"], capture_output=True, text=True, check=True).stderr.splitlines()[0]
@@ -43,7 +44,7 @@ def environment(root: Path) -> dict:
         poppler = "unavailable; required for PDF re-extraction, not prepared-text loading"
     return {"python": sys.version, "executable": sys.executable, "platform": platform.platform(),
             "machine": platform.machine(), "cpu_count": os.cpu_count(),
-            "gpu": "not probed in Phase 1; no embedding models loaded",
+            "gpu": "not probed by this environment snapshot; see the model probe result when available",
             "poppler": poppler,
             "packages": dict(sorted(packages.items())), "git_commit": git(root, "rev-parse", "HEAD"),
             "git_branch": git(root, "branch", "--show-current"), "git_dirty": bool(status),

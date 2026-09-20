@@ -27,8 +27,64 @@ not themselves chunking outputs. The gap policy forms part of the corpus identit
 Changing it later requires a recorded configuration/protocol change and a consistent
 rerun for every method.
 
-## Phase 2 decisions still pending
+## Phase 2 — 20 September 2026
 
-- Embedding model, tokenizer, input limits, and matched early/late feasibility.
-- Benchmark composition, reviewed reference evidence, splits, and primary metrics.
-- Chunk-size/overlap/semantic parameter grids and compute/API budgets.
+- Vithusan selected this computer only; no Colab/GPU assumption.
+- Vithusan selected free LLMs; paid generation and judge budgets are zero.
+- CPU feasibility passed for pinned Jina v2 small English at 2,048 total tokens.
+  Use the same candidate for all methods, subject to development quality checks.
+- Mean-pool content tokens only in every query/early/late path. This documented
+  adaptation differs from stock pooling of all attended tokens.
+- Start development with a 256-token baseline and proposed 128/256/512 grid.
+- Twenty pilot questions are drafts, not human-approved ground truth. Pilot
+  source families remain development-only even after pilot records are removed.
+- Human review, final split authoring and protocol agreement are required before
+  benchmark freeze. The current phase remains in progress.
+
+See [Phase 2 status](phase2_status.md), [protocol](experiment_protocol.md) and
+[model feasibility](model_feasibility.md) for evidence and limits.
+
+## Decisions still pending
+
+- Confirmation of development retrieval quality and final chunk configuration.
+- Reviewed benchmark composition, source-family grouping and held-out splits.
+- Lead review of draft primary metrics, context budget, grids and runtime limits.
+- Exact free generator/judge models, input capacity and practical runtime.
+
+## Vithusan's follow-up decisions — 20 September 2026
+
+- LangChain is required for shared pipeline interfaces. The earlier exploration
+  script uses `PyPDFLoader`; Phase 1/2 currently use direct Python and PyTorch.
+  Add a thin LangChain interface without discarding research-specific provenance.
+- Use 20 pilot drafts for development through answer generation. The larger
+  team-authored benchmark is deferred until before Phase 11 final evaluation.
+  This supersedes the earlier requirement to finish all 120 questions in Phase 2.
+  It does not approve individual annotations or turn pilot runs into final scores.
+- GroqCloud free tier is the preferred generator provider. Exact supported model
+  remains pending; old Llama IDs are not assumed available. Paid-call budget stays zero.
+- GPU use is allowed. `lspci` identifies RTX 3050 Mobile; unrestricted `nvidia-smi`
+  reports 4,096 MiB and driver 595.91.07. Outside the sandbox PyTorch CUDA succeeds
+  and a four-element tensor calculation passed. Earlier CPU-only observations
+  reflected sandbox restrictions, not absent GPU hardware. No full GPU model
+  probe or driver changes were performed.
+- Keep Jina v2 small as the provisional shared embedding choice. Its suitability
+  for this corpus still requires retrieval checks; no universal-best claim is made.
+- Use clear names, short functions, useful comments and teaching examples. Code
+  remains AI-assisted; readability and team understanding are the standard.
+
+## Pre-Phase 3 implementation completed — 20 September 2026
+
+- Added `PreparedCorpusLoader` using LangChain `BaseLoader`/`Document`; its full
+  corpus run returned 169 eligible regions from 60 sources with unchanged text.
+- Added `JinaEmbeddings` using LangChain's `Embeddings` interface. CPU and CUDA
+  probes passed, including token pooling, batch padding and query consistency.
+- Selected model configuration now defaults to CUDA FP32, batch size 1, and a
+  2,048-total-token cap. CUDA peak PyTorch allocation was about 667 MiB; future
+  full-corpus resource use is not inferred from this small probe.
+- Added a `ChatGroq` client factory, with no API invocation. Exact model ID stays
+  unset until a current free-tier model is selected. Configuration records the
+  integration's actual near-zero temperature, `1e-8`.
+- Added LangChain/Groq dependency pins compatible with the existing 0.3 stack;
+  the dependency check passed without upgrading unrelated installed packages.
+- Phase 3 development prerequisites are ready. Phase 2's larger benchmark work
+  is explicitly deferred until before Phase 11 under Vithusan's revised workflow.

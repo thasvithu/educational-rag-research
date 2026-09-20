@@ -4,6 +4,8 @@
 
 **Phase 1 implemented:** See [rag_pipeline/README.md](rag_pipeline/README.md) to validate the prepared corpus and inspect source references before chunking.
 
+**Ready for Phase 3 development:** LangChain interfaces and Jina v2 small embeddings passed local CPU/GPU checks. Use the 20 pilot drafts while building; the reviewed benchmark is due before final evaluation. Groq free tier is selected for generation. See the [LangChain guide](rag_pipeline/docs/langchain_guide.md) and [Phase 2 status](rag_pipeline/docs/phase2_status.md).
+
 > **Final Year Research — Group 04**  
 > Department of ICT, Faculty of Technological Studies, University of Vavuniya
 
@@ -50,7 +52,7 @@ In a RAG system, documents must be split into smaller pieces (chunks) before bei
 | 2 | **Sliding Window** | Fixed-size with overlapping content between chunks |
 | 3 | **Structure-Aware** | Split at document headings (H1, H2, H3) |
 | 4 | **Semantic** | Split at topic boundaries using embedding similarity |
-| 5 | **Late Chunking / Contextual Retrieval** | Context-preserving advanced techniques |
+| 5 | **Late Chunking** | Encode longer text, then pool representations for matched chunk spans |
 
 ---
 
@@ -59,10 +61,10 @@ In a RAG system, documents must be split into smaller pieces (chunks) before bei
 | Component | Technology |
 |---|---|
 | RAG Framework | LangChain |
-| LLM (Generator) | GPT-4o Mini (OpenAI) |
-| Embeddings | Sentence Transformers (`all-MiniLM-L6-v2`) |
+| LLM (Generator) | GroqCloud free tier via LangChain ChatGroq; exact model pending |
+| Embeddings | Pinned Jina v2 small English via LangChain Embeddings; CPU/CUDA tested |
 | Vector Database | FAISS (Facebook AI Similarity Search) |
-| Evaluation | RAGAS Framework |
+| Evaluation | Source-evidence retrieval metrics and human rubrics; optional free/local RAGAS evaluation |
 | Language | Python 3.11 |
 
 ---
@@ -138,7 +140,7 @@ python 01_Load_pdfs/explore_pdfs.py
 
 | Metric | Type | What It Measures |
 |---|---|---|
-| Recall@K | Retrieval | Is the correct chunk in the top-K results? |
+| Recall@K | Retrieval | Fraction of required source evidence units covered by the top-K spans |
 | MRR (Mean Reciprocal Rank) | Retrieval | How highly is the correct chunk ranked? |
 | Faithfulness | Generation | Is the answer grounded in retrieved context? |
 | Answer Relevancy | Generation | Does the answer address the question? |

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "embedding": {
+    "model_id": "jinaai/jina-embeddings-v2-small-en",
+    "model_revision": "44e7d1d6caec8c883c2d4b207588504d519788d0",
+    "implementation_revision": "f3ec4cf7de7e561007f27c9efc7148b0bd713f81",
+    "bundle_dir": "data/outputs/rag/model_probe_20260920",
+    "device": "cuda",
+    "dtype": "float32",
+    "batch_size": 1,
+    "max_input_tokens": 2048,
+    "pooling": "content_mean_l2"
+  },
+  "generation": {
+    "provider": "groq",
+    "integration": "ChatGroq",
+    "account_tier": "free",
+    "paid_budget": 0,
+    "model_id": null,
+    "temperature": 1e-8,
+    "max_output_tokens": 512,
+    "timeout_seconds": 60,
+    "max_retries": 2,
+    "api_key_environment_variable": "GROQ_API_KEY"
+  },
+  "benchmark": {
+    "development_pilot": "data/benchmark/pilot.jsonl",
+    "final_benchmark_due": "before_phase_11"
+  }
+}

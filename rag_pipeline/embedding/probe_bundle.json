@@ -1,0 +1,17 @@
+{
+  "repos": {
+    "jinaai/jina-embeddings-v2-small-en": "44e7d1d6caec8c883c2d4b207588504d519788d0",
+    "jinaai/jina-bert-implementation": "f3ec4cf7de7e561007f27c9efc7148b0bd713f81"
+  },
+  "sha256": {
+    "model/config.json": "940582c6d428408d92d628b94541092e7ca9cbee6c3f147de54e9d4ddfe30ace",
+    "model/tokenizer.json": "e9f999ac74497843ed9f4303246a8f43d9f100ee8aab8e133667903f447ceb48",
+    "model/tokenizer_config.json": "25cbd867af916b5a5718e80e9a702cf72c61bf890a1bc141c6fbce6d74c99632",
+    "model/special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "model/vocab.txt": "109753d618dbb576a35112f9c20ef35cf3517d46106175bcf010c986a4bef1df",
+    "model/1_Pooling/config.json": "87bc2276966306a852eeb365e10008072b05aacc5540741208d959c02d1fc669",
+    "implementation/configuration_bert.py": "3866dabde9264ef5057df1d0d7eefb4dbdf79a49e5bce6c699e7889792eaf650",
+    "implementation/modeling_bert.py": "db5a054f8650e3dafc9f43dbfb82b63ea4f7abe8528d8169a593c4957b4f9902",
+    "model/model.safetensors": "c9a9a7ec012d01efd780474fbb65e25917f3a2aebdff84b5f87daa00f7e90b27"
+  }
+}

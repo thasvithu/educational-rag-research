@@ -1,4 +1,4 @@
-"""Phase 1 inspection CLI. No chunking, embeddings, or API calls."""
+"""Corpus inspection commands. No chunking or API calls."""
 
 import argparse
 from dataclasses import asdict
@@ -125,15 +125,55 @@ def inspect(config_path: Path, run_id: str, root: Path = ROOT) -> Path:
     return run
 
 
+def inspect_langchain(config_path: Path, run_id: str, root: Path = ROOT) -> Path:
+    """Demonstrate LangChain loading and save a reviewable region summary."""
+    from .common.langchain_loader import PreparedCorpusLoader
+
+    config = load_config(config_path, root)
+    run, manifest = create_run(root, config, run_id)
+    manifest["stage"] = "phase2_langchain_inspection"
+    write_json(run / "stage_manifest.json", manifest)
+    try:
+        loader = PreparedCorpusLoader(config_path, root=root)
+        documents = loader.load()  # LangChain BaseLoader's standard entry point.
+        corpus = loader.corpus
+        write_json(run / "environment.json", environment(root))
+        write_json(run / "corpus_snapshot.json", corpus.snapshot)
+        summaries = []
+        for document in documents:
+            metadata = document.metadata
+            summaries.append({key: metadata[key] for key in
+                              ("document_id", "source", "member", "region_id", "page_numbers", "char_start", "char_end")}
+                             | {"characters": len(document.page_content), "preview": document.page_content[:250]})
+        write_json(run / "region_summary.json", summaries)
+        summary = {"source_documents": len(corpus.documents), "langchain_documents": len(documents),
+                   "physical_pages": corpus.snapshot["pages"], "corpus_hash": corpus.corpus_hash,
+                   "note": "Each LangChain Document is an eligible continuous region, not a finished chunk."}
+        write_json(run / "summary.json", summary)
+        manifest["corpus_hash"] = corpus.corpus_hash
+        finish_run(run, manifest)
+        print(json.dumps(summary | {"output": str(run)}, indent=2))
+    except Exception as exc:
+        finish_run(run, manifest, error=f"{type(exc).__name__}: {exc}")
+        raise
+    return run
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     command = sub.add_parser("inspect", help="Validate the corpus and write a new Phase 1 inspection run")
     command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
     command.add_argument("--run-id", required=True, help="New output folder name; existing runs are never overwritten")
+    command = sub.add_parser("inspect-langchain", help="Load prepared regions as LangChain Documents")
+    command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
+    command.add_argument("--run-id", required=True)
     args = parser.parse_args(argv)
     try:
-        inspect(args.config.resolve(), args.run_id)
+        if args.command == "inspect-langchain":
+            inspect_langchain(args.config.resolve(), args.run_id)
+        else:
+            inspect(args.config.resolve(), args.run_id)
     except (ValueError, KeyError, TypeError, OSError, subprocess.SubprocessError) as exc:
         print(f"Inspection failed: {exc}", file=sys.stderr)
         return 1

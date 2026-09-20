@@ -4,9 +4,8 @@
 # How to install all dependencies at once:
 #   pip install -r requirements.txt
 #
-# NOTE: All versions are pinned to ensure that every team member
-#       and experiment run uses exactly the same library versions.
-#       This is critical for research reproducibility.
+# Direct dependencies are pinned. Record the resolved environment as well;
+# direct pins alone do not lock every transitive dependency.
 # ================================================================
 
 
@@ -24,9 +23,8 @@ langchain==0.3.14
 # loads PDF documents and extracts text page by page.
 langchain-community==0.3.14
 
-# LangChain OpenAI: Official LangChain integration for OpenAI APIs.
-# Used to connect our RAG pipeline to GPT-4o Mini for answer
-# generation (the "Generation" component of RAG).
+# Legacy teaching integration, optional to the research pipeline.
+# Phase 2 budget decision: free/local LLM only, no paid API calls.
 langchain-openai==0.2.14
 
 
@@ -47,15 +45,12 @@ pypdf==4.3.1
 # SECTION 3 — Embeddings (Sentence Transformers)
 # ----------------------------------------------------------------
 
-# sentence-transformers: Open-source library for computing dense
-# vector embeddings from text. We use the model
-# "all-MiniLM-L6-v2" to convert text chunks into embeddings
-# that are stored in our vector database.
+# Teaching notebooks use Sentence Transformers. The selected research model
+# is pinned Jina v2 small with token-level access; see model_feasibility.md.
 sentence-transformers==3.3.1
 
-# torch: PyTorch — the deep learning framework required by
-# sentence-transformers to run the embedding model.
-torch==2.5.1
+# Shared model runtime and tokenizer pins; includes Phase 1 requirements.
+-r requirements-phase2.txt
 
 
 # ----------------------------------------------------------------
