@@ -1,12 +1,19 @@
-# RAG pipeline — foundation and Phase 2 preparation
+# RAG pipeline — foundation, protocol and fixed-size chunking
 
 Phase 1 supplies the common foundation for the five chunking methods: a verified
 corpus loader, exact source references, eligible text regions, a chunk record
 factory, configuration validation, and inspection reports.
 
 Phase 1 inspection loads no model or API. Phase 2 adds an explicit offline model
-probe and benchmark validation. Chunking algorithms remain for later phases.
+probe and benchmark validation. Phase 3 adds fixed-size chunking across the corpus.
 The roadmap is in the project's `PLAN.md` when available.
+
+## Phase 3: fixed-size chunking
+
+The baseline uses a LangChain `TextSplitter` with the pinned Jina tokenizer:
+256 content tokens, no overlap, exact source spans and retained tails. All 60
+documents produced 8,627 chunks. Read the [Phase 3 handover](docs/phase3_completion.md)
+for results, boundary examples, output files and runnable commands.
 
 ## Phase 2: start here
 
@@ -198,4 +205,5 @@ The latter counts reflect the selected gap policy, not a new deletion of input.
 
 These checks establish provenance and internal integrity, not semantic accuracy
 of tables, formulas, or image content. Phase 2's narrow model probe has run;
-full-corpus chunking, embeddings, retrieval and generation have not run.
+full-corpus fixed-size chunking has run. Full-corpus embeddings, retrieval and
+generation remain for their later phases.

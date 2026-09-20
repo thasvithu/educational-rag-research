@@ -234,4 +234,6 @@ methods; keep diagnostic interventions separate from main scores.
 - [ ] Before Phase 11: record and validate final splits, review hashes and protocol choices.
 - [ ] Before final test scoring: freeze benchmark; update the plan with actual completion evidence.
 
-Phase 3 has not been implemented or authorized by this Phase 2 work.
+Phase 3 was subsequently authorized and implemented using the 256-token baseline.
+See [the Phase 3 handover](phase3_completion.md); these development runs do not
+freeze the final benchmark or select settings using test scores.

@@ -1,4 +1,4 @@
-# Phase 2 LangChain interfaces and local CPU/CUDA embedding probe; Python 3.11.
+# Phase 2 interfaces/probe and Phase 3 tokenizer/splitter runtime; Python 3.11.
 # Install with uv pip install --python .venv/bin/python -r requirements-phase2.txt
 # Direct/model dependencies pinned; environment.json records the resolved environment.
 -r requirements-phase1.txt
@@ -11,5 +11,6 @@ numpy==1.26.4
 
 # Compatible with the existing LangChain 0.3 project; no framework upgrade.
 langchain-core==0.3.63
+langchain-text-splitters==0.3.8
 langchain-groq==0.2.3
 groq==0.13.1

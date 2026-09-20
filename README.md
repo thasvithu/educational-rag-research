@@ -4,7 +4,7 @@
 
 **Phase 1 implemented:** See [rag_pipeline/README.md](rag_pipeline/README.md) to validate the prepared corpus and inspect source references before chunking.
 
-**Ready for Phase 3 development:** LangChain interfaces and Jina v2 small embeddings passed local CPU/GPU checks. Use the 20 pilot drafts while building; the reviewed benchmark is due before final evaluation. Groq free tier is selected for generation. See the [LangChain guide](rag_pipeline/docs/langchain_guide.md) and [Phase 2 status](rag_pipeline/docs/phase2_status.md).
+**Phase 3 implemented:** Fixed-size chunking uses LangChain and the pinned Jina tokenizer: 8,627 chunks from all 60 documents, 256 content tokens at most, zero overlap. See the [Phase 3 handover](rag_pipeline/docs/phase3_completion.md). Use the 20 pilot drafts while building; the reviewed benchmark is due before final evaluation. Groq free tier is selected for generation.
 
 > **Final Year Research — Group 04**  
 > Department of ICT, Faculty of Technological Studies, University of Vavuniya
@@ -99,9 +99,9 @@ educational-rag-research/
 |---|---|---|---|
 | 1 | Literature Review | ✅ Done | — |
 | 2 | Data Collection | ✅ Done | `data/` |
-| 3 | Data Preparation (Load & Explore) | 🔄 In Progress | `01_Load_pdfs/` |
-| 4 | Data Cleaning | ⏳ Upcoming | `02_clean_data/` |
-| 5 | Chunking Implementation | ⏳ Upcoming | `03_chunking/` |
+| 3 | Data Preparation (Load & Explore) | ✅ Done | `01_Load_pdfs/` |
+| 4 | Data Cleaning | ✅ Prepared corpus validated | `02_data_cleaning/` |
+| 5 | Chunking Implementation | 🔄 Fixed-size complete; four methods remaining | `rag_pipeline/chunking/` |
 | 6 | RAG System Setup | ⏳ Upcoming | `04_rag_system/` |
 | 7 | Experiment & Evaluation | ⏳ Upcoming | `05_evaluation/` |
 | 8 | Failure Mode Analysis | ⏳ Upcoming | `06_failure_analysis/` |

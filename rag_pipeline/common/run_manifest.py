@@ -72,6 +72,6 @@ def create_run(root: Path, config: Config, run_id: str) -> tuple[Path, dict]:
 
 def finish_run(path: Path, manifest: dict, *, error: str | None = None) -> None:
     manifest.update(status="failed" if error else "complete", finished_at_utc=now(), errors=[error] if error else [])
-    manifest["artifact_sha256"] = {p.name: file_hash(p) for p in sorted(path.iterdir())
-                                  if p.is_file() and p.name != "stage_manifest.json"}
+    manifest["artifact_sha256"] = {p.relative_to(path).as_posix(): file_hash(p) for p in sorted(path.rglob("*"))
+                                  if p.is_file() and p != path / "stage_manifest.json"}
     write_json(path / "stage_manifest.json", manifest)

@@ -168,9 +168,19 @@ def main(argv=None) -> int:
     command = sub.add_parser("inspect-langchain", help="Load prepared regions as LangChain Documents")
     command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
     command.add_argument("--run-id", required=True)
+    command = sub.add_parser("chunk-fixed", help="Create fixed-size token chunks with exact source spans")
+    command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
+    command.add_argument("--method-config", type=Path, default=ROOT / "rag_pipeline/configs/fixed_size.json")
+    command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--sample", action="store_true", help="Use the first source by name from each member")
     args = parser.parse_args(argv)
     try:
-        if args.command == "inspect-langchain":
+        if args.command == "chunk-fixed":
+            from .chunking.fixed_size.run import run_fixed_size
+            run_fixed_size(args.run_id, config_path=args.config.resolve(), method_config=args.method_config.resolve(),
+                           model_config=args.model_config.resolve(), sample=args.sample)
+        elif args.command == "inspect-langchain":
             inspect_langchain(args.config.resolve(), args.run_id)
         else:
             inspect(args.config.resolve(), args.run_id)

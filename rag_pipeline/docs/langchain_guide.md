@@ -7,7 +7,8 @@ The pipeline now uses LangChain's `BaseLoader`, `Document`, `Embeddings` and
 The selected embedding model is **jinaai/jina-embeddings-v2-small-en**, pinned to
 the tested revision. Local CUDA FP32 with batch size 1 is the default.
 
-These are shared building blocks. Chunking begins in Phase 3; corpus embedding,
+Phase 3 now adds a LangChain `TextSplitter` for the fixed-size baseline; see the
+[Phase 3 guide and examples](phase3_completion.md). Corpus embedding,
 retrieval and answer-generation experiments remain in their planned phases.
 
 ## 1. Load the prepared corpus
@@ -114,7 +115,8 @@ uv pip install --python .venv/bin/python -r requirements-phase2.txt
 ```
 
 This retains the project's LangChain 0.3 family. It pins `langchain-core==0.3.63`,
-`langchain-groq==0.2.3` and `groq==0.13.1`; compatibility was checked in the existing
+`langchain-groq==0.2.3`, `groq==0.13.1` and `langchain-text-splitters==0.3.8`;
+compatibility was checked in the existing
 environment. The core package contains the loader/document/embedding interfaces.
 The full requirements retain LangChain and Community integrations for later use.
 

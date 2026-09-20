@@ -88,3 +88,24 @@ See [Phase 2 status](phase2_status.md), [protocol](experiment_protocol.md) and
   the dependency check passed without upgrading unrelated installed packages.
 - Phase 3 development prerequisites are ready. Phase 2's larger benchmark work
   is explicitly deferred until before Phase 11 under Vithusan's revised workflow.
+
+## Phase 3 — 20 September 2026
+
+- Implement the agreed 256-content-token fixed-size baseline with zero overlap.
+  Encoder input counts include two special tokens; full chunks therefore use 258.
+- Use LangChain `TextSplitter` and the pinned Jina fast tokenizer. Override source
+  slicing and metadata updates to preserve exact offsets, case, whitespace and
+  repeated passages. Never reconstruct canonical chunk text by decoding tokens.
+- Retokenize each candidate substring before accepting it; back off when cutting
+  a WordPiece changes its independent token count. Keep shared-character subtokens
+  together and record adjustments. This remains a token-based boundary policy.
+- Retain all eligible characters and short region tails. The 650 characters
+  outside eligible regions are only whitespace around existing barriers.
+- Run tokenization on CPU without loading embedding weights. GPU inference stays
+  in the embedding stages; no model or precision decision changed.
+- Preserve new-run-only output protection and hash nested artifacts. Independent
+  read-back verification confirmed exact spans, coverage, page references, token
+  caps, repeatability and 122 unchanged prepared-input hashes.
+- The full corpus produces 8,627 chunks. This is segmentation validation, not a
+  claim of retrieval quality or optimal chunk size. See the
+  [Phase 3 handover](phase3_completion.md) for the audit and boundary examples.
