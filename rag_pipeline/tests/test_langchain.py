@@ -76,8 +76,13 @@ class LangChainModelTests(unittest.TestCase):
         self.assertIs(adapter.tokenizer.call_args.kwargs["truncation"], False)
 
     def test_groq_requires_an_explicit_model(self):
-        with self.assertRaisesRegex(ValueError, "Choose an available"):
-            create_chat_model()
+        # Phase 10 selects a model in the real config; an unset config still fails.
+        with patch("rag_pipeline.generation.model_adapter.json.loads") as loads:
+            loads.return_value = {"schema_version": 1, "generation": {
+                "provider": "groq", "integration": "ChatGroq", "account_tier": "free", "paid_budget": 0,
+                "api_key_environment_variable": "GROQ_API_KEY", "model_id": None}}
+            with self.assertRaisesRegex(ValueError, "Choose an available"):
+                create_chat_model()
 
     def test_groq_client_construction_is_offline(self):
         with patch.dict(os.environ, {"GROQ_API_KEY": "offline-test-key"}):

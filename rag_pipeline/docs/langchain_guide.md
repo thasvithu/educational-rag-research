@@ -8,8 +8,22 @@ The selected embedding model is **jinaai/jina-embeddings-v2-small-en**, pinned t
 the tested revision. Local CUDA FP32 with batch size 1 is the default.
 
 Phase 3 now adds a LangChain `TextSplitter` for the fixed-size baseline; see the
-[Phase 3 guide and examples](phase3_completion.md). Corpus embedding,
-retrieval and answer-generation experiments remain in their planned phases.
+[Phase 3 guide and examples](phase3_completion.md). Phase 4 adds a compatible
+`SlidingWindowSplitter`; see the [overlap guide](phase4_completion.md). Phase 5 adds
+`StructureAwareSplitter` with validated heading metadata and recorded fallbacks;
+see the [structure guide](phase5_completion.md). Phase 6 adds `SemanticSplitter`
+and a cached LangChain `Embeddings` wrapper around the same Jina adapter; see the
+[semantic guide](phase6_completion.md). It embeds source units to choose boundaries.
+Phase 7 uses `ChunkEmbeddings` with a tested batch size of eight to encode final
+chunk text through that shared
+LangChain adapter and save vectors with explicit source row maps; see the
+[embedding guide](phase7_completion.md). Phase 8 reuses `JinaEmbeddings.encode_tokens()`
+to encode longer passages, then pools exact fixed-size spans after encoding; see
+the [late-chunking guide](phase8_completion.md). This small helper preserves token
+alignment that a normal independent `embed_documents()` call cannot supply.
+Phase 9 uses LangChain's `FAISS`, `Document` and `InMemoryDocstore` interfaces,
+with the shared Jina query encoder and explicit tie/context rules; see the
+[retrieval guide](phase9_completion.md). Phase 10 adds grounded answers through ChatPromptTemplate and ChatGroq.
 
 ## 1. Load the prepared corpus
 
@@ -88,23 +102,29 @@ precision consistently for the five methods, particularly when comparing timing.
 
 ## 3. Prepare Groq through LangChain
 
-GroqCloud free tier is selected; the exact available free model will be set before
-generation. `model_id` stays `null` until then. No API key is needed for loading,
-chunking, local embeddings or the offline tests.
+Phase 10 uses `qwen/qwen3.8-27b` on the configured Groq free account. All five
+methods use the same model and instructions. `ChatPromptTemplate` builds the
+system/user messages; `GroqAnswerClient` wraps `ChatGroq` with saved provider
+metadata. The original `create_chat_model()` factory remains an offline teaching
+example; the experiment runner adds explicit retries, quota accounting and caching.
 
-At the generation stage, set `GROQ_API_KEY` in your local environment and select
-a model available to your free-tier account. `create_chat_model(model_id=...)`
-returns a LangChain `ChatGroq` client. Creating it sends no request; invoking it
-does. Do not paste the key into code, Git, or benchmark files.
+Set `GROQ_API_KEY` in the local environment or ignored `.env`. Never put it in
+code or experiment files. The runner reads only this key and disables external
+tracing. Preparation, local tests and cached answer replay need no key.
 
-The free-tier configuration records our zero-paid-budget policy. It cannot prove
-that an account is on the free tier: a paid Groq account using the same model may
-be billed. No paid provider fallback is implemented.
+```bash
+.venv/bin/python -m rag_pipeline generate-answers --run-id answers_prepare_new --dry-run
+.venv/bin/python -m rag_pipeline generate-answers --run-id answers_pilot_new
+```
 
-The pinned integration changes a zero temperature to `1e-8`; configuration now
-records that actual value. It does not guarantee identical hosted responses.
-Basic retries come from LangChain; experiment caching and rate-limit scheduling
-will be implemented with the answer-generation stage.
+The first command prepares all 100 requests without contacting Groq. The second
+selects three questions across all five methods (15 answers). Matching requests
+reuse cached answers. The [Phase 10 handover](phase10_completion.md) explains
+all-question runs, quota limits, explicit resume, new trials and the output files.
+
+The free-tier configuration records the zero-paid-budget policy; it cannot verify
+an account's billing tier. There is no paid provider fallback. Low temperature
+and a fixed seed do not guarantee identical fresh hosted responses.
 
 ## Installation and checks
 

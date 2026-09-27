@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "method": "structure_aware",
+  "algorithm_version": "1",
+  "chunk_size": 256,
+  "overlap": 0,
+  "heading_policy": "validated_lines_numbering_outline_font_shape_v1",
+  "unknown_level": 2,
+  "fallback_policy": "paragraph_list_table_lines_then_sentences_then_tokens_v1",
+  "gap_policy": "reset_heading_path_at_each_region"
+}

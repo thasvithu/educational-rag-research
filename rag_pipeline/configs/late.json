@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "early_variant": "data/outputs/rag/phase7_embeddings_full_20260921/fixed_size/variant_001",
+  "core_chunks": 5,
+  "halo_chunks": 1,
+  "max_input_tokens": 2048
+}

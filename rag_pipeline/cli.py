@@ -1,4 +1,4 @@
-"""Corpus inspection commands. No chunking or API calls."""
+"""Educational RAG commands; generate-answers uses Groq unless preparing or replaying."""
 
 import argparse
 from dataclasses import asdict
@@ -174,9 +174,88 @@ def main(argv=None) -> int:
     command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
     command.add_argument("--run-id", required=True)
     command.add_argument("--sample", action="store_true", help="Use the first source by name from each member")
+    command = sub.add_parser("chunk-sliding", help="Create overlapping token windows with exact source spans")
+    command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
+    command.add_argument("--method-config", type=Path, default=ROOT / "rag_pipeline/configs/sliding_window.json")
+    command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--sample", action="store_true", help="Use the first source by name from each member")
+    command = sub.add_parser("chunk-structure", help="Pack heading sections with paragraph/list/table fallbacks")
+    command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
+    command.add_argument("--method-config", type=Path, default=ROOT / "rag_pipeline/configs/structure_aware.json")
+    command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--sample", action="store_true", help="Use the first source by name from each member")
+    command = sub.add_parser("chunk-semantic", help="Choose semantic boundaries using cached local Jina embeddings")
+    command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
+    command.add_argument("--method-config", type=Path, default=ROOT / "rag_pipeline/configs/semantic.json")
+    command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--sample", action="store_true")
+    command.add_argument("--device", choices=("cpu", "cuda"), help="Explicit recorded override; default is models.json")
+    command.add_argument("--cache-only", action="store_true", help="Fail on a missing cached vector; load no model")
+    command = sub.add_parser("embed-chunks", help="Embed four completed chunk corpora with one shared local model")
+    command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
+    command.add_argument("--input-config", type=Path, default=ROOT / "rag_pipeline/configs/embedding.json")
+    command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--sample", action="store_true", help="Use the first document by source name from each member")
+    command.add_argument("--device", choices=("cpu", "cuda"))
+    command.add_argument("--cache-only", action="store_true", help="Fail if a required final-chunk vector is absent")
+    command.add_argument("--resume", action="store_true", help="Resume a failed/interrupted run with unchanged inputs/settings")
+    command = sub.add_parser("chunk-late", help="Contextual Jina encoding with the fixed baseline's exact chunk spans")
+    command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
+    command.add_argument("--method-config", type=Path, default=ROOT / "rag_pipeline/configs/late.json")
+    command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--sample", action="store_true", help="First source by name from each member")
+    command.add_argument("--cache-only", action="store_true", help="Reuse contextual window vectors without loading the model")
+    command = sub.add_parser("retrieve-pilot", help="Build five exact FAISS indexes and retrieve the shared pilot")
+    command.add_argument("--config", type=Path, default=ROOT / "rag_pipeline/config.json")
+    command.add_argument("--retrieval-config", type=Path, default=ROOT / "rag_pipeline/configs/retrieval.json")
+    command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--cache-only", action="store_true", help="Reuse query vectors without loading the model")
+    command = sub.add_parser("generate-answers", help="Prepare or generate grounded Groq answers from saved retrieval contexts")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--generation-config", type=Path, default=ROOT / "rag_pipeline/configs/generation.json")
+    command.add_argument("--dry-run", action="store_true", help="Save all prompts and token estimates without contacting Groq")
+    command.add_argument("--cache-only", action="store_true", help="Replay saved answers without contacting Groq")
+    command.add_argument("--resume", action="store_true", help="Resume failed/interrupted generation with unchanged settings")
+    command.add_argument("--all-pilot", action="store_true", help="Select all 20 pilot questions instead of the balanced three-question smoke test")
+    command.add_argument("--trial-id", default="trial_001", help="New ID for an independent generation trial; same ID permits cache reuse")
     args = parser.parse_args(argv)
     try:
-        if args.command == "chunk-fixed":
+        if args.command == "generate-answers":
+            from .generation.run import run_generation
+            run_generation(args.run_id, generation_config=args.generation_config.resolve(), dry_run=args.dry_run,
+                           cache_only=args.cache_only, resume=args.resume, all_pilot=args.all_pilot, trial_id=args.trial_id)
+        elif args.command == "retrieve-pilot":
+            from .retrieval.run import run_retrieval
+            run_retrieval(args.run_id, config_path=args.config.resolve(), retrieval_config=args.retrieval_config.resolve(),
+                          model_config=args.model_config.resolve(), cache_only=args.cache_only)
+        elif args.command == "chunk-late":
+            from .chunking.late.run import run_late
+            run_late(args.run_id, config_path=args.config.resolve(), method_config=args.method_config.resolve(),
+                     model_config=args.model_config.resolve(), sample=args.sample, cache_only=args.cache_only)
+        elif args.command == "embed-chunks":
+            from .embedding.encode_chunks import run_embeddings
+            run_embeddings(args.run_id, config_path=args.config.resolve(), input_config=args.input_config.resolve(),
+                           model_config=args.model_config.resolve(), sample=args.sample, device=args.device,
+                           cache_only=args.cache_only, resume=args.resume)
+        elif args.command == "chunk-semantic":
+            from .chunking.semantic.run import run_semantic
+            run_semantic(args.run_id, config_path=args.config.resolve(), method_config=args.method_config.resolve(),
+                         model_config=args.model_config.resolve(), sample=args.sample, device=args.device, cache_only=args.cache_only)
+        elif args.command == "chunk-structure":
+            from .chunking.structure_aware.run import run_structure_aware
+            run_structure_aware(args.run_id, config_path=args.config.resolve(), method_config=args.method_config.resolve(),
+                                model_config=args.model_config.resolve(), sample=args.sample)
+        elif args.command == "chunk-sliding":
+            from .chunking.sliding_window.run import run_sliding_window
+            run_sliding_window(args.run_id, config_path=args.config.resolve(), method_config=args.method_config.resolve(),
+                               model_config=args.model_config.resolve(), sample=args.sample)
+        elif args.command == "chunk-fixed":
             from .chunking.fixed_size.run import run_fixed_size
             run_fixed_size(args.run_id, config_path=args.config.resolve(), method_config=args.method_config.resolve(),
                            model_config=args.model_config.resolve(), sample=args.sample)
@@ -185,6 +264,6 @@ def main(argv=None) -> int:
         else:
             inspect(args.config.resolve(), args.run_id)
     except (ValueError, KeyError, TypeError, OSError, subprocess.SubprocessError) as exc:
-        print(f"Inspection failed: {exc}", file=sys.stderr)
+        print(f"Pipeline command failed: {exc}", file=sys.stderr)
         return 1
     return 0

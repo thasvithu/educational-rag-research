@@ -1,8 +1,6 @@
 """A LangChain text splitter that preserves exact source slices and token limits."""
 
-from bisect import bisect_right
 from copy import deepcopy
-from dataclasses import dataclass
 import json
 from pathlib import Path
 
@@ -11,17 +9,7 @@ from langchain_text_splitters import TextSplitter
 
 from ...common.load_corpus import require
 from ...common.tokenization import ResearchTokenizer
-
-
-@dataclass(frozen=True)
-class TokenSpan:
-    char_start: int
-    char_end: int
-    region_token_start: int
-    region_token_end: int
-    content_token_count: int
-    token_count: int  # Actual encoder input, including CLS/SEP.
-    boundary_backoffs: int
+from ...common.token_windows import TokenSpan, split_token_windows
 
 
 def load_settings(path: Path) -> dict:
@@ -55,49 +43,7 @@ class FixedSizeSplitter(TextSplitter):
                          strip_whitespace=False)
 
     def split_spans(self, text: str) -> list[TokenSpan]:
-        if not text.strip():
-            return []
-        offsets = self.tokens.offsets(text)
-        require(bool(offsets), "Nonblank input has no encodable content tokens; review this region")
-
-        # Some tokenizers map multiple subtokens to the same source character.
-        # A safe cut must lie after all previous token ends, never inside a group.
-        safe = [0]
-        previous_end = 0
-        for i, (start, end) in enumerate(offsets):
-            if i and start >= previous_end:
-                safe.append(i)
-            previous_end = max(previous_end, end)
-        safe.append(len(offsets))
-
-        spans = []
-        token_start, char_start = 0, 0
-        while token_start < len(offsets):
-            target = min(token_start + self._chunk_size, len(offsets))
-            candidate = bisect_right(safe, target) - 1
-            # If one indivisible character group exceeds the nominal window,
-            # inspect that whole group; fail explicitly if it cannot fit.
-            if safe[candidate] <= token_start:
-                candidate = bisect_right(safe, token_start)
-            backoffs = 0
-            while safe[candidate] > token_start:
-                token_end = safe[candidate]
-                char_end = len(text) if token_end == len(offsets) else offsets[token_end][0]
-                piece = text[char_start:char_end]
-                content_count = self.tokens.count(piece, special_tokens=False)
-                input_count = self.tokens.count(piece)
-                if 0 < content_count <= self._chunk_size and input_count <= self.tokens.max_input_tokens:
-                    break
-                candidate -= 1
-                backoffs += 1
-            else:
-                raise ValueError("An indivisible token-offset group cannot fit the budget; no text was dropped")
-
-            spans.append(TokenSpan(char_start, char_end, token_start, token_end,
-                                   content_count, input_count, backoffs))
-            char_start, token_start = char_end, token_end
-        require(char_start == len(text), "Internal error: unprocessed document tail")
-        return spans
+        return split_token_windows(text, self.tokens, self._chunk_size)
 
     def split_text(self, text: str) -> list[str]:
         return [text[span.char_start:span.char_end] for span in self.split_spans(text)]

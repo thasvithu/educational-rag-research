@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "fixed_size": "data/outputs/rag/phase7_embeddings_full_20260921/fixed_size/variant_001",
+    "sliding_window": "data/outputs/rag/phase7_embeddings_full_20260921/sliding_window/variant_001",
+    "structure_aware": "data/outputs/rag/phase7_embeddings_full_20260921/structure_aware/variant_001",
+    "semantic": "data/outputs/rag/phase7_embeddings_full_20260921/semantic/variant_001",
+    "late": "data/outputs/rag/phase8_late_full_20260921/late/variant_001"
+  },
+  "pilot": "data/benchmark/pilot.jsonl",
+  "benchmark_manifest": "data/benchmark/benchmark_manifest.json",
+  "k_values": [1, 3, 5, 10],
+  "context_content_tokens": 1536,
+  "similarity": "normalized_inner_product",
+  "tie_policy": "score_descending_chunk_id_ascending",
+  "overlap_policy": "subtract_included_source_spans",
+  "oversize_policy": "skip_candidate_try_next",
+  "faiss_threads": 1
+}

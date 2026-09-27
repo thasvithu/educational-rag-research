@@ -49,8 +49,8 @@ pypdf==4.3.1
 # is pinned Jina v2 small with token-level access; see model_feasibility.md.
 sentence-transformers==3.3.1
 
-# Shared model runtime and tokenizer pins; includes Phase 1 requirements.
--r requirements-phase2.txt
+# Shared model, retrieval and generation runtime pins; includes earlier phases.
+-r requirements-phase10.txt
 
 
 # ----------------------------------------------------------------
@@ -94,6 +94,6 @@ pandas==2.2.3
 rich==13.9.4
 
 # python-dotenv: Loads environment variables from a .env file.
-# Used to securely store and access the OpenAI API key without
+# Used to read the local Groq API key without
 # hardcoding it into the source code.
 python-dotenv==1.0.1

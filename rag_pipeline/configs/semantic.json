@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "method": "semantic",
+  "algorithm_version": "1",
+  "chunk_size": 256,
+  "min_chunk_size": 64,
+  "overlap": 0,
+  "percentile": 90,
+  "threshold_policy": "linear_percentile_strictly_greater_source_order",
+  "unit_policy": "sentences_list_items_table_rows_exact_offsets_v1",
+  "size_policy": "minimum_for_semantic_cuts_maximum_always_tail_may_be_short",
+  "short_region_policy": "fewer_than_three_units_pack_without_scoring"
+}

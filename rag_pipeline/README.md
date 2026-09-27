@@ -1,4 +1,4 @@
-# RAG pipeline — foundation, protocol and fixed-size chunking
+# RAG pipeline — corpus preparation through grounded answers
 
 Phase 1 supplies the common foundation for the five chunking methods: a verified
 corpus loader, exact source references, eligible text regions, a chunk record
@@ -6,7 +6,79 @@ factory, configuration validation, and inspection reports.
 
 Phase 1 inspection loads no model or API. Phase 2 adds an explicit offline model
 probe and benchmark validation. Phase 3 adds fixed-size chunking across the corpus.
+Phase 4 adds sliding windows using the same tokenizer and source-reference rules.
+Phase 5 adds structure-aware sections, paragraph/table/list packing and recorded fallbacks.
+Phase 6 adds semantic boundaries using cached local Jina embeddings and recorded scores.
+Phase 7 embeds the four completed chunk corpora using a shared batched encoder.
+Phase 8 creates contextual vectors at the exact fixed-size boundaries.
+Phase 9 indexes all five methods and saves pilot retrieval and budgeted contexts.
+Phase 10 turns those contexts into traceable, cited answers through Groq.
 The roadmap is in the project's `PLAN.md` when available.
+
+## Phase 10: grounded answer generation
+
+LangChain builds the same prompt for every method and calls Groq
+`qwen/qwen3.8-27b`. The runner prepares all 100 pilot requests, then selects
+three questions across all five methods for the first live sample. It saves
+exact prompts/evidence, answers, citations, provider usage, retries and errors.
+A persistent cache and quota ledger support later all-question runs and resume.
+See the [Phase 10 handover](docs/phase10_completion.md) for commands and results.
+
+```bash
+.venv/bin/python -m rag_pipeline generate-answers --run-id phase10_prepare_new --dry-run
+.venv/bin/python -m rag_pipeline generate-answers --run-id phase10_pilot_new
+```
+
+The second command can call the configured Groq account when matching answers
+are not cached. Set `GROQ_API_KEY` in the ignored `.env` or environment. Use
+`--cache-only` with a new run ID for a replay without provider calls.
+
+## Phase 9: indexing and retrieval
+
+Five separate LangChain/FAISS indexes hold **53,977 vectors**. The shared pilot
+produced **100 retrieval results and contexts** from 20 query vectors. Raw top-10
+results, exact source pieces and budget decisions are saved separately. All
+indexes, rankings and contexts match the cached repeat. See the
+[Phase 9 handover](docs/phase9_completion.md) for commands and review examples.
+Pilot annotation review remains pending; these are development diagnostics.
+
+## Phase 8: late chunking
+
+The same Jina model reads longer passages before pooling each fixed-size chunk.
+All 60 documents produced **8,627 matched contextual vectors** across **1,804
+encoder windows**, with exact source spans, one owner per chunk and saved
+window-placement diagnostics. Read the [Phase 8 handover](docs/phase8_completion.md)
+for the simple explanation, commands, audit, resource measurements and limitations.
+
+## Phase 7: shared chunk embeddings
+
+The common Jina encoder produces **45,350 vectors of 512 dimensions** across the
+four methods, using CUDA FP32 and a tested batch size of eight. Each method has
+its own matrix, exact chunk copy and vector-row mapping. A separate cache and
+explicit resume command preserve work after interruption. See the
+[Phase 7 handover](docs/phase7_completion.md) for commands, validation, source
+examples and time/storage measurements. Phase 8 uses its fixed-size vectors as
+the matched early baseline.
+
+## Phase 6: semantic chunking
+
+The semantic method produced 11,927 chunks across all 60 documents. It compares
+adjacent text units, uses the region's 90th-percentile distance as a starting rule,
+and retains the 256-content-token cap. Read the [Phase 6 handover](docs/phase6_completion.md)
+for GPU/cache commands, scores, validation and limitations. Boundary vectors are
+separate from the final retrieval embeddings created in Phase 7.
+
+## Phase 5: structure-aware chunking
+
+The structure-aware method produced 13,377 chunks across all 60 documents under
+the same 256-content-token cap. Read the [Phase 5 handover](docs/phase5_completion.md)
+for commands, heading decisions, fallback counts and review examples.
+
+## Phase 4: sliding-window chunking
+
+Sliding windows use 256 content tokens with 64-token overlap. All 60 documents
+produced 11,419 chunks. Read the [Phase 4 handover](docs/phase4_completion.md) for
+commands, overlap examples and the comparison with the fixed-size baseline.
 
 ## Phase 3: fixed-size chunking
 
@@ -205,5 +277,6 @@ The latter counts reflect the selected gap policy, not a new deletion of input.
 
 These checks establish provenance and internal integrity, not semantic accuracy
 of tables, formulas, or image content. Phase 2's narrow model probe has run;
-full-corpus fixed-size chunking has run. Full-corpus embeddings, retrieval and
-generation remain for their later phases.
+all five chunking/vector paths and shared retrieval are implemented. Phase 10
+adds a small live generation pilot. Benchmark review/freezing and controlled
+evaluation remain for Phase 11; development examples are not final findings.

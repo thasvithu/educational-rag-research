@@ -6,6 +6,20 @@
 
 **Phase 3 implemented:** Fixed-size chunking uses LangChain and the pinned Jina tokenizer: 8,627 chunks from all 60 documents, 256 content tokens at most, zero overlap. See the [Phase 3 handover](rag_pipeline/docs/phase3_completion.md). Use the 20 pilot drafts while building; the reviewed benchmark is due before final evaluation. Groq free tier is selected for generation.
 
+**Phase 4 implemented:** Sliding windows use the same 256-token cap with 64-token overlap, producing 11,419 chunks. See the [Phase 4 handover](rag_pipeline/docs/phase4_completion.md) for commands, checks and boundary comparisons.
+
+**Phase 5 implemented:** Structure-aware chunking uses headings and paragraph/table/list boundaries, producing 13,377 chunks under the same cap. See the [Phase 5 handover](rag_pipeline/docs/phase5_completion.md) for fallback reports and limitations.
+
+**Phase 6 implemented:** Semantic chunking uses local Jina embeddings through LangChain to score topic changes, producing 11,927 chunks. Boundary scores, size-forced cuts and cached vectors are recorded. See the [Phase 6 handover](rag_pipeline/docs/phase6_completion.md). Final retrieval embeddings belong to Phase 7.
+
+**Phase 7 implemented:** The shared LangChain/Jina encoder produces 45,350 final chunk vectors across the four methods, with 512 dimensions, explicit source row maps, caching and resumable runs. See the [Phase 7 handover](rag_pipeline/docs/phase7_completion.md) for commands, artifacts and verification.
+
+**Phase 8 implemented:** Late chunking produces 8,627 contextual vectors at the fixed baseline's exact boundaries, using 1,804 longer encoder windows. Source mappings, context-aware caching and window-placement diagnostics are saved. See the [Phase 8 handover](rag_pipeline/docs/phase8_completion.md). Its contextual vectors feed the Phase 9 index.
+
+**Phase 9 implemented:** Five separate LangChain/FAISS indexes contain 53,977 vectors. The 20-question pilot produces ranked evidence and budgeted contexts for all methods, with verified repeatability and source mapping. Read the [Phase 9 handover](rag_pipeline/docs/phase9_completion.md). Human benchmark review and final evaluation remain pending.
+
+**Phase 10 implemented:** LangChain and Groq now generate answers from the exact saved evidence. All 100 pilot prompts are prepared; a 15-answer sample completed with saved citations, usage, quota handling and verified cache replay. See the [Phase 10 handover](rag_pipeline/docs/phase10_completion.md) for commands, actual examples and remaining benchmark work.
+
 > **Final Year Research — Group 04**  
 > Department of ICT, Faculty of Technological Studies, University of Vavuniya
 
@@ -101,7 +115,7 @@ educational-rag-research/
 | 2 | Data Collection | ✅ Done | `data/` |
 | 3 | Data Preparation (Load & Explore) | ✅ Done | `01_Load_pdfs/` |
 | 4 | Data Cleaning | ✅ Prepared corpus validated | `02_data_cleaning/` |
-| 5 | Chunking Implementation | 🔄 Fixed-size complete; four methods remaining | `rag_pipeline/chunking/` |
+| 5 | Chunking Implementation | 🔄 Fixed-size, sliding-window and structure-aware complete; two methods remaining | `rag_pipeline/chunking/` |
 | 6 | RAG System Setup | ⏳ Upcoming | `04_rag_system/` |
 | 7 | Experiment & Evaluation | ⏳ Upcoming | `05_evaluation/` |
 | 8 | Failure Mode Analysis | ⏳ Upcoming | `06_failure_analysis/` |

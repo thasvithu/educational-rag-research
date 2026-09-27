@@ -83,8 +83,15 @@ not silently change pooling, truncate text, or discard page/region metadata.
 
 Late uses the fixed baseline's exact spans, inside deterministic encoder windows
 of at most 2,046 content tokens plus two special tokens. A target chunk must fit
-inside its assigned window. Window overlap/ownership is finalized and tested in
-Phase 8; no chunk can be split or counted twice at a window seam.
+inside its assigned window. Phase 8 assigns five consecutive chunks to each
+window, adding one whole neighboring chunk on each side where available.
+Windows respect eligible-region barriers. If the token cap requires it, reduce
+the owned group, then remove outer neighbors; never split a target chunk.
+Each chunk has one owner. Pooling spans exclude neighboring, padding and special
+tokens. Overlapping windows also provide recorded seam-sensitivity diagnostics.
+Late inference uses batch one; the independent Phase 7 encoder uses batch eight,
+with their numerical compatibility checked separately. Both use the same CUDA
+FP32 model and content-only pooling. See [Phase 8](phase8_completion.md).
 
 ## Small development grid
 
@@ -102,12 +109,21 @@ Start with **256 content tokens**, not a claim that 256 is optimal.
 
 Initial semantic rule: adjacent single sentences, using the common model and
 content-only pooling. If fewer than three units exist, pack under the cap. Split
-oversized units before scoring, retain offsets, break equal-score ties in source
-order, and let the cap override any semantic decision. Record forced breaks and
+oversized units before scoring and retain offsets. Phase 6 makes the tie rule
+explicit: use linear percentile interpolation and select distances **strictly
+greater** than the threshold. Equal scores stay together unless the size cap
+forces a cut; packing proceeds in source order. Let the cap override any semantic
+decision. The minimum of 64 at the 256-token cap applies to semantic cuts; a
+size-forced chunk or region tail can be shorter and is flagged. Record forced breaks and
 the realized threshold. A percentile grid of 80/90/95 is an optional sensitivity
 study, excluded from the primary tuning budget unless all methods receive a
 documented comparable search budget. Concrete parsing/fallback details are tested
-in Phase 6 before freezing configurations.
+in Phase 6 before freezing configurations. Prose uses conservative sentence
+boundaries; list items and visible table rows serve as scoring units. The rules
+preserve abbreviations, decimals, course codes and exact whitespace. They cannot
+repair an extraction fragment or reconstruct an uncertain table. The 90th
+percentile is a predeclared development default, not a tuned optimum. No held-out
+questions or answers are used to choose these boundaries.
 
 First run matched 256-token comparisons. Then evaluate at most three primary
 variants per method on development questions. Choose by primary evidence coverage;
@@ -165,7 +181,7 @@ only whitespace for coverage; do not award a hit for merely sharing a page.
 Separate facts across passages are separate required units. Alternative spans
 must each independently support the same fact.
 
-Context assembly proposal: process the top 10 in rank order, subtract source-span
+Phase 9 development context policy: process the top 10 in rank order, subtract source-span
 overlap already included, preserve the remaining exact spans, and stop at a common
 **1,536 Jina content-token evidence budget**. Skip a candidate whose new evidence
 would exceed the budget and try the next; do not silently cut a rule mid-sentence.
@@ -237,3 +253,17 @@ methods; keep diagnostic interventions separate from main scores.
 Phase 3 was subsequently authorized and implemented using the 256-token baseline.
 See [the Phase 3 handover](phase3_completion.md); these development runs do not
 freeze the final benchmark or select settings using test scores.
+
+
+## Phase 9 implementation record (27 September 2026)
+
+The exact-search and context rules above are implemented for the 20 pilot drafts.
+All five indexes search the same full corpus. Query vectors are computed once;
+reference labels enter only the subsequent pilot diagnostics. Saved top-10
+retrieval, K-prefix IDs and exact included source pieces remain separate.
+Global ties are resolved after collecting all exact FAISS scores, using one
+FAISS thread. The numerical audit uses a 2e-6 absolute score tolerance against
+independent float64 dot products; the observed maximum difference was 1.62e-7.
+No similarity threshold, metadata filter, reranker or reference-answer input is
+used. The development run does not freeze or approve the final benchmark.
+See [Phase 9 handover](phase9_completion.md) for artifacts and resource records.

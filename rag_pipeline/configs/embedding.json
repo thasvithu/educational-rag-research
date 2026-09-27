@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "batch_size": 8,
+  "inputs": {
+    "fixed_size": "data/outputs/rag/phase3_fixed_full_20260920/fixed_size/variant_001/chunks.jsonl",
+    "sliding_window": "data/outputs/rag/phase4_sliding_full_20260920/sliding_window/variant_001/chunks.jsonl",
+    "structure_aware": "data/outputs/rag/phase5_structure_full_v2_20260920/structure_aware/variant_001/chunks.jsonl",
+    "semantic": "data/outputs/rag/phase6_semantic_full_20260921/semantic/variant_001/chunks.jsonl"
+  }
+}

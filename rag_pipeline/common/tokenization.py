@@ -48,7 +48,7 @@ def load_tokenizer(config_path: Path = ROOT / "rag_pipeline/configs/models.json"
     pins = json.loads((ROOT / "rag_pipeline/embedding/probe_bundle.json").read_text())
     model_id = "jinaai/jina-embeddings-v2-small-en"
     require(settings["model_id"] == model_id and settings["model_revision"] == pins["repos"][model_id],
-            "Fixed-size experiment requires the selected pinned Jina tokenizer")
+            "Token chunking requires the selected pinned Jina tokenizer")
     limit = settings["max_input_tokens"]
     require(type(limit) is int and 3 <= limit <= 2048, "Input limit exceeds the tested configuration")
     bundle = within(ROOT, settings["bundle_dir"])
