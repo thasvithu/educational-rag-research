@@ -11,7 +11,7 @@ from ..embedding.encode_chunks import atomic_jsonl
 from ..embedding.inputs import verify_manifest
 from ..retrieval.inputs import METHODS
 from .answer import GeneratorTokenizer, inspect_answer, load_settings, prepare_request
-from .client import GroqAnswerClient, ProviderFailure
+from .client import OpenAIAnswerClient, ProviderFailure
 from .state import AnswerStore, FreePlanLimiter, answer_once, locked_cache
 
 
@@ -95,12 +95,16 @@ def run_generation(run_id, *, generation_config=ROOT / 'rag_pipeline/configs/gen
                 variant.mkdir(parents=True, exist_ok=True)
                 atomic_jsonl(variant / 'requests.jsonl', [r for r in requests if r['method'] == method])
                 atomic_jsonl(variant / 'generation_contexts.jsonl', [c for c in contexts if c['method'] == method])
+                if dry_run:
+                    # Empty, hashed exports make unexecuted answers explicit to
+                    # the offline evaluator without contacting the provider.
+                    atomic_jsonl(variant / 'answers.jsonl', [])
             preparation = {'prepared_requests': len(requests), 'selected_requests': len(selected),
                            'estimated_prompt_tokens_all': sum(r['estimated_prompt_tokens'] for r in requests),
                            'reserved_tokens_all': sum(r['reserved_tokens'] for r in requests),
                            'reserved_tokens_selected': sum(r['reserved_tokens'] for r in selected),
                            'largest_prompt_tokens': max(r['estimated_prompt_tokens'] for r in requests),
-                           'paid_budget': 0, 'account_tier': 'free', 'human_review_status': 'draft pilot; not final evaluation',
+                           'account_tier': settings['account_tier'], 'human_review_status': 'draft pilot; not final evaluation',
                            'rate_note': 'Local reservations cover this pipeline only; provider quotas also include other account use.'}
             write_json(run / 'preparation.json', preparation)
             print(json.dumps(preparation), flush=True)
@@ -110,7 +114,7 @@ def run_generation(run_id, *, generation_config=ROOT / 'rag_pipeline/configs/gen
                 by_key = {(c['method'], c['question_id']): c for c in contexts}
                 for index, request in enumerate(selected, 1):
                     if not cache_only and store.get(request['request_key']) is None and client is None:
-                        client = GroqAnswerClient(settings)
+                        client = OpenAIAnswerClient(settings)
                     context = by_key[(request['method'], request['question_id'])]
                     base = {k: request[k] for k in ('method', 'question_id', 'request_key', 'context_hash')}
                     try:
@@ -134,8 +138,8 @@ def run_generation(run_id, *, generation_config=ROOT / 'rag_pipeline/configs/gen
                                                  for a in answers if a['status'] == 'complete')
                                           for key in ('prompt_tokens', 'completion_tokens', 'total_tokens')},
                        'live_requests_this_invocation': sum(a['status'] == 'complete' and not a['cache_hit'] for a in answers),
-                       'dry_run': dry_run, 'paid_budget': 0,
-                       'billing_note': 'Free account requested by user; API does not expose billing-tier verification. No paid fallback.'}
+                       'dry_run': dry_run, 'account_tier': settings['account_tier'],
+                       'billing_note': 'Paid OpenAI account; cost is billed per the provider\'s token-based pricing.'}
             write_json(run / 'usage_report.json', summary)
             for name, expected in corpus.snapshot['files'].items():
                 require(file_hash(within(ROOT / config.corpus_dir, name)) == expected, 'Prepared input changed during generation')

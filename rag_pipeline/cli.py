@@ -1,4 +1,4 @@
-"""Educational RAG commands; generate-answers uses Groq unless preparing or replaying."""
+"""Educational RAG commands; generate-answers uses OpenAI unless preparing or replaying."""
 
 import argparse
 from dataclasses import asdict
@@ -216,17 +216,31 @@ def main(argv=None) -> int:
     command.add_argument("--model-config", type=Path, default=ROOT / "rag_pipeline/configs/models.json")
     command.add_argument("--run-id", required=True)
     command.add_argument("--cache-only", action="store_true", help="Reuse query vectors without loading the model")
-    command = sub.add_parser("generate-answers", help="Prepare or generate grounded Groq answers from saved retrieval contexts")
+    command = sub.add_parser("generate-answers", help="Prepare or generate grounded OpenAI answers from saved retrieval contexts")
     command.add_argument("--run-id", required=True)
     command.add_argument("--generation-config", type=Path, default=ROOT / "rag_pipeline/configs/generation.json")
-    command.add_argument("--dry-run", action="store_true", help="Save all prompts and token estimates without contacting Groq")
-    command.add_argument("--cache-only", action="store_true", help="Replay saved answers without contacting Groq")
+    command.add_argument("--dry-run", action="store_true", help="Save all prompts and token estimates without contacting OpenAI")
+    command.add_argument("--cache-only", action="store_true", help="Replay saved answers without contacting OpenAI")
     command.add_argument("--resume", action="store_true", help="Resume failed/interrupted generation with unchanged settings")
-    command.add_argument("--all-pilot", action="store_true", help="Select all 20 pilot questions instead of the balanced three-question smoke test")
+    command.add_argument("--all-pilot", action="store_true", help="Select every question in the configured pilot instead of the configured sample")
     command.add_argument("--trial-id", default="trial_001", help="New ID for an independent generation trial; same ID permits cache reuse")
+    command = sub.add_parser("evaluate", help="Evaluate saved traces offline: provisional pilot checks, or final frozen-test scoring")
+    command.add_argument("--run-id", required=True)
+    command.add_argument("--provisional", action="store_true", help="Development-only checks against the pilot split; not thesis-reportable")
+    command.add_argument("--final-test-scoring", action="store_true",
+                         help="Score the frozen benchmark's held-out test split. Requires frozen_snapshot.json to exist and match. "
+                              "Pass exactly one of --provisional or --final-test-scoring.")
+    command.add_argument("--retrieval-run", type=Path, default=ROOT / "data/outputs/rag/phase9_retrieval_pilot_20260927")
+    command.add_argument("--generation-run", type=Path, default=ROOT / "data/outputs/rag/phase10_generation_pilot_20260927")
+    command.add_argument("--answer-reviews", type=Path, help="Completed JSONL answer reviews copied from a previous evaluation template")
     args = parser.parse_args(argv)
     try:
-        if args.command == "generate-answers":
+        if args.command == "evaluate":
+            from .evaluation.run import run_evaluation
+            run_evaluation(args.run_id, provisional=args.provisional, final_test_scoring=args.final_test_scoring,
+                           retrieval_run=args.retrieval_run, generation_run=args.generation_run,
+                           reviews=args.answer_reviews)
+        elif args.command == "generate-answers":
             from .generation.run import run_generation
             run_generation(args.run_id, generation_config=args.generation_config.resolve(), dry_run=args.dry_run,
                            cache_only=args.cache_only, resume=args.resume, all_pilot=args.all_pilot, trial_id=args.trial_id)

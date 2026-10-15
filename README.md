@@ -195,3 +195,17 @@ upload code through your local Git workflow so these rules take effect.
 ## 📄 License
 
 This project is licensed under the MIT License — see [LICENSE](./LICENSE) for details.
+
+
+## Streamlit research explorer
+
+Explore saved PDFs, prepared text, five chunking methods, embeddings, retrieval
+contexts and generated answers in a local visual interface:
+
+```bash
+uv pip install --python .venv/bin/python -r requirements-ui.txt
+.venv/bin/streamlit run research_gui/app.py --server.address 127.0.0.1 --server.port 8501 --server.headless true --browser.gatherUsageStats false
+```
+
+Open http://127.0.0.1:8501. See the [UI guide and team walkthrough](research_gui/README.md).
+The explorer reads saved experiments; it does not run models or change benchmark approvals.

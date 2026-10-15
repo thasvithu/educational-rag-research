@@ -13,7 +13,7 @@ import httpx
 
 from rag_pipeline.common.config import ROOT
 from rag_pipeline.generation.answer import inspect_answer, load_settings, prepare_request
-from rag_pipeline.generation.client import GroqAnswerClient, ProviderFailure
+from rag_pipeline.generation.client import OpenAIAnswerClient, ProviderFailure
 from rag_pipeline.generation.state import AnswerStore, FreePlanLimiter, answer_once
 
 
@@ -139,8 +139,8 @@ class GenerationTests(unittest.TestCase):
             resumed.reserve(self.request)
 
     def client(self, handler):
-        with patch.dict(os.environ, {'GROQ_API_KEY': 'unit-test-secret'}):
-            client = GroqAnswerClient(self.settings, transport=httpx.MockTransport(handler))
+        with patch.dict(os.environ, {'OPENAI_API_KEY': 'unit-test-secret'}):
+            client = OpenAIAnswerClient(self.settings, transport=httpx.MockTransport(handler))
         self.addCleanup(client.close)
         return client
 
@@ -194,7 +194,7 @@ class GenerationTests(unittest.TestCase):
                                 ('load_contexts', Mock(return_value=(contexts, source, {'artifact_sha256': {}}))),
                                 ('GeneratorTokenizer', Mock(return_value=FakeTokens())),
                                 ('environment', Mock(return_value={})), ('create_run', create),
-                                ('GroqAnswerClient', Mock(return_value=client)), ('FreePlanLimiter', Mock())]:
+                                ('OpenAIAnswerClient', Mock(return_value=client)), ('FreePlanLimiter', Mock())]:
                 stack.enter_context(patch.object(runner, name, value))
             with self.assertRaisesRegex(ValueError, 'failed requests'):
                 runner.run_generation('resume_fixture')
@@ -211,6 +211,13 @@ class GenerationTests(unittest.TestCase):
             replay = runner.run_generation('replay_fixture', cache_only=True)
             self.assertEqual(client.invoke.call_count, 6)
             self.assertEqual(json.loads((replay / 'usage_report.json').read_text())['cache_hits'], 5)
+            runner.OpenAIAnswerClient.reset_mock()
+            prepared = runner.run_generation('prepare_fixture', dry_run=True, all_pilot=True)
+            runner.OpenAIAnswerClient.assert_not_called()
+            client.invoke.assert_not_called()
+            for method in runner.METHODS:
+                self.assertEqual((prepared / method / 'variant_001/answers.jsonl').read_text(), '')
+            self.assertEqual(json.loads((prepared / 'usage_report.json').read_text())['answers'], 0)
 
     def test_provider_error_is_sanitized(self):
         def respond(request):
@@ -228,6 +235,15 @@ class GenerationTests(unittest.TestCase):
                     'usage': {'prompt_tokens': 1, 'completion_tokens': 0, 'total_tokens': 1}})
             with self.assertRaises(ProviderFailure):
                 self.client(respond).invoke(self.request)
+
+    def test_dated_snapshot_model_name_is_accepted(self):
+        # OpenAI echoes a dated snapshot of the requested alias, not the alias itself.
+        def respond(request):
+            return httpx.Response(200, json={'id': 'stub', 'model': self.settings['model_id'] + '-2024-07-18',
+                'created': 1, 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Three [S1].'},
+                'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 1, 'completion_tokens': 1, 'total_tokens': 2}})
+        result = self.client(respond).invoke(self.request)
+        self.assertEqual(result['text'], 'Three [S1].')
 
 
 if __name__ == '__main__':

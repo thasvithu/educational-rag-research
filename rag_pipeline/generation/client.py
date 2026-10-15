@@ -1,4 +1,4 @@
-"""LangChain/Groq transport with safe response metadata and explicit retries."""
+"""LangChain/OpenAI transport with safe response metadata and explicit retries."""
 
 import os
 import time
@@ -6,7 +6,7 @@ import time
 import httpx
 from dotenv import dotenv_values
 from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 from langsmith import tracing_context
 
 from ..common.config import ROOT
@@ -21,17 +21,17 @@ class ProviderFailure(Exception):
         self.retryable = retryable
 
 
-class GroqAnswerClient:
+class OpenAIAnswerClient:
     def __init__(self, settings, *, transport=None):
-        key = os.environ.get('GROQ_API_KEY') or dotenv_values(ROOT / '.env').get('GROQ_API_KEY')
-        require(bool(key), 'GROQ_API_KEY is missing')
+        key = os.environ.get('OPENAI_API_KEY') or dotenv_values(ROOT / '.env').get('OPENAI_API_KEY')
+        require(bool(key), 'OPENAI_API_KEY is missing')
         self.settings = settings
         self.observed = {}
         self.http = httpx.Client(event_hooks={'response': [self._capture]}, trust_env=False, transport=transport)
-        self.model = ChatGroq(model=settings['model_id'], api_key=key, base_url='https://api.groq.com',
-                              temperature=settings['temperature'], max_tokens=settings['max_output_tokens'],
-                              timeout=settings['timeout_seconds'], max_retries=0, http_client=self.http,
-                              cache=False)
+        self.model = ChatOpenAI(model=settings['model_id'], api_key=key,
+                                temperature=settings['temperature'], max_tokens=settings['max_output_tokens'],
+                                timeout=settings['timeout_seconds'], max_retries=0, http_client=self.http,
+                                cache=False)
 
     def _capture(self, response):
         response.read()
@@ -51,11 +51,9 @@ class GroqAnswerClient:
                     for m in payload['messages']]
         start = time.monotonic()
         try:
-            # The old SDK supports new API fields through extra_body. LangChain
-            # still constructs and sends the messages. No external tracing.
+            # LangChain constructs and sends the messages; no external tracing.
             with tracing_context(enabled=False):
-                answer = self.model.invoke(messages, seed=payload['seed'], top_p=payload['top_p'],
-                                           extra_body={'reasoning_effort': payload['reasoning_effort']})
+                answer = self.model.invoke(messages, seed=payload['seed'], top_p=payload['top_p'])
         except Exception as exc:
             status = getattr(exc, 'status_code', self.observed.get('http_status'))
             try:
@@ -65,7 +63,11 @@ class GroqAnswerClient:
             retryable = status == 429 or (isinstance(status, int) and status >= 500)
             retryable |= type(exc).__name__ in ('APIConnectionError', 'APITimeoutError')
             raise ProviderFailure(type(exc).__name__, status, delay, retryable) from None
-        if self.observed.get('model') != payload['model']:
+        returned_model = self.observed.get('model') or ''
+        requested_model = payload['model']
+        # OpenAI echoes a dated snapshot (e.g. "gpt-4o-mini-2024-07-18") instead
+        # of the requested alias; accept that pattern but reject any other model.
+        if returned_model != requested_model and not returned_model.startswith(requested_model + '-'):
             raise ProviderFailure('UnexpectedResponseModel')
         if not isinstance(answer.content, str) or not answer.content.strip():
             raise ProviderFailure('EmptyAnswer')

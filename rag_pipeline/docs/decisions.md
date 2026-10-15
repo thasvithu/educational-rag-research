@@ -264,3 +264,35 @@ produce misleading similarities; saved diagnostics keep those cases visible.
   not establish factual support. Pilot draft annotations remain unapproved.
 
 See [Phase 10 handover](phase10_completion.md) for actual results and limitations.
+
+
+## Streamlit explorer — 28 September 2026
+
+- Added a Python inspection interface between Phases 10 and 11 at Vithusan's request.
+- Read saved experiment artifacts using recorded source paths and checksums; keep
+  algorithm implementations in `rag_pipeline/` and display code in `research_gui/`.
+- Compare methods by document character spans, not by method-specific chunk numbers.
+- Show unavailable answers explicitly and separate retrieved ranks from packed evidence.
+- Display current reference annotations only in a human-review panel. Export notes
+  without modifying benchmark approvals or completed outputs.
+- This release is an inspection UI. Pipeline execution and background-job controls
+  remain a possible later extension. Viewing screens makes no model/API calls.
+
+See the [UI guide](../../research_gui/README.md) and local verification artifacts
+under `data/outputs/rag/ui_verification_20260928/`.
+
+## Phase 11 provisional implementation — 6 October 2026
+
+The user authorized evaluation implementation while benchmark review continues.
+The new offline command accepts the existing pilot only and requires
+`--provisional`. It preserves the separate 153-question intake as drafts.
+Final test scoring remains unavailable until benchmark/protocol/configuration
+freezing and the remaining experiment workflow are implemented and verified.
+
+Exact source evidence defines retrieval relevance. Human rubric judgments define
+answer correctness; citation label existence alone does not establish support.
+Missing answers, unreviewed judgments and failed judge outputs remain visible.
+The optional pinned RAGAS adapter requires explicit clients and makes no calls
+from the offline command. Its live judge/budget workflow remains pending.
+
+See [Phase 11 status](phase11_status.md) for outputs, commands and limitations.

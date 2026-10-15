@@ -1,4 +1,4 @@
-"""Durable answers and conservative free-plan scheduling shared across runs."""
+"""Durable answers and conservative request-pacing scheduling shared across runs."""
 
 from contextlib import contextmanager
 from datetime import datetime, timezone

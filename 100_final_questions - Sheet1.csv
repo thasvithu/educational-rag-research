@@ -1,0 +1,467 @@
+Question ID,Question,Answerability,Question category,Reference answer,Exact PDF filename,Physical PDF page(s),Supporting passage(s),Answer rubric,Author,Reviewer,Review decision,Notes / Reason if unanswerable
+1,"According to the UCSC 2024 handbook, how do Academic and Enhancement courses differ?",answerable,definition,Academic courses provide subject knowledge; Enhancement courses cover wider disciplines for a holistic education.,aysha/UCSC_HB_2024.pdf,71,"001_E01 | physical page 71: Academic courses provide subject
+knowledge and enhancement courses provide knowledge on a
+wide range of disciplines that are required for a holistic education.",Academic courses provide subject knowledge; Enhancement courses cover wider disciplines for a holistic education.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+2,"According to the UCSC 2024 handbook, what attendance level must be satisfied before taking a course examination?",answerable,eligibility,A student must satisfy 80% attendance for the course.,aysha/UCSC_HB_2024.pdf,71,"002_E01 | physical page 71: 80% attendance will be a requirement for a course to
+be satisfied before taking the corresponding examination.",A student must satisfy 80% attendance for the course.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+3,"According to the UCSC 2024 handbook, what do the first and second digits of a course code indicate?",answerable,explanation,The first digit indicates the corresponding academic year. The second digit indicates the subject revision.,aysha/UCSC_HB_2024.pdf,71,"003_E01 | physical page 71: The
+first digit of each course code is the corresponding year (e.g: For
+a course in the second year, it will be like 2xxx).
+
+003_E02 | physical page 71: The second digit
+represents the revision of the subject.","The first digit indicates the corresponding academic year.
+The second digit indicates the subject revision.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+4,"According to the UCSC 2024 handbook, which course-code prefixes identify academic subjects and which identify Enhancement subjects?",answerable,definition,SCS and IS identify academic subjects; ENH identifies Computer Science Enhancement subjects and EN identifies Information Systems Enhancement subjects.,aysha/UCSC_HB_2024.pdf,71,"004_E01 | physical page 71: SCS and
+IS are academic subjects while ENH (Computer Science) and EN
+(Information Systems) represent the Enhancement subjects.",SCS and IS identify academic subjects; ENH identifies Computer Science Enhancement subjects and EN identifies Information Systems Enhancement subjects.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+5,"According to the UCSC 2024 handbook, how many academic credits must students complete in the first two years and in the third year?",answerable,eligibility,Complete all Academic credits in the first two years and at least 22 academic credits in the third year.,aysha/UCSC_HB_2024.pdf,71,"005_E01 | physical page 71: Students should complete all Academic credits in the first
+two academic years and at least 22 academic credits in the third
+academic year.",Complete all Academic credits in the first two years and at least 22 academic credits in the third year.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+6,"According to the UCSC 2024 handbook, do A+ and A have different grade-point values, and what are those values?",answerable,table_lookup,No. Both A+ and A have a grade-point value of 4.00.,aysha/UCSC_HB_2024.pdf,72,"006_E01 | physical page 72: A+             4.00
+            A              4.00",No. Both A+ and A have a grade-point value of 4.00.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+7,"According to the UCSC 2024 handbook, what grade-point values correspond to C- and D+?",answerable,table_lookup,C- corresponds to 1.70 and D+ to 1.30.,aysha/UCSC_HB_2024.pdf,72,"007_E01 | physical page 72: C-             1.70
+            D+             1.30",C- corresponds to 1.70 and D+ to 1.30.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+8,"According to the UCSC 2024 handbook, what minimum project grade is required for consideration for the Soma Goonetillake Memorial Award in Software Engineering?",answerable,eligibility,Graduating BSc Honours in Software Engineering students must have an A or higher in their final-year project.,aysha/UCSC_HB_2024.pdf,78,"008_E01 | physical page 78: This award goes to graduating students who scored an ‘A’ or
+
+higher in their final year project for the Bachelor of Science
+
+Honours in Software Engineering degree.",Graduating BSc Honours in Software Engineering students must have an A or higher in their final-year project.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+9,"According to the UCSC 2024 handbook, how are ties and disciplinary or examination offences treated for the IFS Award for Academic Excellence in Software Engineering?",answerable,exception,A tie leads to a shared award; students with disciplinary actions or examination offences are ineligible.,aysha/UCSC_HB_2024.pdf,78,"009_E01 | physical page 78: If there’s a tie, the award is shared. Students
+
+with disciplinary actions or exam offenses are not eligible for
+
+the award.",A tie leads to a shared award; students with disciplinary actions or examination offences are ineligible.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+10,"According to the UCSC 2024 handbook, for the three-year degree, what minimum GPA and Industry Project grade are required, and how many third-year academic credits must be completed?",answerable,eligibility,The minimum GPA is 2.00. The third-year Industry Project requires at least C. At least 22 third-year academic credits must be completed.,aysha/UCSC_HB_2024.pdf,71115,"010_E01 | physical page 115: Obtained a minimum GPA of 2.00.
+
+010_E02 | physical page 115: Completed the third year Industry Project with a minimum
+
+C grade.
+
+010_E03 | physical page 71: Students should complete all Academic credits in the first
+two academic years and at least 22 academic credits in the third
+academic year.
+
+010_E03 | physical page 115: at least 22 Credits
+contributing towards the GPA in the third academic year.","The minimum GPA is 2.00.
+The third-year Industry Project requires at least C.
+At least 22 third-year academic credits must be completed.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+11,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, what continuous-assessment mark and lecture attendance are required to sit a module’s end-of-semester examination?",answerable,eligibility,At least 40% for continuous assessment is required. Lecture attendance must be at least 80%.,aysha/UOM_FIT_HB_2020.pdf,35,"011_E01 | physical page 35: a minimum mark of 40% for continuous assessment
+
+011_E02 | physical page 35: 80% of attendance at lectures","At least 40% for continuous assessment is required.
+Lecture attendance must be at least 80%.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+12,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, what is the normal continuous-assessment weighting, and which activities are excepted from that range?",answerable,exception,"Normally 30%–60% of total marks; Industrial Training, research projects and Independent studies are exceptions.",aysha/UOM_FIT_HB_2020.pdf,35,"012_E01 | physical page 35: The continuous assessment component in a module normally carries a weightage not less than 30%
+and not more than 60% of the total marks, except in Industrial Training, research projects and
+Independent studies.","Normally 30%–60% of total marks; Industrial Training, research projects and Independent studies are exceptions.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+13,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, what minimum end-of-semester examination mark is needed for the result to be considered in calculating final marks?",answerable,eligibility,At least 20% must be obtained in the end-of-semester examination.,aysha/UOM_FIT_HB_2020.pdf,35,"013_E01 | physical page 35: A minimum requirement of 20% should be obtained from the end-of -semester examination in order
+to consider the result for calculating the final marks.",At least 20% must be obtained in the end-of-semester examination.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+14,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, what grade and grade points correspond to benchmark marks from 65 to 69?",answerable,table_lookup,The grade is B+ and the grade-point value is 3.3.,aysha/UOM_FIT_HB_2020.pdf,35,014_E01 | physical page 35: 65 to 69            B+           3.3,The grade is B+ and the grade-point value is 3.3.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+15,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, what happens when a student meets continuous-assessment requirements but fails the end-of-semester examination?",answerable,procedure,The student receives incomplete grade I and may repeat only the end-of-semester examination.,aysha/UOM_FIT_HB_2020.pdf,36,"015_E01 | physical page 36: A student satisfying continuous assessment requirements but failing the end-of-semester
+      examination receives an incomplete grade I. In that event the student may repeat only the
+      end-of-semester examination.",The student receives incomplete grade I and may repeat only the end-of-semester examination.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+16,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, what grade and repeat requirements apply when a student does not satisfy continuous assessment?",answerable,procedure,"The student is ineligible for the final examination, receives F, and must repeat both continuous assessment and the end-of-semester examination.",aysha/UOM_FIT_HB_2020.pdf,36,"016_E01 | physical page 36: A student who does not satisfy continuous assessment requirements will not be eligible to sit
+      the final examination and will receive a grade F. In that event the student must repeat both the
+      continuous assessment and the end-of-semester examination.","The student is ineligible for the final examination, receives F, and must repeat both continuous assessment and the end-of-semester examination.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+17,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, what is the maximum repeat grade, and which grades may be improved to it?",answerable,exception,"The maximum repeat grade is C. F, I, D and C- may be improved up to C.",aysha/UOM_FIT_HB_2020.pdf,36,"017_E01 | physical page 36: The maximum grade awarded for repeating a course module will be a C.
+
+017_E02 | physical page 36: The grades F, I, D or C- can be improved up to a C grade.","The maximum repeat grade is C.
+F, I, D and C- may be improved up to C.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+18,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, after missing an examination through illness or another compelling reason, whom must a student notify and appeal to, and by when?",answerable,procedure,Inform the Registrar or Senior Assistant Registrar/Examinations within seven days of the examination. Appeal to the Dean with supporting documents within one month of the examination.,aysha/UOM_FIT_HB_2020.pdf,38,"018_E01 | physical page 38: inform the Registrar or Senior Assistant Registrar/ Examinations within 7 days of the
+          date of examination.
+
+018_E02 | physical page 38: appeal with supporting documents to the Dean, within one month from the date of exam.","Inform the Registrar or Senior Assistant Registrar/Examinations within seven days of the examination.
+Appeal to the Dean with supporting documents within one month of the examination.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+19,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, what conditions must a full-time undergraduate meet for a Dean’s List recommendation?",answerable,eligibility,"The student must be full-time, achieve SGPA at least 3.80, complete at least the minimum letter-graded credits for that semester, have no Incomplete grades or failures, and have no disciplinary action.",aysha/UOM_FIT_HB_2020.pdf,38,"019_E01 | physical page 38: Full time undergraduate students who achieve a semester grade point average of 3.80 or greater and
+have completed at least the minimum number of credits on a letter graded basis during the semester
+considered, have no ""Incomplete"" grade or Failures, and have no disciplinary action against them
+will be recommended by the Board of Examiners to be included in the Dean's List","The student must be full-time, achieve SGPA at least 3.80, complete at least the minimum letter-graded credits for that semester, have no Incomplete grades or failures, and have no disciplinary action.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+20,"According to the University of Moratuwa Faculty of Information Technology 2020 handbook, can a student taking longer than five academic years still receive a degree with a class?",answerable,exception,"Yes, exceptionally: the student must satisfy the overall GPA, and the Senate may consider a class on the Faculty’s recommendation.",aysha/UOM_FIT_HB_2020.pdf,38,"020_E01 | physical page 38: Under exceptional circumstances a student who satisfies the overall GPA but takes longer than five
+academic years to complete the course requirements may considered to be eligible for the award of
+the BScHons (IT) / BScHons (IT&M) Degree with a class by the Senate on the recommendation of
+the Faculty.","Yes, exceptionally: the student must satisfy the overall GPA, and the Senate may consider a class on the Faculty’s recommendation.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+21,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, how many lecture hours equal one course credit, and how do practical-class hours convert to lecture hours?",answerable,definition,One course credit equals 15 lecture hours. Two hours of practical classes or in-class assignments equal one lecture hour.,aysha/UOP_FEng_HB_2024.pdf,44,"021_E01 | physical page 44: One course credit is equivalent to 15 hours of lectures.
+
+021_E02 | physical page 44: An hour of tutorial work, demonstrations, smallgroup discussions, or two hours of practical classes or in-class assignments is equivalent to one lecture
+hour.","One course credit equals 15 lecture hours.
+Two hours of practical classes or in-class assignments equal one lecture hour.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+22,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, how do the notional hours per credit differ between ordinary taught activities and industrial training or research projects?",answerable,explanation,"Ordinary listed teaching activities require 50 notional learning hours per credit. Industrial training, research projects and workplace-based learning require at least 100 notional hours per credit.",aysha/UOP_FEng_HB_2024.pdf,44,"022_E01 | physical page 44: for lectures, tutorials, demonstrations,
+practical classes, in-class assignments, small-group discussions and field studies work, one credit (the
+measure of volume of learning) corresponds to 50 notional learning hours
+
+022_E02 | physical page 44: in the case of industrial
+training, research project, and workplace-based learning (in suitable settings) one credit is equivalent to a
+minimum of 100 notional hours.","Ordinary listed teaching activities require 50 notional learning hours per credit.
+Industrial training, research projects and workplace-based learning require at least 100 notional hours per credit.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+23,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, under Rule 2.4, can a course run longer than one semester?",answerable,exception,Normally a course runs within one semester; the Senate may allow a longer duration on the Faculty Board’s recommendation.,aysha/UOP_FEng_HB_2024.pdf,44,"023_E01 | physical page 44: Each course shall be conducted within a single semester. However, the Senate may allow certain courses
+a longer duration on the recommendation of the Faculty Board.",Normally a course runs within one semester; the Senate may allow a longer duration on the Faculty Board’s recommendation.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+24,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, under Rule 2.5, can registration change after the add/drop period?",answerable,exception,"Only with special permission from the Dean, based on a student request with valid reasons.",aysha/UOP_FEng_HB_2024.pdf,44,"024_E01 | physical page 44: No change to course
+registration is allowed after the add/drop period except under special permission granted by the Dean based
+on requests from students with valid reasons.","Only with special permission from the Dean, based on a student request with valid reasons.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+25,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, what are the recommended and maximum credit loads in a regular semester?",answerable,eligibility,The recommended load is 18 credits and the maximum is 24 credits.,aysha/UOP_FEng_HB_2024.pdf,44,"025_E01 | physical page 44: The recommended load of a student in a regular semester is 18 credits, and the maximum number of credits
+allowed is 24 credits in a regular semester.",The recommended load is 18 credits and the maximum is 24 credits.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+26,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, what participation threshold is required to have satisfactorily followed a course?",answerable,eligibility,At least 80% course participation is required.,aysha/UOP_FEng_HB_2024.pdf,44,"026_E01 | physical page 44: To be considered to have satisfactorily followed a course, a student is required to have at least 80% course
+participation",At least 80% course participation is required.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+27,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, under Rule 2.10, how and when should a valid-reason request for a makeup examination in the first, seventh or eighth semester be submitted?",answerable,procedure,"Submit a written request explaining the reasons to the Dean as early as possible, no later than one week after the examination.",aysha/UOP_FEng_HB_2024.pdf,44,"027_E01 | physical page 44: he/she is
+required to submit a written request stating the reasons to the Dean as early as possible but not later than
+one week from the date of the examination.","Submit a written request explaining the reasons to the Dean as early as possible, no later than one week after the examination.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+28,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, which industrial-training course does the student guide place outside the semester credit limit?",answerable,exception,"EF4010: Industrial Training, normally conducted during the vacation, is outside the semester limit.",aysha/UOP_FEng_HB_2024.pdf,49,"028_E01 | physical page 49: The credits from EF4010: Industrial Training Course which
+is normally conducted during the vacation is outside this limit.","EF4010: Industrial Training, normally conducted during the vacation, is outside the semester limit.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+29,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, how does a student apply for graduation and demonstrate completion of its requirements?",answerable,procedure,Complete the Degree Claim Form (DCF).,aysha/UOP_FEng_HB_2024.pdf,49,"029_E01 | physical page 49: The student should apply for graduation and demonstrate the completion of all requirements for graduation
+by filling the Degree Claim Form (DCF).",Complete the Degree Claim Form (DCF).,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+30,"According to the University of Peradeniya Faculty of Engineering 2024 handbook, what language is used for academic activities, and what is the maximum grade for repeating a course?",answerable,multi_passage,"Academic activities, including assessments, use English. The maximum grade for a repeated course is C.",aysha/UOP_FEng_HB_2024.pdf,"44,49","030_E01 | physical page 44: Any academic activities of courses, including assessments in the entire programme, shall be conducted in
+English medium.
+
+030_E02 | physical page 49: the maximum grade awarded for a repeated course unit is a “C”.","Academic activities, including assessments, use English.
+The maximum grade for a repeated course is C.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+31,"According to the Eastern University Faculty of Science 2022–2023 handbook, after illness causes absence from an end-semester examination, what are the notification and medical-certificate deadlines?",answerable,procedure,"The student, parent or guardian must inform the Dean or Assistant Registrar in writing within seven days of the examination. After timely notification, submit medical certificates certified by the University Medical Officer within 14 days of the missed examination.",haleema/UE-FS-2022-2023.pdf,50,"031_E01 | physical page 50: Student (or parent / guardian) should inform in writing his/her absence to
+
+an end semester examination of a course unit to the Dean or Assistant
+
+Registrar within 7 days from the date of exam due to illness.
+
+031_E02 | physical page 50: Once informed
+within 7 days, the medical certificates (certified by the University Medical
+Officer) should be submitted within 14 days of the absent examination.","The student, parent or guardian must inform the Dean or Assistant Registrar in writing within seven days of the examination.
+After timely notification, submit medical certificates certified by the University Medical Officer within 14 days of the missed examination.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+32,"According to the Eastern University Faculty of Science 2022–2023 handbook, what happens if the 80% attendance requirement is not met?",answerable,eligibility,The student cannot sit the end-semester examination as a proper candidate; the grade uses available continuous-assessment marks. The requirement is 80% attendance for all components.,haleema/UE-FS-2022-2023.pdf,50,"032_E01 | physical page 50: University regulations require 80% attendance for all components of a
+
+course unit. If a student does not meet the required attendance for a
+course unit, then he/she will not be eligible to sit the end semester
+examination as proper candidate and a grade will be assign to that
+
+course with available continuous assessment marks.",The student cannot sit the end-semester examination as a proper candidate; the grade uses available continuous-assessment marks. The requirement is 80% attendance for all components.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+33,"According to the Eastern University Faculty of Science 2022–2023 handbook, in which attempts do continuous-assessment marks count, and what is used for the third and fourth attempts?",answerable,exception,"Continuous-assessment marks count for the proper attempt and the first repeat, which is the second attempt. Only end-semester examination marks count for the third and fourth attempts.",haleema/UE-FS-2022-2023.pdf,51,"033_E01 | physical page 51: Continuous assessment marks will be incorporated for the computation
+     of final grade for students who sit an end semester examination (i) as
+     proper candidate; (ii) as repeat candidate at the first time (i.e., 2nd
+     attempt).
+
+033_E02 | physical page 51: For 3rd and 4th attempts, only end semester examination marks
+     shall contribute to the final grade of that course unit.","Continuous-assessment marks count for the proper attempt and the first repeat, which is the second attempt.
+Only end-semester examination marks count for the third and fourth attempts.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+34,"According to the Eastern University Faculty of Science 2022–2023 handbook, may repeat students attend lectures and practical classes?",answerable,exception,"They may attend lectures with the lecturer’s consent, but cannot attend practical classes.",haleema/UE-FS-2022-2023.pdf,51,"034_E01 | physical page 51: Repeat students may be allowed to follow the lectures with the consent
+    of the lecturer; however, they will not be allowed to attend practical
+    classes.","They may attend lectures with the lecturer’s consent, but cannot attend practical classes.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+35,"According to the Eastern University Faculty of Science 2022–2023 handbook, for the BSc degree, what overall GPA, total credits and minimum credits per level are specified?",answerable,eligibility,"At least overall weighted GPA 2.00 in 90 credits excluding Auxiliary courses, with at least 30 credits at each level.",haleema/UE-FS-2022-2023.pdf,51,"035_E01 | physical page 51: Obtained a minimum overall weighted GPA (G) of 2.00 in minimum of
+     90 credits (excluding Auxiliary courses) with at least 30 credits in each
+     level","At least overall weighted GPA 2.00 in 90 credits excluding Auxiliary courses, with at least 30 credits at each level.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+36,"According to the Eastern University Faculty of Science 2022–2023 handbook, for BSc First Class, what GPA, A-grade credits, C-grade credits and duration are required in addition to BSc eligibility?",answerable,eligibility,"GPA at least 3.70, A or better in at least 36 credits, C or better in at least 80 credits, and completion within three academic years.",haleema/UE-FS-2022-2023.pdf,52,"036_E01 | physical page 52: 4.5.2.1 First Class:
+   (i) Obtain a minimum overall weighted GPA ( G ) of 3.70;
+   (ii) Obtain A or better grades in at least 36 credits;
+   (iii) Obtain C or better in at least 80 credits;
+   (iv) Complete the degree programme within three academic years.","GPA at least 3.70, A or better in at least 36 credits, C or better in at least 80 credits, and completion within three academic years.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+37,"According to the Eastern University Faculty of Science 2022–2023 handbook, what is the minimum overall GPA and total credit requirement for the BSc Honours degree?",answerable,eligibility,"Overall weighted GPA at least 2.00 in at least 120 credits, excluding Auxiliary courses.",haleema/UE-FS-2022-2023.pdf,52,"037_E01 | physical page 52: obtained a minimum overall weighted GPA ( G ) of 2.00 in minimum of
+    120 credits (excluding Auxiliary courses)","Overall weighted GPA at least 2.00 in at least 120 credits, excluding Auxiliary courses.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+38,"According to the Eastern University Faculty of Science 2022–2023 handbook, how many Principal Subject specialization credits are required for BSc Honours, and how does Mathematics differ?",answerable,eligibility,"At least D in 72 specialization credits, or 88 for Mathematics; at least 40 of those credits must be at 400 level.",haleema/UE-FS-2022-2023.pdf,52,"038_E01 | physical page 52: should have grade D or better in minimum of 72 credits from the
+       Principal Subject of specialization (88 credits in case of Mathematics),
+       out of which at least 40 credits from 400 level;","At least D in 72 specialization credits, or 88 for Mathematics; at least 40 of those credits must be at 400 level.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+39,"According to the Eastern University Faculty of Science 2022–2023 handbook, for BSc Honours First Class, what GPA, A-grade credits and completion period are required in addition to degree eligibility?",answerable,eligibility,"GPA at least 3.70, A or better in at least 48 credits including at least 20 at 400 level, and completion within four academic years.",haleema/UE-FS-2022-2023.pdf,53,"039_E01 | physical page 53: 4.5.2.1 First Class:
+   (i) Obtain a minimum overall weighted GPA ( G ) of 3.70;
+   (ii) Obtain A or better grades in at least 48 credits, of which at least 20
+         credits are from the 400 level;
+   (iii) Complete of the degree programme within four academic years.","GPA at least 3.70, A or better in at least 48 credits including at least 20 at 400 level, and completion within four academic years.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+40,"According to the Eastern University Faculty of Science 2022–2023 handbook, how do the maximum completion periods for the BSc and BSc Honours degrees differ from their First Class completion periods?",answerable,multi_passage,The BSc degree requirements must be completed within six academic years. BSc First Class requires completion within three academic years. BSc Honours requirements must be completed within eight academic years. BSc Honours First Class requires completion within four academic years.,haleema/UE-FS-2022-2023.pdf,"51,52,53","040_E01 | physical page 51: completed requirements (i) and (ii) above within six academic years.
+
+040_E02 | physical page 52: Complete the degree programme within three academic years.
+
+040_E02 | physical page 52: Complete the degree programme within three academic years.
+
+040_E02 | physical page 52: Complete the degree programme within three academic years.
+
+040_E03 | physical page 53: completed requirements (i) and (ii) above within eight academic years.
+
+040_E04 | physical page 53: Complete of the degree programme within four academic years.
+
+040_E04 | physical page 53: Complete of the degree programme within four academic years.
+
+040_E04 | physical page 53: Complete of the degree programme within four academic years.","The BSc degree requirements must be completed within six academic years.
+BSc First Class requires completion within three academic years.
+BSc Honours requirements must be completed within eight academic years.
+BSc Honours First Class requires completion within four academic years.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+41,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, when must a student with a grade of C+ or below repeat the course?",answerable,eligibility,The student must register to repeat it in a subsequent semester when the overall GPA for the relevant academic year is below 2.7.,haleema/UJP-MCom.pdf,30,"041_E01 | physical page 30: A student who obtains a grade of ‘C+’ or below for a course shall repeat that course by registering in that
+
+course in a subsequent semester if his/her overall GPA is less than 2.7 for the considering academic year.",The student must register to repeat it in a subsequent semester when the overall GPA for the relevant academic year is below 2.7.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+42,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, may a student with an overall GPA of at least 2.7 repeat a course graded C+ or C?",answerable,exception,Yes. A student with C+ or C may register to repeat it in a subsequent semester if the relevant overall GPA is at least 2.7.,haleema/UJP-MCom.pdf,30,"042_E01 | physical page 30: However, a student who obtains a grade of ‘C+’ or ‘C’ may repeat that course by registering in that course
+
+in a subsequent semester if his/her overall GPA is 2.7 or above for the considering academic year.",Yes. A student with C+ or C may register to repeat it in a subsequent semester if the relevant overall GPA is at least 2.7.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+43,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, under the ordinary repeat-course rule in Section 11.3, what marks cap and maximum grade apply?",answerable,exception,"The ordinary repeat rule caps marks at 50% and the grade at B-, regardless of actual marks.",haleema/UJP-MCom.pdf,30,"043_E01 | physical page 30: A candidate who repeats course/s of an examination shall not be eligible to obtain more than 50% for each
+
+of the course/s, which he/she has repeated irrespective of the actual marks obtained. The maximum grade
+
+given for a repeated course is‘B-’.","The ordinary repeat rule caps marks at 50% and the grade at B-, regardless of actual marks.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+44,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, which grade is retained if a repeat attempt earns a lower grade?",answerable,exception,The better grade from the attempts is retained.,haleema/UJP-MCom.pdf,30,"044_E01 | physical page 30: If the student obtains a lower grade at a repeat attempt than a grade received in earlier attempts, the
+
+better grade shall be retained.",The better grade from the attempts is retained.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+45,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, what does Section 12.1 say about separate repeat end-semester examinations and the next opportunity to sit?",answerable,procedure,The faculty does not conduct a separate repeat end-semester examination; the opportunity is when the examination is held in the next academic year.,haleema/UJP-MCom.pdf,30,"045_E01 | physical page 30: No repeat end-semester examinations are conducted by the FMSC for the end-semester examination
+
+or evaluation. If a student fails an examination and was unable to sit for the examination due to ill health or
+
+any other valid reason in Section 9 he/she has the opportunity to sit for such examination when it is conducted
+
+during the next academic year.",The faculty does not conduct a separate repeat end-semester examination; the opportunity is when the examination is held in the next academic year.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+46,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, when may continuous-evaluation marks be carried forward for a re-sit, and what happens if carrying them forward worsens the grade?",answerable,exception,"Carry the marks forward if they improve the repeated-subject grade; if they reduce it, use only the repeated subject’s final-examination marks.",haleema/UJP-MCom.pdf,30,"046_E01 | physical page 30: his/her continuous evaluation marks may carry forward if the carried forward
+
+marks would improve the grades for the repeated subject. However, if the marks carry forward reduce his/her
+
+final grading, the grade should be given considering only the final examination marks of the repeated subject.","Carry the marks forward if they improve the repeated-subject grade; if they reduce it, use only the repeated subject’s final-examination marks.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+47,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, are GPA decimals beyond two places rounded or truncated?",answerable,procedure,"They are truncated, not rounded.",haleema/UJP-MCom.pdf,30,"047_E01 | physical page 30: Decimals beyond two places are truncated, not rounded, in
+
+computing the grade point average.","They are truncated, not rounded.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+48,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, where are semester examination results published, and when is GPA reported to candidates?",answerable,procedure,"Semester examination results are published on the PCBS website. GPA is reported at the end of each year, with each course grade.",haleema/UJP-MCom.pdf,33,"048_E01 | physical page 33: Results of the semester examinations will be published on the PCBS website.
+
+048_E02 | physical page 33: The GPA will be reported to the
+
+candidates at the end of each year with the grade earned by the candidate for each course","Semester examination results are published on the PCBS website.
+GPA is reported at the end of each year, with each course grade.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+49,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, how is the effective date of the degree determined?",answerable,definition,"It is the date the student completes all relevant course units and submits the completed project, research, thesis or dissertation where required.",haleema/UJP-MCom.pdf,34,"049_E01 | physical page 34: The effective date of the degree shall be the date a student completed all relevant course units of the
+
+postgraduate degree programme and submitted the completed project/research/thesis or dissertation if
+
+required by the respective degree.","It is the date the student completes all relevant course units and submits the completed project, research, thesis or dissertation where required.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+50,"According to the University of Sri Jayewardenepura MCom handbook, whose web version was updated on 23 September 2024, under Section 20.2, what GPA and final-project grade are required for a Merit Pass in a two-year taught postgraduate programme?",answerable,eligibility,"Overall GPA must be at least 3.8. The final project, dissertation, research or thesis must receive A or better.",haleema/UJP-MCom.pdf,34,"050_E01 | physical page 34: The student shall have earned an overall GPA of 3.8 or above in the entire degree programme.
+
+050_E02 | physical page 34: The student shall have grades of “A” or better for the Final Project/Dissertation/Research/ Thesis of degree
+
+programme.","Overall GPA must be at least 3.8.
+The final project, dissertation, research or thesis must receive A or better.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+51,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, for Environmental Science, what happens when a student misses an end-semester examination for an accepted medical or other valid reason?",answerable,exception,"The student receives IC (Incomplete), provided the Faculty Board and Senate accept the medical or other valid reason.",vithusan/UOV_FAS_HB_2024_2025.pdf,29,"051_E01 | physical page 29: A candidate who fails to sit the examination due to Medical or other valid reason(s) ac-
+     ceptable by the Faculty Board and the Senate, he/she will be given ‘IC’ (i.e., Incomplete)
+     for the End-semester Examination of that course unit.","The student receives IC (Incomplete), provided the Faculty Board and Senate accept the medical or other valid reason.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+52,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, for Environmental Science, what happens if an examination is missed without an accepted valid reason?",answerable,exception,The student forfeits an examination opportunity and receives F (Failed to sit).,vithusan/UOV_FAS_HB_2024_2025.pdf,29,"052_E01 | physical page 29: A candidate who fails to sit the examination without giving valid reasons acceptable
+     by the Faculty Board and the Senate, he/she shall be considered as forfeiting a chance
+     to sit that examination and will be given ‘F’ (i.e., Failed to sit) for the End-semester
+     Examination of that course unit.",The student forfeits an examination opportunity and receives F (Failed to sit).,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+53,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, how many resits and total attempts are allowed for an Environmental Science course unit?",answerable,eligibility,"At most two resits, giving three attempts in total.",vithusan/UOV_FAS_HB_2024_2025.pdf,29,"053_E01 | physical page 29: A student will not be allowed to resit a course unit more than two times. Thus, a student
+     can sit for a course unit at a maximum of three times.","At most two resits, giving three attempts in total.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+54,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, what is the maximum completion period for the Environmental Science Honours degree, and which absences are excluded?",answerable,exception,"Six academic years, excluding periods of absence for medical or other valid reasons accepted by the Faculty Board and Senate.",vithusan/UOV_FAS_HB_2024_2025.pdf,29,"054_E01 | physical page 29: The maximum duration for completing the Bachelor of Science Honours in Environmental
+     Science degree programme shall be six academic years. This would exclude periods of
+     absence caused by medical or other valid reasons acceptable by the Faculty Board and
+     the Senate.","Six academic years, excluding periods of absence for medical or other valid reasons accepted by the Faculty Board and Senate.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+55,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, what possible grade changes must an Environmental Science student accept when requesting re-scrutiny?",answerable,procedure,"The final grade may increase, decrease or remain unchanged, and the candidate must accept it.",vithusan/UOV_FAS_HB_2024_2025.pdf,29,"055_E01 | physical page 29: the candidate who apply for re-scrutiny should accept the final
+grade which may be higher, lower or no-change after the re-scrutinization.","The final grade may increase, decrease or remain unchanged, and the candidate must accept it.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+56,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, what credit and GPA conditions apply to the Higher Diploma in Environmental Science?",answerable,eligibility,At least 60 core credits across Levels 1 and 2 are required. GPA must be at least 2.00 in each of Levels 1 and 2.,vithusan/UOV_FAS_HB_2024_2025.pdf,31,"056_E01 | physical page 31: successfully completed minimum 60 credits core course units in Level 1 and Level 2 of the
+   study programme
+
+056_E02 | physical page 31: obtained a minimum GPA of 2.00 in each Level 1 and Level 2.","At least 60 core credits across Levels 1 and 2 are required.
+GPA must be at least 2.00 in each of Levels 1 and 2.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+57,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, what credit and GPA conditions apply to the Diploma in Environmental Science?",answerable,eligibility,Complete 30 Level 1 core credits. Achieve at least GPA 2.00 in Level 1.,vithusan/UOV_FAS_HB_2024_2025.pdf,31,"057_E01 | physical page 31: completed 30 credits of core course units in Level 1 of the study programme
+
+057_E02 | physical page 31: obtained a minimum GPA of 2.00 in Level 1.","Complete 30 Level 1 core credits.
+Achieve at least GPA 2.00 in Level 1.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+58,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, what core-credit grade and overall GPA are required for the BSc in Applied Mathematics and Computing?",answerable,eligibility,Obtain C- or above in 90 core credits across Levels 1–3. Achieve at least OGPA 2.00.,vithusan/UOV_FAS_HB_2024_2025.pdf,49,"058_E01 | physical page 49: obtained Grade ‘C-’ or above in 90 credits of core course units offered in level 1, level
+     2, and level 3 of the degree programme
+
+058_E02 | physical page 49: obtained a minimum OGPA of 2.00","Obtain C- or above in 90 core credits across Levels 1–3.
+Achieve at least OGPA 2.00.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+59,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, for the BSc in Applied Mathematics and Computing, how do the English auxiliary-course grade requirements differ from the other auxiliary courses?",answerable,eligibility,English Language I and II require C or above; other auxiliary courses require D+ or above.,vithusan/UOV_FAS_HB_2024_2025.pdf,49,"059_E01 | physical page 49: obtained Grade ‘C’ or above in the auxiliary course units English Language I and English
+     Language II, and Grade ‘D+’ or above in the auxiliary course units other than English
+     Language I and English Language II",English Language I and II require C or above; other auxiliary courses require D+ or above.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+60,"According to the University of Vavuniya Faculty of Applied Science 2024–2025 handbook, how do the maximum completion periods compare for Environmental Science Honours and the three-year bachelor’s programmes described in Section 3.3, including exclusions?",answerable,multi_passage,"Environmental Science Honours allows six academic years, excluding accepted medical or other valid absences. The three-year bachelor’s programmes allow five academic years, excluding medical or other valid absences accepted by the Faculty Board and Senate.",vithusan/UOV_FAS_HB_2024_2025.pdf,"29,49","060_E01 | physical page 29: The maximum duration for completing the Bachelor of Science Honours in Environmental
+     Science degree programme shall be six academic years. This would exclude periods of
+     absence caused by medical or other valid reasons acceptable by the Faculty Board and
+     the Senate.
+
+060_E02 | physical page 49: The maximum duration for completing the three-year bachelor’s degree programme shall
+     be five academic years. This would exclude periods of absence caused by medical or other
+     valid reasons acceptable to the Faculty Board and the Senate.","Environmental Science Honours allows six academic years, excluding accepted medical or other valid absences.
+The three-year bachelor’s programmes allow five academic years, excluding medical or other valid absences accepted by the Faculty Board and Senate.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+61,"According to FOCP Theory Lecture 03 on creating computer solutions, what are the six stages for creating a computer solution to a problem?",answerable,procedure,Analyze the problem; plan the algorithm; desk-check the algorithm; code it into a program; desk-check the program; evaluate and modify the program.,vithusan/FOCP Theory Lecture-03.pdf,7,061_E01 | physical page 7: 1. Analyze the problem 2. Plan the algorithm 3. Desk-Check the algorithm 4. Code the Algorithms into a program 5. Desk-Check the program 6. Evaluate & Modify the program,Analyze the problem; plan the algorithm; desk-check the algorithm; code it into a program; desk-check the program; evaluate and modify the program.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+62,"According to FOCP Theory Lecture 03 on creating computer solutions, what should a programmer ask when identifying a problem’s outputs?",answerable,explanation,"Ask what the user wants displayed on screen, printed on paper or stored in a file.",vithusan/FOCP Theory Lecture-03.pdf,8,"062_E01 | physical page 8: When searching on the output- What does the user want to see displayed on the screen,
+
+printed on paper, or stored in a file?","Ask what the user wants displayed on screen, printed on paper or stored in a file.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+63,"According to FOCP Theory Lecture 03 on creating computer solutions, how should a programmer decide which input information is needed?",answerable,explanation,"Identify the information the computer needs to display, print or store the required outputs.",vithusan/FOCP Theory Lecture-03.pdf,8,"063_E01 | physical page 8: You have to decide the Input – What information will the computer need to know to
+
+display, print or store the output items?","Identify the information the computer needs to display, print or store the required outputs.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+64,"According to FOCP Theory Lecture 03 on creating computer solutions, how should James’s TV example calculate the final cost from the sale price and tax rate?",answerable,procedure,Multiply the sale price by the tax rate and add that tax amount to the sale price.,vithusan/FOCP Theory Lecture-03.pdf,9,"064_E01 | physical page 9: The Program should calculate the cost by multiplying the
+sale price by the country tax rate and then adding the result to the sale price.
+
+064_E01 | physical page 9: The Program should calculate the cost by multiplying the
+sale price by the country tax rate and then adding the result to the sale price.",Multiply the sale price by the tax rate and add that tax amount to the sale price.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+65,"According to FOCP Theory Lecture 03 on creating computer solutions, why should each algorithm instruction start with a verb?",answerable,explanation,A verb describes the action the computer must take to derive outputs from inputs.,vithusan/FOCP Theory Lecture-03.pdf,11,"065_E01 | physical page 11: Each Instruction Should start with a verb, because it will describe the action
+ that the computer needs to take in order to derive the output from the input.",A verb describes the action the computer must take to derive outputs from inputs.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+66,"According to FOCP Theory Lecture 03 on creating computer solutions, how should an algorithm normally begin and end?",answerable,procedure,"Begin by entering the input items into the computer. Normally end by displaying, printing or storing the output items.",vithusan/FOCP Theory Lecture-03.pdf,11,"066_E01 | physical page 11: Begin with an instruction to enter the input items into the computer.
+
+066_E02 | physical page 11: Most algorithms end with an instruction to display,print or store the output
+ items.","Begin by entering the input items into the computer.
+Normally end by displaying, printing or storing the output items.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+67,"According to FOCP Theory Lecture 03 on creating computer solutions, what is pseudocode used for, and can the computer understand it directly?",answerable,definition,Pseudocode helps programmers plan algorithms; the computer cannot understand it directly.,vithusan/FOCP Theory Lecture-03.pdf,13,"067_E01 | physical page 13: Pseudocode can’t understand by computer
+
+It’s used to help programmers while they are planning an algorithms",Pseudocode helps programmers plan algorithms; the computer cannot understand it directly.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+68,"According to FOCP Theory Lecture 03 on creating computer solutions, why is desk-checking also called hand-tracing?",answerable,definition,The programmer follows each algorithm instruction by hand using pen or pencil and paper.,vithusan/FOCP Theory Lecture-03.pdf,16,"068_E01 | physical page 16: Also called hand-tracing- because programmers used pen, pencil & paper to follow each of the
+algorithm’s instructions by hand.",The programmer follows each algorithm instruction by hand using pen or pencil and paper.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+69,"According to FOCP Theory Lecture 03 on creating computer solutions, what should be prepared before desk-checking an algorithm?",answerable,procedure,Choose sample input values and manually compute the expected outputs.,vithusan/FOCP Theory Lecture-03.pdf,16,"069_E01 | physical page 16: Before you begin desk-check you first choose a set of sample data for the input values which you
+then manually compute expected outputs.",Choose sample input values and manually compute the expected outputs.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+70,"According to FOCP Theory Lecture 03 on creating computer solutions, how does desk-checking help verify that the planned input-to-output instructions are complete and correctly ordered?",answerable,multi_passage,Planning records the instructions that transform input items into the required output. Desk-checking checks that no instruction is missing and that the instructions are correct and properly ordered.,vithusan/FOCP Theory Lecture-03.pdf,"11,16","070_E01 | physical page 11: Record the instructions to process the input items to achieve problem’s output.
+
+070_E02 | physical page 16: The purpose is to verify that it is not missing any instructions and that the existing instructions
+are correct and in the proper order.","Planning records the instructions that transform input items into the required output.
+Desk-checking checks that no instruction is missing and that the instructions are correct and properly ordered.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+71,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", what is database indexing used for?",answerable,definition,Indexing supports efficient retrieval of database-file records using the attributes on which the index is defined.,vithusan/Advanced DBMS - 4.pdf,3,"071_E01 | physical page 3: Indexing is a data structure technique to efficiently retrieve records
+
+from the database files based on some attributes on which the indexing
+has been done.",Indexing supports efficient retrieval of database-file records using the attributes on which the index is defined.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+72,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", how do primary and clustering indexes differ in their ordering fields?",answerable,explanation,"A primary index is defined on a data file ordered by a key field, generally the relation’s primary key. A clustering index is defined on a data file ordered by a non-key field.",vithusan/Advanced DBMS - 4.pdf,4,"072_E01 | physical page 4: Primary Index −Primary index is defined on an ordered data file.
+
+The data file is ordered on a key field. The key field is generally
+the primary key of the relation.
+
+072_E02 | physical page 4: Clustering Index −Clustering index is defined on an ordered data
+
+file. The data file is ordered on a non-key field.","A primary index is defined on a data file ordered by a key field, generally the relation’s primary key.
+A clustering index is defined on a data file ordered by a non-key field.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+73,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", can a secondary index use a non-key field with duplicate values?",answerable,definition,Yes. It may use a unique candidate-key field or a non-key field containing duplicate values.,vithusan/Advanced DBMS - 4.pdf,4,"073_E01 | physical page 4: Secondary Index −Secondary index may be generated from a field
+
+which is a candidate key and has a unique value in every record, or
+a non-key with duplicate values.",Yes. It may use a unique candidate-key field or a non-key field containing duplicate values.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+74,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", what search-versus-storage tradeoff is described for a dense index?",answerable,explanation,A dense index has an index record for every search-key value. This speeds up searching but requires more storage for index records.,vithusan/Advanced DBMS - 4.pdf,5,"074_E01 | physical page 5: In dense index, there is an index record for every search key value in
+
+the database.
+
+074_E02 | physical page 5: This makes searching faster but requires more space to store index
+
+records itself.","A dense index has an index record for every search-key value.
+This speeds up searching but requires more storage for index records.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+75,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", what happens in a sparse-index search if the index does not point directly to the desired record?",answerable,procedure,"After following the index, the system searches sequentially until it finds the desired record.",vithusan/Advanced DBMS - 4.pdf,6,"075_E01 | physical page 6: If the data we are looking for is not where we directly reach by
+
+following the index, then the system starts sequential search until the
+desired data is found.","After following the index, the system searches sequentially until it finds the desired record.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+76,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", why can a multilevel index help when a single-level index becomes too large for memory?",answerable,explanation,"A large single-level index may not fit in memory, causing multiple disk accesses. Multilevel indexing divides it into smaller indexes so the outermost level can fit in one disk block in main memory.",vithusan/Advanced DBMS - 4.pdf,7,"076_E01 | physical page 7: If single-level index is used, then a large size index cannot be kept in
+
+memory which leads to multiple disk accesses.
+
+076_E02 | physical page 7: Multi-level Index helps in breaking down the index into several
+
+smaller indices in order to make the outermost level so small that it
+can be saved in a single disk block, which can easily be
+accommodated anywhere in the main memory.","A large single-level index may not fit in memory, causing multiple disk accesses.
+Multilevel indexing divides it into smaller indexes so the outermost level can fit in one disk block in main memory.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+77,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", what is a bucket in hash-file organization?",answerable,definition,"A bucket is a storage unit, typically one complete disk block containing one or more records.",vithusan/Advanced DBMS - 4.pdf,15,"077_E01 | physical page 15: Bucket is considered
+
+a unit of storage. A bucket typically stores one complete disk block,
+which in turn can store one or more records.","A bucket is a storage unit, typically one complete disk block containing one or more records.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+78,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", how is the bucket address calculated for insertion using static hashing?",answerable,procedure,Apply hash function h to search key K: bucket address = h(K).,vithusan/Advanced DBMS - 4.pdf,18,"078_E01 | physical page 18: the hash function h computes the bucket address for search key K,
+where the record will be stored.
+
+Bucket address = h(K)",Apply hash function h to search key K: bucket address = h(K).,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+79,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", how does dynamic hashing respond to database growth or shrinkage?",answerable,explanation,Static hashing does not expand or shrink dynamically with database size. Dynamic hashing adds and removes buckets dynamically on demand.,vithusan/Advanced DBMS - 4.pdf,21,"079_E01 | physical page 21: The problem with static hashing is that it does not expand or shrink
+
+dynamically as the size of the database grows or shrinks.
+
+079_E02 | physical page 21: Dynamic hashing provides a mechanism in which data buckets are
+
+added and removed dynamically and on-demand.","Static hashing does not expand or shrink dynamically with database size.
+Dynamic hashing adds and removes buckets dynamically on demand.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+80,"According to the Advanced DBMS notes in ""Advanced DBMS - 4.pdf"", how does dense indexing locate a record compared with hashing?",answerable,multi_passage,A dense-index entry stores a search-key value and a pointer to the disk record. Hashing applies a hash function to the search key to generate the record address.,vithusan/Advanced DBMS - 4.pdf,"5,14","080_E01 | physical page 5: Index records contain search key value and a pointer to the actual
+
+record on the disk.
+
+080_E02 | physical page 14: Hashing uses hash functions with search keys as parameters to
+
+generate the address of a data record.","A dense-index entry stores a search-key value and a pointer to the disk record.
+Hashing applies a hash function to the search key to generate the record address.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+81,"According to IT Project Management Chapter 4, Project Scope Management, what does project scope include?",answerable,definition,Project scope includes all work involved in creating project products and the processes used to create them.,vithusan/Chapter 04 -ITPM.pdf,2,"081_E01 | physical page 2: Scope refers to all the work involved in
+creating the products of the project and the
+processes used to create them",Project scope includes all work involved in creating project products and the processes used to create them.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+82,"According to IT Project Management Chapter 4, Project Scope Management, what is a deliverable, and what examples are given?",answerable,definition,"A deliverable is a product produced as part of a project, such as hardware, software, planning documents or meeting minutes.",vithusan/Chapter 04 -ITPM.pdf,2,"082_E01 | physical page 2: A deliverable is a product produced as part of
+a project, such as hardware or software,
+planning documents, or meeting minutes","A deliverable is a product produced as part of a project, such as hardware, software, planning documents or meeting minutes.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+83,"According to IT Project Management Chapter 4, Project Scope Management, how do scope verification and scope control differ?",answerable,explanation,Scope verification formalizes acceptance of project scope by key stakeholders. Scope control manages scope changes affecting project cost and time goals.,vithusan/Chapter 04 -ITPM.pdf,3,"083_E01 | physical page 3: Scope verification: formalizing acceptance of the
+project scope by key project stakeholders
+
+083_E02 | physical page 3: Scope control: controlling changes to project scope
+which impact project cost and time goals","Scope verification formalizes acceptance of project scope by key stakeholders.
+Scope control manages scope changes affecting project cost and time goals.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+84,"According to IT Project Management Chapter 4, Project Scope Management, who should review the scope management plan, and why?",answerable,procedure,Review it with the project sponsor to ensure that the approach meets expectations.,vithusan/Chapter 04 -ITPM.pdf,5,"084_E01 | physical page 5: It should be reviewed with the project sponsor to
+make sure the approach meets expectations",Review it with the project sponsor to ensure that the approach meets expectations.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+85,"According to IT Project Management Chapter 4, Project Scope Management, what is a work breakdown structure (WBS)?",answerable,definition,A WBS groups project work around deliverables and defines the project’s total scope.,vithusan/Chapter 04 -ITPM.pdf,11,"085_E01 | physical page 11: A WBS is a deliverable-oriented grouping of the
+work involved in a project that defines the total
+scope of the project",A WBS groups project work around deliverables and defines the project’s total scope.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+86,"According to IT Project Management Chapter 4, Project Scope Management, what are decomposition and a work package?",answerable,definition,Decomposition divides project deliverables into smaller pieces. A work package is a task at the lowest WBS level.,vithusan/Chapter 04 -ITPM.pdf,11,"086_E01 | physical page 11: Decomposition is subdividing project deliverables into
+smaller pieces
+
+086_E02 | physical page 11: A work package is a task at the lowest level of the WBS","Decomposition divides project deliverables into smaller pieces.
+A work package is a task at the lowest WBS level.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+87,"According to IT Project Management Chapter 4, Project Scope Management, what are the primary inputs for creating a WBS?",answerable,procedure,The project scope statement and the project management plan.,vithusan/Chapter 04 -ITPM.pdf,12,"087_E01 | physical page 12: The project scope statement and project
+management plan are the primary inputs for
+creating a WBS",The project scope statement and the project management plan.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+88,"According to IT Project Management Chapter 4, Project Scope Management, how do the top-down and bottom-up WBS approaches differ?",answerable,explanation,Top-down starts with the largest project items and breaks them down. Bottom-up starts with specific tasks and combines them into larger groups.,vithusan/Chapter 04 -ITPM.pdf,18,"088_E01 | physical page 18: The top-down approach: start with the largest
+items of the project and break them down
+
+088_E02 | physical page 18: The bottom-up approach: start with the
+specific tasks and roll them up","Top-down starts with the largest project items and breaks them down.
+Bottom-up starts with specific tasks and combines them into larger groups.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+89,"According to IT Project Management Chapter 4, Project Scope Management, which three approved documents form the scope baseline?",answerable,definition,"The approved project scope statement, its WBS and its WBS dictionary.",vithusan/Chapter 04 -ITPM.pdf,27,"089_E01 | physical page 27: The approved project scope statement and its
+WBS and WBS dictionary form the scope
+baseline","The approved project scope statement, its WBS and its WBS dictionary.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+90,"According to IT Project Management Chapter 4, Project Scope Management, how do the WBS and WBS dictionary work together to describe project work?",answerable,multi_passage,The WBS organizes deliverable-oriented work and defines the total scope. The WBS dictionary supplies detailed information about each WBS item.,vithusan/Chapter 04 -ITPM.pdf,"11,27","090_E01 | physical page 11: A WBS is a deliverable-oriented grouping of the
+work involved in a project that defines the total
+scope of the project
+
+090_E02 | physical page 27: A WBS dictionary is a document that
+describes detailed information about each
+WBS item","The WBS organizes deliverable-oriented work and defines the total scope.
+The WBS dictionary supplies detailed information about each WBS item.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+91,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", how are the Internet and the Web distinguished?",answerable,explanation,The Internet is connected computers and other devices that can communicate. The Web is software and protocols used to share information over the Internet.,vithusan/2. Basics of Web browser and Protocols.pdf,3,"091_E01 | physical page 3: The Internet is a collection of computers and other devices connected by
+
+equipment that allows them to communicate with each other.
+
+091_E02 | physical page 3: The Web is a collection of software and protocols that has been installed on
+
+most of the computers on the Internet. It is just a way of sharing information
+
+over the internet.","The Internet is connected computers and other devices that can communicate.
+The Web is software and protocols used to share information over the Internet.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+92,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", what different roles do CSS and JavaScript perform in a web page?",answerable,explanation,"CSS adds appearance information, such as colours, fonts and text sizes. JavaScript provides behavior and actions behind interactivity.",vithusan/2. Basics of Web browser and Protocols.pdf,17,"092_E01 | physical page 17: To add stylistics or appearance related information to the page.
+
+Eg : Change colour, font, text size
+
+092_E02 | physical page 17: 3. Java Script :
+
+Provides the behaviour or actions behind the interactivity.","CSS adds appearance information, such as colours, fonts and text sizes.
+JavaScript provides behavior and actions behind interactivity.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+93,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", which hosting type is associated with a small low-traffic website, and which with a large site needing custom server changes?",answerable,explanation,"Shared hosting is associated with a small, low-traffic website. Dedicated hosting is associated with a single person or company needing custom server changes and a large, high-traffic site.",vithusan/2. Basics of Web browser and Protocols.pdf,18,"093_E01 | physical page 18: Shared host : small website with small traffic
+
+093_E02 | physical page 18: Dedicated host : hosting website for single person / company (who need
+
+custom server modification and huge website with large traffic)","Shared hosting is associated with a small, low-traffic website.
+Dedicated hosting is associated with a single person or company needing custom server changes and a large, high-traffic site.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+94,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", what kinds of rules does a communication protocol specify?",answerable,definition,"It specifies permitted data types, commands for sending and receiving data, and how transfers are confirmed.",vithusan/2. Basics of Web browser and Protocols.pdf,22,"094_E01 | physical page 22: These rules include what type of data may be transmitted, what commands are used to
+
+send and receive data, and how data transfers are confirmed.","It specifies permitted data types, commands for sending and receiving data, and how transfers are confirmed.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+95,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", after fetching the HTML document, what does a browser do to assemble a complete web page?",answerable,procedure,"It parses the HTML and requests scripts, CSS and sub-resources such as images and videos. It combines the resources to present the complete page.",vithusan/2. Basics of Web browser and Protocols.pdf,26,"095_E01 | physical page 26: It then parses this file, making additional requests corresponding to execution
+
+scripts, layout information (CSS) to display, and sub-resources contained
+
+within the page (usually images and videos).
+
+095_E02 | physical page 26: The Web browser then mixes these resources to present to the user a complete
+
+document, the Web page.","It parses the HTML and requests scripts, CSS and sub-resources such as images and videos.
+It combines the resources to present the complete page.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+96,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", how does a transparent proxy differ from a non-transparent proxy?",answerable,explanation,A transparent proxy forwards requests unchanged; a non-transparent proxy alters them before forwarding.,vithusan/2. Basics of Web browser and Protocols.pdf,28,"096_E01 | physical page 28: These can be transparent, forwarding on the requests they receive without altering
+
+them in any way, or non-transparent, in which case they will change the request in
+some way before passing it along to the server.",A transparent proxy forwards requests unchanged; a non-transparent proxy alters them before forwarding.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+97,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", which responsibilities are assigned to IP and TCP?",answerable,explanation,IP forwards packets using destination IP addresses. TCP detects errors or lost data and triggers retransmission when needed.,vithusan/2. Basics of Web browser and Protocols.pdf,31,"097_E01 | physical page 31: IP forwards each packet based on a destination address (the IP number)
+
+097_E02 | physical page 31: TCP adds support to detect errors or lost data and to trigger retransmission if needed.","IP forwards packets using destination IP addresses.
+TCP detects errors or lost data and triggers retransmission when needed.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+98,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", what does DNS translate?",answerable,definition,DNS translates domain names into IP addresses.,vithusan/2. Basics of Web browser and Protocols.pdf,33,098_E01 | physical page 33: DNS server : Responsible for translating domain names into a specific IP addresses.,DNS translates domain names into IP addresses.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+99,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", what does FTP transfer and over which protocol suite?",answerable,definition,FTP transfers files between computers over TCP/IP connections.,vithusan/2. Basics of Web browser and Protocols.pdf,38,"099_E01 | physical page 38: FTP (File Transfer Protocol) is a network protocol for transmitting files between
+
+computers over Transmission Control Protocol/Internet Protocol (TCP/IP)
+
+connections.",FTP transfers files between computers over TCP/IP connections.,Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.
+100,"According to the lecture ""2. Basics of Web browser and Protocols.pdf"", how do the browser and server cooperate to display a page and fetch extra resources?",answerable,multi_passage,"The web server sends pages in response to browser requests. The browser parses the returned HTML and requests scripts, CSS and sub-resources. The browser combines the resources into the complete displayed page.",vithusan/2. Basics of Web browser and Protocols.pdf,"18,26","100_E01 | physical page 18: The web server is a software that is programmed to send web pages when they
+
+are requested by browser.
+
+100_E02 | physical page 26: It then parses this file, making additional requests corresponding to execution
+
+scripts, layout information (CSS) to display, and sub-resources contained
+
+within the page (usually images and videos).
+
+100_E03 | physical page 26: The Web browser then mixes these resources to present to the user a complete
+
+document, the Web page.","The web server sends pages in response to browser requests.
+The browser parses the returned HTML and requests scripts, CSS and sub-resources.
+The browser combines the resources into the complete displayed page.",Verified by our team,Verified by our team,Verified by our team, Accept equivalent wording; preserve all conditions and numeric values. Related questions share a source group. Alternative evidence is not exhaustive.

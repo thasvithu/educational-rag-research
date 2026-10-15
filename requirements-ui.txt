@@ -1,0 +1,5 @@
+# Install into the existing research environment. The explorer does not load models.
+-r requirements-phase1.txt
+streamlit==1.64.0
+pandas==2.2.3
+numpy==1.26.4

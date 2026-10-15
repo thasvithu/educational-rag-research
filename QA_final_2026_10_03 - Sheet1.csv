@@ -1,0 +1,761 @@
+Question ID,Question,Answerability,Question category,Reference answer,Exact PDF filename,Physical PDF page(s),Supporting passage(s),Author,Review decision,Notes / Reason if unanswerable
+VITHUSAN_001,"According to the UCSC 2024 handbook, how many lecture or practical hours correspond to one credit?",Answerable,Definition,"One credit equals 15 lecture hours, 30 practical hours, or an equivalent combination of lectures and practical.",aysha/UCSC_HB_2024.pdf,71,"A credit is equal to 15 hours of lectures
+or 30 hours of practical or an equivalent combination of lectures
+and practical.",Vithusan,Approved,
+AYSHA_002,Does the handbook contain a section on Mahapola and Bursary?,Answerable,Definition,"Yes, the handbook contains a section titled ""Mahapola and Bursary"" on page 20",vithusan/URJT_FT_HB_2025pdf.pdf,5,content,Aysha,,
+AYSHA_003,Give a brief description of the BICT (Hons) degree program?,Answerable,explanation,"The Bachelor of Information and Communication Technology (BICT) degree program is designed to equip students with strong theoretical knowledge and practical skills in modern computing and digital technologies. The program covers key areas such as programming, networking, databases, web and mobile application development, information security, data science, and emerging technologies. With an emphasis on hands-on learning, problem-solving, and industry relevance, the BICT program prepares graduates to meet the evolving demands of the ICT sector. It also fosters critical thinking, ethical awareness, and teamwork, enabling students to pursue successful careers in industry, research, or further studies.",vithusan/URJT_FT_HB_2025pdf.pdf,43,same,Aysha,,
+AYSHA_004,List the degree programs in the Faculty of Technology.,Answerable,Definition,"BBST (Hons) in Bioprocess Technology
+BBST (Hons) in Food Technology
+BET (Hons) in Electrical and Electronic Technology
+BET (Hons) in Materials Technology
+Bachelor of Information & Communication Technology (Hons)",vithusan/URJT_FT_HB_2025pdf.pdf,24,,Aysha,,
+AYSHA_005,Who was the Vice Chancellor of Rajarata University of Sri Lanka in 2023?,Answerable,Definition,Professor Sanjeewanie Ginigaddara.,vithusan/URJT_FSSH_HB_2025pdf.pdf,X,same,Aysha,,
+AYSHA_006,What do credited courses and non-credited courses mean?,Answerable,Definition,"Credited courses are courses that earn grade points for students and contribute to the student's Grade Point Average (GPA).
+
+Non-credited courses are courses that do not contribute to the student's Grade Point Average (GPA).",vithusan/URJT_FSSH_HB_2025pdf.pdf,12,"These are courses that will earn grade points for the students and contribute to the Grade
+Point Average (GPA) of a student. All courses in the common program and subjects courses
+in the program, Project proposal formulation, Research Project and the industrial training
+program will be credited courses.
+
+
+There will be non-credited courses in the degree program. The departments may permit
+students to offer other courses if the timetable permits it. If so, such courses would be
+treated as noncredited courses that will not contribute to the Grade Point Average (GPA) of a student.",Aysha,,
+AYSHA_007,"How many departments are there, and what are they?",Answerable,Definition,"Department of Humanities
+Department of Languages
+Department of Archaeology & Heritage Management
+Department of Economics
+Department of Environmental Management
+Department of Social Sciences
+Department of English Language Teaching
+Department of Information Technology",vithusan/URJT_FSSH_HB_2025pdf.pdf,20,same,Aysha,,
+AYSHA_008,Give the geographical location of the Faculty of Medicine and Allied Sciences (FMAS)?,Answerable,explanation,"The faculty is situated in a unique geographical location in Anuradhapura, which is the largest district in Sri Lanka. The faculty is located approximately 8 km from the Teaching Hospital Anuradhapura (THA) and 13 km from the main university at Mihintale.",vithusan/URJT_FMAS_HB_2025pdf.pdf,5,"Geographical location and historical context
+The faculty is situated in a unique geographical location in Anuradhapura which is the largest district
+in Sri Lanka. Anuradhapura has a rich history of more than 2,500 years and was the capital of Sri Lanka
+from the 4th century BC until the beginning of the 11th century AD. During this period, it remained one
+of the most stable centres of political power and urban life in South Asia. Anuradhapura is a treasure
+trove of archaeological sites including those of ancient medical heritage and the sacred city of
+Anuradhapura is a UNESCO world heritage site. The location of the faculty is about 8 km from the
+Teaching Hospital Anuradhapura (THA) and 13 km from the main university at Mihintale.",Aysha,,
+AYSHA_009,Give the contact number of the Department of Forensic Medicine.,Answerable,Definition,Phone: +94 25 2235276.,vithusan/URJT_FMAS_HB_2025pdf.pdf,27,same,Aysha,,
+AYSHA_010,Whom can I contact to get information regarding the library?,Answerable,Definition,"You can contact the following library staff:
+
+Senior Assistant Librarian:
+Ms. W. M. P. G. K. T. Wanasinghe (BBAmgt, MSSc)
+
+Library Information Assistants and Support Staff:
+
+Mr. M. K. D. A. Amarasinghe
+Mr. I. D. Weerasinghe
+Mr. G. R. D. H. Fernando
+Mr. G. Piyarathne
+Mr. W. Indrajith
+Ms. M. R. A. Wijerathna
+Ms. K. H. D. Kanthi
+Ms. H. M. J. B. Dassanayake
+
+Contact information:
+
+Email: library@med.rjt.ac.lk
+Email: thusharafmas@gmail.com",vithusan/URJT_FMAS_HB_2025pdf.pdf,37-38,"Senior assistant librarian
+Ms. W M P G K T Wanasinghe (BBAmgt, MSSc)
+Library information assistants Support staff
+Mr. M K D A Amarasinghe Mr. I D Weerasinghe
+Mr. G R D H Fernando Mr. G Piyarathne
+Mr. W Indrajith Ms. M R A Wijerathna
+Ms. K H D Kanthi Ms. H M J B Dassanayake
+Contact information Email: library@med.rjt.ac.lk, thusharafmas@gmail.com",Aysha,,
+AYSHA_011,When can I access the computer laboratory?,Answerable,Definition,The computer laboratory operates from 8:30 a.m. to 4:30 p.m. on weekdays.,vithusan/URJT_FMAS_HB_2025pdf.pdf,38,"The FMAS encourages the use of computing and network resources to enhance the learning and
+teaching environment of the faculty community. The computer laboratory is the main location that
+provides ICT resources for the students and the academic staff of the faculty. The faculty has a LMS
+which provides students with e-resources that complement classroom and clinical teaching. In
+addition, the computer laboratory provides ICT training for new entrants, maintains services of the
+local area network (LAN), Internet and networking of the faculty and maintains the faculty website.
+The computer laboratory of the faculty comprises 45 computers. It operates from 08.30 am to 4.30
+pm on weekdays.",Aysha,,
+AYSHA_012,What are the eligibility requirements to receive the BSc Honours degree?,Answerable,eligibility,"A student should attain a minimum of 120 credits, with at least 26 credits per each academic year and a minimum of 72 credits must be attained from Botany and Zoology, or Biology. If a student accumulates more than 120 credits, the courses corresponding to the best 120 credits will be considered. When the total number of credits does not equal 120, the best 121-123 credits may be considered.
+N.B. All compulsory courses of Botany and Zoology, or Biology are included in the best 120 credits and hence will be used for calculation of the final GPA.
+In addition, a student must
+i. obtain a minimum GPA of 2.00,
+ii. obtain C grades or higher in specified courses equivalent to a minimum of 92 credits with at least 23 credits per each academic year and at least a D grade in the remaining courses,
+iii. obtain at least a C grade for relevant FDN and compulsory IDC courses and
+iv. complete the relevant requirements within a period of eight academic years.",vithusan/URJT_FAS_HB_2023.pdf,43,same,Aysha,,
+AYSHA_013,How are classes awarded to students?,Answerable,procedure,"Award of Classes
+First Class
+To be awarded a First Class a student must,
+i. obtain a minimum GPA of 3.70
+ii. obtain at least a C grade for FDNs and compulsory IDCs, and
+iii. obtain C grades or higher in specified courses equivalent to at least 120 credits within four academic years.
+Second Class (Upper Division)
+To be awarded a Second Class (Upper Division) a student must,
+i. obtain a minimum GPA of 3.30
+ii. obtain at least a C grade for FDNs and compulsory IDCs, and
+iii. obtain C grades or higher in specified courses equivalent to at least 112 credits and at least a D grade in the remaining courses within four academic years.
+Second Class (Lower Division)
+To be awarded a Second Class (Lower Division) a student must,
+i. obtain a minimum GPA of 3.00
+ii. obtain at least a C grade for FDNs and compulsory IDCs, and
+iii. obtain C grades or better in the specified courses equivalent to at least 108 credits and at least a D grade in the remaining courses within five academic years.",vithusan/URJT_FAS_HB_2023.pdf,43,same,Aysha,,
+AYSHA_014,What is the emergency hotline number?,Answerable,Definition,118/119,vithusan/URJT_FA_HB_2023.pdf,12,,Aysha,,
+AYSHA_015,What are the opening hours of the Faculty of Agriculture Dean's Office?,Answerable,Definition,Opening hours: Weekdays from 8.30 a.m. to 4.15 p.m.,vithusan/URJT_FA_HB_2023.pdf,14,,Aysha,,
+AYSHA_016,Can you list the Level 1 syllabus with the course titles and course codes?,Answerable,Definition,"Course Title Fundamentals in Environmental Chemistry
+Course Code ENS1112
+
+Course Title Analysis of Chemical Elements and Compounds
+Course Code ENS1121
+
+Course Title Cell and Molecular Biology
+Course Code ENS1132
+
+Course Title Plant Biology
+Course Code ENS1142
+
+Course Title Fundamentals of Animal Biology
+Course Code ENS1153
+
+Course Title Basic Mathematics
+Course Code ENS1162
+
+Course Title Fundamentals of Information Technology
+Course Code CCCU1113
+
+Course Title English Language I
+Course Code ACU1113
+
+Course Title Environment and Agriculture
+Course Code ENS1212
+
+Course Title Soil Science
+Course Code ENS1223
+
+Course Title Environmental Sanitation
+Course Code ENS1232
+
+Course Title Principles of Economics
+Course Code ENS1242
+
+Course Title Earth and Atmospheric Sciences
+Course Code ENS1253
+
+Course Title Fundamentals in Environmental Microbiology
+Course Code ENS1263
+
+Course Title Social Harmony and Active Citizenship
+Course Code ACU1212",vithusan/UOV_FAS_HB_2024_2025.pdf,128 - 142,,Aysha,,
+AYSHA_017,What is the evaluation method for the Geographic Information System and Remote Sensing subject?,Answerable,procedure,"Evaluation Methods
+Theory:
+In-course Assessment (Tutorials/Assignments) 10%
+In-course Assessment (Quiz I and II) 20%
+End-semester Examination (Theory) 70%
+Practical:
+End-semester Examination (Practical) 100%
+Final marks = {(2×Theory)+(1×Practical)}/3",vithusan/URJT_FA_HB_2023.pdf,158,,Aysha,,
+AYSHA_018,"What are the specialized application domains offered to students following this degree programme, and what is the aim of each domain?",Answerable,explanation,"Net Centric, Mobile Computing, Digital Gaming and Animations, Health Informatics, Business Engineering Applications, and Data Science and Engineering Applications,
+a) Net Centric
+Net centric specialization aims to develop the advanced skills and knowledge required to become successful software engineers in the advanced web application, distributed and cloud computing and semantic web and ontological engineering.
+b) Mobile Computing
+Mobile computing is a rapidly emerging area of computing that has enormous market potential and growth. Mobile computing specialization provides thorough knowledge about mobile computing technologies, mobile networks, and builds advanced skills in mobile application development.
+c) Digital Gaming and Animation
+This specialization provides knowledge about cutting-edge digital gaming and animation technologies and builds advanced skills essential to cater the requirements of the digital gaming and animation industry.
+d) Health Informatics
+This specialization aims to provide advanced knowledge about health information management, health information system design and development and medical imaging and biomedical signal processing. The software engineering skills blended with medical informatics will fill the gap in the industry for health informaticians with advanced software engineering skills.
+e) Business Engineering Applications
+Software engineering is an integral part of modern business applications. Business engineering applications specialization provides the essential knowledge and skills required for a software engineer to design and implement solutions to improve business processes and services. The curriculum includes business systems modelling and optimization, computer-based operations management, and business process engineering.
+f) Data Science and Engineering Applications
+Data Science and engineering applications aim to equip the students with the advanced knowledge and skills required for building business intelligence and management support systems, designing and developing big data infrastructures, and analysing big data to deliver insights and discover new relations.",vithusan/UOK_FS_HB_2024_2025.pdf,8 - 9,,Aysha,,
+AYSHA_019,What are the certificate courses offered by the Faculty of Humanities?,Answerable,Definition,"Certificate Course in Modern Languages (two years) offered by the Department of Modern Languages
+Chinese
+French
+German
+Japanese
+Korean
+Russian
+Spanish
+The Certificate Course in the Hindi Language (two years) offered by the Department of Hindi Studies",vithusan/UOK_FS_HB_2024_2025.pdf,104,,Aysha,,
+AYSHA_020,"What are the departments of the Faculty of Humanities, and who are the heads of each department?",Answerable,table lookup or multiple passages,"Department	Head of the Department
+Department of Drama, Cinema and Television	Dr. S.M. Assella
+Department of English	Ms. G. Prahalathan
+Department of English Language Teaching (DELT)	Prof. (Mrs.) K.D.L. Manaranjanie
+Department of Fine Arts	Dr. W. Neetha Subhashini Senevirathne
+Department of Hindi Studies	Ven. Dr. Kapugollawe Anandakiththi Thero
+Department of Linguistics	Dr. (Mrs.) K.M.U.I. De Silva
+Department of Modern Languages	Ven. Deniyaye Pannaloka Thero
+Department of Pali and Buddhist Studies	Dr. Ven. Udawela Rewatha Thero
+Department of Sanskrit and Eastern Studies	Prof. H.W.B.I. Sampath
+Department of Sinhala	Ven. Dr. W.P. Roshan Fernando
+Department of Western Classical Culture and Christian Culture	Dr. R.M.S. Priyadarshani",vithusan/UOK_FH_HB_2024_2025.pdf,42 - 67,,Aysha,,
+AYSHA_021,What is the role of the Internship & Skills Development Unit?,Answerable,explanation,"The Internship & Skills Development Unit was established in the Faculty of Humanities of
+the University of Kelaniya in 2019 in order to to assist student who pursue their degree in
+the Arts stream to overcome the complex challenges they will have to face as graduates
+after their study period. The establishment of this unit was based on a concept of the
+AHEAD project, which was implemented with assistance from World Bank. The primary
+aim of setting up this academic unit was to increase the student’s employability and to
+develop the associated skills, thus playing a unique role in the Faculty of Humanities. The
+unit’s objectives are as follows:
+• Directing the students for authentic industrial training related to employment within and
+without the subject field they are studying within the period of studying the degree.
+• Providing opportunities for students to engage with public and private sector
+institutions in Sri Lanka to gain professional competence in matters such as corporate
+administrative structures and management, the operation of corporate rules and ethics,
+and the nature of a work environment.
+• Expanding services and opportunities to help develop a student’s personality for
+employment.
+• To develop in the students the ability to manage the three languages of Sinhala, English
+and Tamil for office work.
+• To improve the use of information technology and to develop computer literacy in
+students which is a special need concerning professional competencies today.
+• To develop leadership qualities in the students and to promote their teamwork skills,
+decision-making skills, organizational skills, and ability to perform any task well
+• To develop the ability to work in a manner that respects others and does not violate
+the rights of others in the Sri Lankan society that comprises different languages,
+cultures and lifestyles.
+• To develop the ability to adapt to any work environment and to build a sense of
+responsibility and accountability in the students.
+• In addition to the subject knowledge, developing application and presentation skills
+that should exist in the students, as well as developing the basic statistical and
+analytical knowledge essential in office work.
+To achieve the above objectives, so far the Internship & Skills Development Unit has
+introduced about 08 career-oriented subject units covering 12 credits. Being allowed to
+complete these subject units as an essential part of the degree course can also be said to be
+a privilege for you as a student to add a new value to your degree certificates.",vithusan/UOK_FH_HB_2024_2025.pdf,70,,Aysha,,
+AYSHA_022,"According to the 2024–2025 handbook, how many total students are enrolled in the Faculty of Commerce and Management Studies at the University of Kelaniya?",Answerable,Definition,3764 students.,vithusan/UOK_FCMS_HB_2024_2025.pdf,16,,Aysha,,
+AYSHA_023,What is the Central Business Incubator (CBI)?,Answerable,Definition,"The Central Business Incubator (CBI) supports university, government sector, and private sector collaborative entrepreneurial activities.
+
+Purpose:
+“To serve national need for research and consultancy services in Entrepreneurship”
+
+Mission:
+“To support all future entrepreneurial venture building activities of the country, innovation and strengthen the university-industry collaborations”
+
+Vision:
+“To facilitate and catalyze innovation, entrepreneurial development, commercialization, and business success that fosters sustainable economic growth in Sri Lanka”",vithusan/UOK_FCMS_HB_2024_2025.pdf,17,"Despite the various initiatives intended to enhance entrepreneurial skills of the students, physical infrastructures
+
+available need improvements. A separate place to practice entrepreneurial activities and to conduct entrepre-
+neurial research would be a definite solution to leading Entrepreneurial Goal.
+
+The Faculty of Commerce and Management Studies (FCMS) of the University of Kelaniya continually progresses
+through novel initiatives. Amongst the recent initiatives the Central Business Incubator (CBI) of the faculty
+attracts attention with its central purpose to support all future entrepreneurial venture building activities of the
+country and strengthen the university-industry collaborations.
+The business incubator was firstly formed under the Department of Commerce and Financial Management in
+
+2017 as the Entrepreneurial Centre for Venturing and Research (ECVR). Given the timely importance of entrepre-
+neurship development in national level, the ECVR has reformed and expanded under the AHEAD project of FCMS
+
+in 2021, under a new name: Central Business Incubator (CBI). CBI opens for university, government sector and
+private sector collaborative, entrepreneurial activities.
+Purpose
+“To serve national need for research and consultancy services in Entrepreneurship”
+Mission
+“To support all future entrepreneurial venture building activities of the country, innovation and strengthen the
+university-industry collaborations”
+Vision
+“To facilitate and catalyze innovation, entrepreneurial development, commercialization, and business success
+that fosters sustainable economic growth in Sri Lanka”",Aysha,,
+AYSHA_024,"What is a fall-back qualification, and how can a student become eligible for it?",Answerable,eligibility,A fall-back qualification is an alternative qualification awarded to students who are unable to fulfill the requirements of their intended degree within the maximum period allowed. A student who fails to meet the requirements for a BSc (General) degree after six academic years may apply for a Higher Diploma in Science (SLQF Level 4) or a Diploma in Science (SLQF Level 3). A student who fails to meet the requirements for a BSc Honours degree after seven academic years may apply for a Bachelor of Science General Degree (SLQF Level 5). The Faculty Board of Science must recommend the award after conducting an exit interview and obtaining Senate approval. Students expelled on disciplinary grounds may not be eligible for a fall-back qualification.,vithusan/EU_2021-2022 Final version for circulation.pdf,47,"A student who fails to fulfil the above requirements in section 4.5.1 for BSc
+(General) degree, after completing maximum period of six academic years
+allowed for the degree become eligible to apply for fall-back qualification of a
+Higher Diploma in Science (SLQF Level 4) or Diploma in Science (SLQF Level
+3). Moreover, a student who fails to fulfil the requirements in section 4.5.2 for
+BSc Honours degree, after completing maximum period of seven academic years
+allowed for the degree become eligible to apply for fall-back qualification of a
+Bachelor of Science General Degree (SLQF Level 5). However, a student expelled
+from the university on disciplinary grounds, might not be eligible for fall-back
+qualification.
+A recommendation for award of a fall-back qualification to a student who
+applied for Bachelor of Science or Higher Diploma in Science or Diploma in
+Science under above condition should be made by the Faculty Board of Science,
+to the Senate, after an exit interview to judge the suitability of the student to the
+applied qualifications.
+The effective date of award of a fall-back qualification of Bachelor of Science or
+Higher Diploma in Science or Diploma in Science will be the first day the month
+after which the Senate has approved the award of the qualification.
+",Aysha,,
+AYSHA_025,What are the recommended books for the BT4052 – Research Methodology and Scientific Writing course?,Answerable,Definition,"Thomas, C. G. (2015). Research Methodology and Scientific Writing. Ane Books Pvt Ltd.
+Chawla, D. and Sondhi, N. (2011). Research Methodology: Concepts and Cases. Vikas Publishing House Pvt. Ltd., Delhi.
+Hofmann, A.H. (2010). Scientific Writing and Communication. Oxford University Press.",Haleema/EU_2021-2022 Final version for circulation.pdf,76,,Aysha,,
+AYSHA_026,What memorial awards are offered by the Faculty of Science?,Answerable,Definition,"V. Nalliah Memorial Award – Best performance at the first-year examination of the General Degree in Physical Science.
+S. Dharmarathnam Memorial Award – Best performance at the first-year examination of the General Degree in Biological Science.
+Stella Aseerwatham Memorial Award – Best performance at the final-year examination of the General Degree in Physical Science.
+Rathini Ananthamoorthy Memorial Award – Best performance at the final-year examination of the General Degree in Biological Science.
+Kanapathipillai Karunairajah Memorial Award – Best research conducted by final-year students of the Faculty of Science.
+Sivanesam Thambipillai Memorial Award – Overall best performance in the Honours Degree in Botany.
+Velupillai Samuel Ariyarathnam Award – Overall best performance in the Honours Degree in Zoology.
+Vannamani Kiddnan Memorial Award – Overall best performance in the Faculty of Science.",Haleema/EU_2021-2022 Final version for circulation.pdf,256,,Aysha,,
+AYSHA_027,How can students register for subjects?,Answerable,procedure,"Students newly admitted to a faculty are required to select courses available in the
+departments and register the selected subjects for every semester of the every year.
+Subjects registered once will not be permitted to be changed.",Haleema/UE_Art_2016.pdf,7,"Students newly admitted to a faculty are required to select courses available in the
+departments and register the selected subjects for every semester of the every year.
+Subjects registered once will not be permitted to be changed.
+Therefore, students are advised to study the subject combination of their choice
+carefully before registration. The period at which students are required to register for
+courses is announced by the FAC.
+This registration process is effected through the coordination of the Dean’s office where
+
+the Senior Assistant Registrar / Assistant Registrar of the Faculty is doing the registra-
+tion. Unless the registration form is duly perfected and signed by relevant departments /
+
+desiplines registration application will not be entertained.
+
+Student’s special attention is invited to the fact that subjects (main) offered in first se-
+mester of the first year must continue throughout entire degree program in case of gen-
+eral degree.
+
+Honours degree is offered on a subject, the study of which is continued from second year
+to fourth year. Students who fail to register for courses during the specified period shall
+not be allowed to register without the approval of relevant course lecturer and Head of
+the Department followed by consultation of the Dean.",Aysha,,
+AYSHA_028,What are the objectives of Internship Training / Community Study?,Answerable,explanation,"To support students in developing a good understanding of the real world through first-hand practical experience locally.
+To provide a training platform for students to integrate classroom learning with practical work experiences and prepare for future careers.
+To assist students in developing social awareness, critical thinking, and analytical abilities to identify practical solutions to complex problems.
+To enhance students’ personal growth and competitiveness by improving communication, problem-solving, and leadership skills.",Haleema/UE_Art_2016.pdf,47,same,Aysha,,
+AYSHA_029,What are the library rules and regulations?,Answerable,eligibility,"No bags, files, briefcases, parcels, hats, or umbrellas are allowed inside the library.
+No valuable items or cash should be left at the entrance shelves.
+Silence must be maintained.
+Smoking, eating, drinking, and the use of matches or open lights are prohibited.
+Reserving seats and joint work inside the library are not permitted.
+Readers may take books from shelves and should leave used books on tables.
+Books not available on shelves should be requested at the circulation desk.
+Library materials must be presented for inspection when required.
+Theft or unauthorized removal of materials may result in suspension and disciplinary action.
+No book may be taken out of Sri Lanka without the Librarian’s permission.
+Library equipment and furniture must not be damaged or removed.
+Any breach of regulations may result in suspension from library use.",Haleema/UE_FTS.pdf,50 - 51,,Aysha,,
+AYSHA_030,What are the responsibilities of the Career Guidance Unit?,Answerable,procedure,"To develop mutually beneficial relationships between the University and the employment sector.
+To help undergraduates choose and pursue suitable careers based on their abilities, interests, and available opportunities.
+To help undergraduates gain orientation to the employment sector and develop transferable skills such as communication, leadership, teamwork, and managerial skills.
+To liaise with public and private sector organizations to identify job opportunities and direct suitable graduates to those opportunities.",Haleema/UE_FTS.pdf,53,,Aysha,,
+HALEEMA_031,"Who is the current Vice-Chancellor of the Eastern University, Sri Lanka?",Answerable,Definition,Prof. V. Kanagasangam,Haleema/UE-FS-2022-2023.pdf,9,The present Vice Chancellor is Prof. V. Kanagasangam.,Haleema,Approved,
+HALEEMA_032, Who is the current Dean of the Faculty of Technology at Wayamba University of Sri Lanka?,Answerable,explanation,Dr. A.M.N. Alagiyawanna,Haleema/UW-FTS-2020_2021.pdf,10,"Dr. A.M.N. Alagiyawanna B.Sc.Eng. (Hons) (Moratuwa), M.Eng. (AIT), D.Eng. (Nagaoka), C.Eng., MIE(SL), MSLGS Mobile: + (94) 773408980 Email: deanfot@wyb.ac.lk",Haleema,,
+HALEEMA_033,What is the procedure for submitting medical certificates for illness during examinations at Wayamba University of Sri Lanka?,Answerable,procedure,"Students should contact the University Medical Officer (UMO) immediately. If ill at home, inform the Dean or Assistant Registrar immediately, followed by a letter. A Medical Certificate must be sent to the Dean within seven days after recovery. All certificates must be approved by the UMO.",Haleema/UW-FTS-2020_2021.pdf,26,The Degree of Bachelor of Science Honours programmes are of four academic years duration and a student should have obtained a minimum of 120 credits for the award.,Haleema,,
+HALEEMA_034,What is the procedure to apply for the Bachelor of Science Honours degree programme in Applied Sciences at the University of Sri Jayewardenepura?,Answerable,procedure,Students interested in the programme are required to submit an application indicating their preferred discipline. Selection is based on the student's GPA from the first five semesters and resource availability.,Haleema/UJP-FAS_2026.pdf,155,"At the end of the third year, students interested in the programme are required to submit an application indicating their preferred discipline. Applicants must have successfully completed the compulsory English course units... Selection for the required discipline will be based solely on the student's GPA... as well as the availability of resources...",Haleema,,
+HALEEMA_035,"Who is the Dean of the Faculty of Technology at the University of Sri Jayewardenepura?
+",Answerable,Definition,Professor Renuka Nilmini Liyanage,Haleema/UJP_FOT-2026_2024-25.pdf,6,"Professor Renuka Nilmini Liyanage BSc (Hons) (Colombo), PhD (Cardiff) Dean, Faculty of Technology, University of Sri Jayewardenepura.",Haleema,,
+HALEEMA_036,What is the maximum allowable period for a student to complete a Master of Philosophy (MPhil) degree at the University of Sri Jayewardenepura?,Answerable,exception,Up to 5 years for full-time and up to 7 years for part-time.,Haleema/UJP-FGS-2017.pdf,20,MA-R / MPhil Full time 02 Up to 5 Part time 03 Up to 7,Haleema,,
+HALEEMA_037,What is the mission of the Faculty of Urban and Aquatic Bioresources at the University of Sri Jayewardenepura?,Answerable,Definition,To develop the required human resources for a knowledge-based bioeconomy through undergraduate and postgraduate degrees programs.,Haleema/UJP-FUAB-2022-2023.pdf,3,The mission of the Faculty is to develop the required human resources for a knowledge based bioreconomy through undergraduate and postgraduate degrees programs.,Haleema,,
+HALEEMA_038,What is the eligibility requirement to register for the Master of Commerce (MCom) programme at the University of Sri Jayewardenepura?,Answerable,eligibility,"A bachelor's degree (SLQF 5/SLQF 6) in Commerce or a relevant discipline from a recognized university, or a bachelor's degree with prior learning/two years of relevant experience, or an equivalent professional qualification.",Haleema/UJP-MCom.pdf,21,1. A bachelor's degree (SLQF 5/SLQF 6) in Commerce or relevant discipline from a recognized university... 2. A bachelor's degree (SLQF 5/SLQF 6) from a recognized university... along with prior learning or two years of relevant post-qualification experience. 3. A qualification equivalent to SLQF 6 or above in relevant discipline...,Haleema,,
+HALEEMA_039, What is the vision of the Faculty of Animal Science & Export Agriculture at Uva Wellassa University?,Answerable,Definition,Be the centre of excellence in value addition to the national resource base.,Haleema/UW_Agri-2019.pdf,6,OUR VISION Be the centre of excellence in value addition to the national resource base.,Haleema,,
+HALEEMA_040, What is the procedure for submitting medical certificates for absences at Uva Wellassa University?,Answerable,procedure,A student must inform the Dean within 10 working days of the incidence and report back to the Dean through the Head of the Department with acceptable evidence. The final decision is taken by the Faculty Board.,Haleema/UW_Agri-2019.pdf,211,"In case of an illness or any other sudden incidence, student/guardian shall inform the Dean of the Faculty within 10 working days of the incidence. Once the student returns to the university after such incidence, he/ she shall report to the Dean of the Faculty through Head of the Department by a letter with acceptable evidences of such an incidence. Final decision about the attendance shall be taken by the Faculty Board...",Haleema,,
+HALEEMA_041,"What is the minimum attendance requirement for a course unit at the Faculty of Applied Sciences, Uva Wellassa University?",Answerable,eligibility,A minimum of 80% attendance is compulsory for both theory and laboratory classes.,Haleema/UW_FAS-2020.pdf,23,A minimum of 80% attendance is compulsory for both theory and laboratory classes to sit for the examination.,Haleema,,
+HALEEMA_042, Who is the Head of the Department of Animal Science at Uva Wellassa University?,Answerable,Definition,Mr. N.P.P. Liyanage,Haleema/UW_Agri-2019.pdf,33,Mr. N.P.P. Liyanage Head of the Department /Senior Lecturer Gr. II...,Haleema,,
+HALEEMA_043,"What is the vision of the Faculty of Medicine at Uva Wellassa University?
+",Answerable,Definition,To be the center of excellence for value addition to the national resource base,Haleema/UW_MS-2025.pdf,13,"VISION OF THE FACULTY ""To be the center of excellence for value addition to the national resource base""",Haleema,,
+HALEEMA_044,What is the maximum number of attempts a student is permitted to pass the Final MBBS Examination at Uva Wellassa University?,Answerable,explanation,A total of five (05) attempts.,Haleema/ UW_MS-2025.pdf,14,A student shall be given only a total of five (05) attempts to complete the examination and to be completed within ten (10) years following registration.,Haleema,,
+HALEEMA_045,What is the procedure for a student to cancel their studentship at Uva Wellassa University?,Answerable,procedure, A student may cancel his/her studentship by making a request to the Student Affairs Division of the university through the Head of the Department (HOD) and Dean of the Faculty,Haleema/UW_managenment_2018.pdf,11,A student may cancel his/her studentship by making a request to the Student Affairs division of the university to that effect through Head of the Department (HOD) and Dean of the Faculty.,Haleema,,
+HALEEMA_046,"What is the maximum period for a student to complete the degree at the Faculty of Technology, Wayamba University of Sri Lanka?",Answerable,Definition,"Six (06) academic years, with a possible extension of up to three (03) more years.",Haleema/UW-FTS-2020_2021.pdf,26,"The maximum period for the completion of all requirements for the award of the degree is six (06) academic years. The Senate of the University may grant one academic year at a time, beyond initial six (06) academic years, based on the merit of individual applications, for maximum of three (03) years.",Haleema,,
+HALEEMA_047,What is the vision of the Faculty of Technology at Wayamba University of Sri Lanka?,Answerable,Definition,"To be the center of excellence in technology education, innovations, and research and developments through outstanding academic programmes.",Haleema/UW-FTS-2020_2021.pdf,12,"Vision To be the center of excellence in technology education, innovations, and research and developments through outstanding academic programmes.",Haleema,,
+HALEEMA_048,What is the mission of the Faculty of Technological Studies at Uva Wellassa University?,Answerable,Definition,"To produce high-caliber technology graduates who will play leading roles in their chosen careers; in local and global industry, the professions and academia.",Haleema/UW-FT.pdf,17,"To produce high- caliber technology graduates who will play leading roles in their chosen careers; in local and global industry, the professions and academia.",Haleema,,
+HALEEMA_049,Who is the current Dean of the Faculty of Urban and Aquatic Bioresources at the University of Sri Jayewardenepura?,Answerable,Definition,Senior Prof. Pradep Jayawera,Haleema/UJP-FUAB-2022-2023.pdf,5,"Senior Prof. Pradep Jayawera, BSc (Hons) (USJ), PhD (Belfast, UK) Acting Dean, Faculty of Urban and Aquatic Bioresources",Haleema,,
+HALEEMA_050,What is the procedure to apply for the Bachelor of Science Honours degree programme in Applied Sciences at the University of Sri Jayewardenepura?,Answerable,procedure, Students interested in the programme are required to submit an application indicating their preferred discipline. Selection is based on the student's GPA from the first five semesters and resource availability.,Haleema/UJP-FAS_2026.pdf,155,"At the end of the third year, students interested in the programme are required to submit an application indicating their preferred discipline. Applicants must have successfully completed the compulsory English course units... Selection for the required discipline will be based solely on the student's GPA... as well as the availability of resources...",Haleema,,
+HALEEMA_051, What is the eligibility requirement to register for the Master of Commerce (MCom) programme at the University of Sri Jayewardenepura?,Answerable,eligibility,"A bachelor's degree (SLQF 5/SLQF 6) in Commerce or a relevant discipline from a recognized university, or a bachelor's degree with prior learning/two years of relevant experience, or an equivalent professional qualification.",Haleema/UJP-MCom.pdf,21,1. A bachelor's degree (SLQF 5/SLQF 6) in Commerce or relevant discipline from a recognized university... 2. A bachelor's degree (SLQF 5/SLQF 6) from a recognized university... along with prior learning or two years of relevant post-qualification experience. 3. A qualification equivalent to SLQF 6 or above in relevant discipline...,Haleema,,
+HALEEMA_052,What is the maximum allowable period for a student to complete a Master of Philosophy (MPhil) degree at the University of Sri Jayewardenepura?,Answerable,exception,Up to 5 years for full-time and up to 7 years for part-time.,Haleema/UJP-FGS-2017.pdf,20,MA-R / MPhil Full time 02 Up to 5 Part time 03 Up to 7,Haleema,,
+HALEEMA_053,What is the procedure to apply for the Postgraduate Diploma/MSc in Industrial Mathematics at the University of Sri Jayewardenepura?,Answerable,procedure,Applications are invited via open advertisements. Candidates must possess a Bachelor's Degree with Mathematics as a component. A written examination and/or an interview will be held to select candidates.,Haleema/UJP-FGS-2017.pdf,                                 116-117,To be eligible for admission to this program an applicant must possess one the following qualifications; Bachelors Degree with Mathematics as a component... Proficiency in English is important... A written examination and/or an interview will be held to select the candidates for the program.,Haleema,,
+HALEEMA_054,What is the procedure for repeating a course unit at the University of Sri Jayewardenepura?,Answerable,procedure,A student who obtains a C- grade or below can register to sit for the same course unit examination on three further occasions only as a repeat candidate. The highest grade given to a repeat candidate is C.,Haleema/UJP_FC-2014.pdf,10,"If a candidate obtains a C- grade or below in a course unit examination, they may register to sit for the same course unit examination on three further occasions only as a repeat candidate... The highest grade given to a repeat candidate is C.",Haleema,,
+HALEEMA_055,What is the maximum allowable period for a student to complete the Bachelor of Computing Honours degree at the University of Sri Jayewardenepura?,Answerable,explanation," Seven academic years from the date of initial registration.
+",Haleema/UJP_FC-2014.pdf,17,Students registered for the Bachelor of Computing Honours degree Programmes are required to complete their studies within seven academic years from the date of their initial registration. Failure to meet this timeframe may result in the student losing the eligibility to graduate.,Haleema,,
+HALEEMA_056,What are the five faculties of the University of Moratuwa?,Answerable,Definition,"Engineering, Architecture, Information Technology, Graduate Studies and Business.",aysha/UOM_DepTextileAndApparelEngineering_HB__2020.pdf,12,"The University of Moratuwa has five faculties, namely Engineering, Architecture, Information Technology, Graduate Studies and Business.",Haleema,,
+HALEEMA_057,What are the internal undergraduate degree programmes offered by the UCSC?,Answerable,Definition,"Bachelor of Science in Computer Science (BSc. in CS), Bachelor of Science Honours in Computer Science (BSc. (Hons) in CS), Bachelor of Science Honours in Software Engineering (BSc. (Hons) in SE), Bachelor of Science in Information Systems (BSc. in IS), and Bachelor of Science Honours in Information Systems (BSc. (Hons) in IS).",aysha/UCSC_HB_2024.pdf,1,Bachelor of Science in Computer Science (BSc. in CS) Bachelor of Science Honours in Computer Science (BSc. (Hons) in CS) Bachelor of Science Honours in Software Engineering (BSc. (Hons) in SE) Bachelor of Science in Information Systems (BSc. in IS) Bachelor of Science Honours in Information Systems (BSc. (Hons) in IS),Haleema,,
+HALEEMA_058,What is the vision of the University of Colombo School of Computing?,Answerable,explanation,"Be a global leader in computing, advancing the frontiers of new knowledge through learning and research.",aysha/UCSC_HB_2024.pdf,3,"Vision. Be a global leader in computing, advancing the frontiers of new knowledge through learning and research.",Haleema,,
+HALEEMA_059,"What is the minimum GPA required to be awarded a First Class degree for the B.Sc. degree at the Faculty of Science, University of Peradeniya?",Answerable,eligibility, A GPA of 3.70 and over.,aysha/UOP_FofSci_HB_2024_2025.pdf,30,First Class (i) GPA of 3.70 and over,Haleema,,
+HALEEMA_060,"What is the duration of the Industrial Training course for the BScEng Hons degree programme at the Faculty of Engineering, University of Peradeniya?",Answerable,Definition,Not less than 24 weeks.,aysha/UOP_FEng_HB_2024.pdf,43,1.1. The Degree Programme for the Degree of Bachelor of the Science of Engineering Honours ... and an Industrial Training course of total duration not less than 24 weeks.,Haleema,Approved,
+AYSHA_061,What is the eligibility for the examination?,Answerable,eligibility,"Course Attendance (Credited, Non-Gradial and Audit Courses)
+A student who does not have a minimum of 80% attendance for both theory and practical classes will not be eligible to sit the end semester examination and shall be given “Not Allowed” (NA). The student will be considered as a repeat candidate when the examination is held next. The highest grade given for such an attempt will be a grade of “C”.
+Students should support the absence from coursework due to illness with a valid medical certificate issued by the government hospitals or the University Medical Officer (UMO). Under exceptional circumstances only, medical certificates issued by other medical practitioners could be validated by the University Medical Officer. A valid medical certificate means a medical certificate issued by the following persons:
+• University Medical Officer
+• District Medical Officer
+• Consultant specialist in the relevant field
+• Head of a Government Base Hospital
+• Medical Superintendent of an Ayurvedic/Government Hospital
+• Ayurvedic Physician registered in the Ayurvedic Medical Council
+Students should obtain prior permission by submitting a letter issued by the Director/Physical Education to the Dean of the Faculty to support the absence from coursework due to inter-university or international sports activities. Representatives of the student union should submit an official document to the Dean of the Faculty to support the absence from coursework due to official Union Meetings.",Haleema/UE-Agri-2023.pdf,44,same,Aysha,,
+AYSHA_062,What are the fallback options available?,Answerable,Definition,"Diploma in Agriculture (SLQF Level 3)
+Higher Diploma in Agriculture (SLQF Level 4)",Haleema/UE-Agri-2023.pdf,47 - 48,"4.5.1 Fallback Options
+A student who fails in obtaining a minimum of 2.0 FGPA even after attempting all
+given chances and completing a minimum of 04 academic years is eligible to apply
+for the following qualifications. However, the student who is expelled from the
+university on disciplinary grounds is not eligible for fallback options.
+The first day of the month after which the Senate of the Eastern University, Sri
+Lanka has approved the award of the qualification, made on the student’s request
+and on the recommendation of the Faculty Board of Agriculture, will be considered
+as the effective date of such qualification.
+
+4.5.1.1 Award of Diploma in Agriculture (SLQF Level 3)
+A candidate shall be awarded a Diploma in Agriculture if he/she obtained the
+following within eight academic years:
+i. C or better grades (pass) for at least 30 credits among the credited courses
+of 120 credits offered in eight semesters for Bachelor of Science Honours in
+Agriculture, of which at least two courses from each department offered as
+credited courses,
+ii. Eligibility to sit the end semester examination for all non-gradial courses
+offered in eight semesters for the Bachelor of Science Honours in
+Agriculture.
+4.5.1.2 Award of Higher Diploma in Agriculture (SLQF Level 4)
+A candidate shall be awarded a Higher Diploma in Agriculture if he/she obtained
+the following within eight academic years:
+i. C or better grades (pass) for at least 60 credits among the credited courses
+of 120 credits offered in eight semesters for Bachelor of Science Honours in
+Agriculture, of which at least two courses from each department offered as
+credited courses, including the Research Project,
+ii. Eligibility to sit the end semester examination for all non-gradial courses
+offered in eight semesters for the Bachelor of Science Honours in
+Agriculture.",Aysha,,
+AYSHA_063,What are the eligibility requirements to sit for examinations?,Answerable,eligibility,"Have at least 80% attendance for both theory and practical sessions.
+Satisfy all course requirements set by the relevant teacher.
+Submit valid medical/official approval documents if absent for accepted reasons.",Haleema/UE-Arts.pdf,47 - 48,"I. Attendance for Lectures
+One hundred percent regular attendance is expected from each student. A student who does not
+have 80% attendance for both theory and practical and has not satisfied the course requirements
+maintained by the teacher concern shall not be eligible to sit for the end-semester examination
+and given IC (Incomplete) symbol whereas the candidate shall be required to repeat the course
+in the subsequent semester. The candidate shall be awarded maximum of a “C” grade which is
+equivalent to GP 2.00 for that paper/course.
+
+Students are requested to obtain prior approval from the Dean of the Faculty by submitting a
+letter of request issued by the Director/ Physical Education to support the absence from course
+work due to any kind of sports activities inside the University system. Representatives of the
+Students’ Union must submit official document(s) to the Dean of the Faculty to support the
+absence from course work due to official Union Meetings/activities.
+
+II. Submission of Medical Report
+Students who fail to continue course work due to medical reasons are requested to submit a
+proper medical certificate issued by the government hospitals/Registered Medical
+Practitioners/University Medical Officer (UMO).
+Under exceptional circumstances certificates issued by other sources could be validated by
+University Medical Board (UMB). A medical certificate may be obtained from the following
+authorities.
+• University Medical Officer (UMO)
+• District Medical Officer (DMO)
+• Consultant specialist in the relevant field
+• Head of the Government Base Hospital
+• Medical Superintendent of an Ayurveda / Government Hospital
+• Ayurveda Physician registered in Ayurveda Medical Council
+
+III. Repeat Examination
+
+• If a candidate obtains below C pass or GP <2.00 in a paper, she/he must repeat the
+paper.
+• Those who failed in a course unit are required to sit for the said examination when it is
+held next.
+• A candidate can repeat a paper not more than thrice. A grace chance may be considered
+with the approval of the Faculty Board of Arts and Culture and the subsequent Senate,
+EUSL.
+• A repeat candidate shall be awarded a maximum C grade/GP 2.00 in the respective
+paper.
+
+IV. Absence from the Examination
+Except for any justifiable reasons to the Faculty Board and the Medical grounds supported by
+a valid medical certificate, she/he is considered as absent. A student who has failed in a
+particular course has to repeat the course at the first available opportunity. The maximum grade
+given for a repeated examination shall be C or GP of 2.00
+
+A student who falls sick during examination should contact the UMO immediately. While a
+student falls sick at home or elsewhere during the examination time student’s parents/guardian
+should inform the Dean of the Faculty of Arts & Culture within seven (07) days by telegram
+followed by a letter. The medical certificate also should be sent to the Dean of the Faculty of
+Arts & culture within fourteen (14) days.
+
+If a Bachelor Degree or Honours Degree student has completed a period of six (06) and eight
+(08) academic years respectively from the date of Registration at the EUSL, the registration of
+the student shall lapse after the above-said stipulated period.
+",Aysha,,
+AYSHA_064,What is the maximum grade given for a repeated examination,Answerable,Definition,The maximum grade given for a repeated examination shall be C or GP of 2.00.,Haleema/UE-Arts.pdf,48,,Aysha,,
+AYSHA_065,What are the fees for registration?,Answerable,procedure,"Registration Fee Rs. 400.00
+Hand Book Rs. 500.00
+Medical Fee Rs. 200.00
+Library Deposit Rs. 500.00
+Instrumental Deposit Rs. 1000.00
+IdentityCard fee Rs. 300.00
+Student Charter Fee Rs. 100.00
+Total Fee Rs. 3,000.00
+
+Re-registration Fee Rs. 400.00
+Medical Fee Rs. 200.00
+Total Fee Rs. 600.00",Haleema/UE-FA-2021.pdf,25,,Aysha,,
+AYSHA_066,What is the percentage of attendance needed for courses?,Answerable,eligibility,University regulations required 80% attendance for all courses.,Haleema/UE-FA-2021.pdf,55,,Aysha,,
+AYSHA_067,Why are Auxiliary Courses included?,Answerable,explanation,"Auxiliary courses are designed to provide (i) a Basic English (ENG) language proficiency aligned with University Tests of English Language (UTEL); (ii) induce a sensitiveness to Sri Lankan Values (SLV), and (iii) mould a socially responsible graduate through a series of courses on Career and Personality Development (CPD).",Haleema/UE-FS-2022-2023.pdf,29,,Aysha,,
+AYSHA_068,Do Auxiliary Courses affect GPA?,Answerable,procedure,No,Haleema/UE-FS-2022-2023.pdf,29,"The Auxiliary course units are compulsory, but not taken for the computation of Grade Point Average (GPA); however shall be evaluated and appear in academic transcript, and be partial requisite for the award of degrees (see Table 7 and sections 4.5.2(ii) and 4.5.3(ii)). Generally CPD & SLV courses will be conducted throughout the academic year, mostly outside the usual time- table hours, and continuous assessments would mainly contribute to the final grades.",Aysha,,
+AYSHA_069,What programs are offered by the Faculty of Graduate Studies (FGS)?,Answerable,Definition,"The programs offered by the Faculty are broadly classified into Certificate Courses, Postgraduate Diplomas, One year Masters Degrees, Masters Degrees by Course work and Research and Research Degrees such as MA-R, MPhil and PhD.",Haleema/UJP-FGS-2017.pdf,18,,Aysha,,
+AYSHA_070,What is the minimum requirement to obtain a master’s degree?,Answerable,eligibility,"A candidate is awarded a MSc in Food Science and Technology if the candidate has, obtained a GPA not less than 2.7 (B- grade) for all taught and non-taught courses and the research project.",Haleema/UJP-FGS-2017.pdf,66,,Aysha,,
+AYSHA_071,What is the official email address of ITRC?,Answerable,Definition,Email: itrc@sjp.ac.lk,Haleema/UJP-MCom.pdf,220,,Aysha,,
+AYSHA_072,What action should be taken if a student loses their student ID card?,Answerable,procedure,"If a student loses the student ID card or student record book, he/she should
+immediately inform the Student Affairs Division through a letter with a police report
+to that effect. Duplicate ID card or record book will be issued after the payment of the fine.",Haleema/UW_Science_2018.pdf,5,"If a student loses the student ID card or student record book, he/she should immediately inform the Student Affairs Division through a letter with a police report to that effect. Duplicate ID card or record book will be issued after the payment of the fine.
+
+Fines for issuing duplicate ID Card and Record Book
+
+Type	Amount (Rs.)
+Duplicate ID Card	500.00
+Duplicate Record Book	1000.00",Aysha,,
+AYSHA_073,What medals and awards are available in the Faculty of Science and Technology?,Answerable,explanation,"i. Vice Chancellor’s award for the best performing student of each degree programme
+ii. Danapala Ratnasekara Memorial Gold Medal for the best performing student of the Science and Technology degree programme
+iii. Gold Medal for the Highest Achiever of the Faculty of Science and Technology
+iv. Gold Medal for the Highest Achiever of the Faculty of Science and Technology selected from Uva Wellassa Province.",Haleema/UW_Science_2018.pdf,14,"Students of the Faculty of Science and Technology are eligible to receive the following medals and awards at the Convocation of the university.
+
+i. Vice Chancellor’s award for the best performing student of each degree programme
+ii. Danapala Ratnasekara Memorial Gold Medal for the best performing student of the Science and Technology degree programme
+iii. Gold Medal for the Highest Achiever of the Faculty of Science and Technology
+iv. Gold Medal for the Highest Achiever of the Faculty of Science and Technology selected from Uva Wellassa Province.",Aysha,,
+AYSHA_074,Who are the academic advisors of the Department of Physics at UJP?,Answerable,Definition,"Dr. (Mrs.) S. Kandeepan
+Senior Lecturer
+
+Dr. (Mrs). W. W. P. De Silva
+Senior Lecturer",Haleema/UJP_PS-2026.pdf,11,,Aysha,,
+AYSHA_075,What are the contact number and email address of Prof. M. M. P. M. Fernando?,Answerable,Definition,"Prof. M. M. P. M. Fernando
+Professor in Physics
+B.Sc., Ph.D. (USJ)
+Phone: 0112758356
+Email: pmadhuranga@sjp.ac.lk",Haleema/UJP_PS-2026.pdf,40,,Aysha,,
+AYSHA_076,What is the URL of the LMS?,Answerable,Definition,http://lms.mgmt.cmb.ac.lk,Aysha/UOC_FMF_HB_2021_2025.pdf,58,,Aysha,,
+AYSHA_077,What should students use as their username to log in to the LMS?,Answerable,Definition,Students are required to use their registration number or faculty provided e-mail address as the user name.,Aysha/UOC_FMF_HB_2021_2025.pdf,58,"How to log into the LMS:
+The URL of the Undergraduate Learning Management System is http://lms.mgmt.cmb.ac.lk. Each of the students has a login account to the LMS. Students are required to use their registration number or faculty provided e-mail address as the username and given password to log on to the system
+
+",Aysha,,
+AYSHA_078,What degree programmes are available?,Answerable,Definition,"Internal Undergraduate Degree Programmes
+External Undergraduate Degree Programme
+Postgraduate Degree Programmes
+Postgraduate Research Degrees",Aysha/UCSC_HB_2024.pdf,9,"Internal Undergraduate Degree Programmes
+
+Bachelor of Science in Computer Science (BSc. in CS)
+Bachelor of Science Honours in Computer Science (BSc. (Hons) in CS)
+Bachelor of Science Honours in Software Engineering (BSc. (Hons) in SE)
+Bachelor of Science in Information Systems (BSc. in IS)
+Bachelor of Science Honours in Information Systems (BSc. (Hons) in IS)
+
+External Undergraduate Degree Programme
+
+Bachelor of Information Technology (BIT)
+
+Postgraduate Degree Programmes
+
+Master of Computer Science (MCS)
+Master of Science in Computer Science (MSc. in CS)
+Master of Information Technology (MIT)
+Master of Information Security (MIS)
+Master of Business Analytics (MBAnalytics)
+Master of Cybersecurity (MCyberSec)
+
+Postgraduate Research Degrees
+
+Doctor of Philosophy in Computing (PhD)
+Master of Philosophy in Computing (MPhil)",Aysha,,
+AYSHA_079,What is the URL of the Undergraduate Virtual Learning Environment (UGVLE)?,Answerable,Definition,http://ugvle.ucsc.cmb.ac.lk,Aysha/UCSC_HB_2024.pdf,36,"http://ugvle.ucsc.cmb.ac.lk is the Virtual Learning Environment (VLE) 
+established for the undergraduate students (UG). The students can 
+access lecture materials, assignments and notices of their courses 
+to actively participate in the academic activities. At the same time, 
+they can also collaborate with teachers and students through this 
+Virtual Learning Environment, known as UGVLE.",Aysha,,
+AYSHA_080,What are the main student societies in UCSC?,Answerable,table lookup or multiple passages,"COMPUTER SCIENCE SOCIETY OF UNIVERSITY OF COLOMBO
+“PAHASARA” (meyeir) - UCSC MEDIA UNIT
+EXPLORATION CLUB
+UCSC ISACA STUDENT GROUP
+UCSC MOZILLA CLUB
+IEEE STUDENT BRANCH OF UCSC
+IEEE CS STUDENT BRANCH CHAPTER OF UCSC
+MECHATRONIC SOCIETY OF UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+“REKHA” (f¾Ld) - UCSC MUSIC CIRCLE
+UCSC STUDENTS’ UNION
+IEEE WIE STUDENT BRANCH AFFINITY GROUP OF UCSC
+THE ACM STUDENT CHAPTER OF UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING
+ROTARACT CLUB OF UCSC",Aysha/UCSC_HB_2024.pdf,46 - 51,,Aysha,,
+AYSHA_081,Who is the Deputy Proctor?,Answerable,Definition,"Deputy Proctor
+Dr. K.M.N.M. Chathuranga
+",Aysha/UOP_FofSci_HB_2024_2025.pdf,14,"Deputy Proctor
+Dr. K.M.N.M. Chathuranga
+Department: Mathematics
+Contact No: 0719887144
+Email: chathuranga.mudalige@sci.pdn.ac.lk",Aysha,,
+AYSHA_082,What can be termed as examination offences?,Answerable,explanation,"Possession of unauthorized documents/items
+Copying
+Cheating
+Removal of stationery
+Disorderly conduct
+Impersonation
+Unauthorized assistance
+Aiding and abetting in the commission of above offences",Aysha/UOP_FofSci_HB_2024_2025.pdf,35 -36,"2.1 Possession of unauthorized documents/items
+2.2 Copying
+2.3 Cheating
+2.4 Removal of stationery
+2.5 Disorderly conduct
+2.6 Impersonation
+2.7 Unauthorized assistance
+2.8 Aiding and abetting in the commission of above offences",Aysha,,
+AYSHA_083,What is the contact number of the Chief Marshal?,Answerable,Definition,"Chief Marshal
+077-599-6290",Aysha/UOP_FofSci_HB_2024_2025.pdf,42,,Aysha,,
+AYSHA_084,What are the requirements to pass the B.Sc. Degree?,Answerable,explanation,"The Board of Examiners will meet to consider the performance of the candidates. To pass the B.Sc. Degree, candidates have to fulfill the following requirements:
+
+I. Obtain at least grade C for the three foundation courses.
+
+II. Successfully complete the Non-GPA courses.
+
+III. At least 90 credits (excluding ENG1002 and Non-GPA courses) with the following minimum credit requirements:
+
+24 credits from each principal subject should be earned by selecting courses subject to a minimum of eight credits each at 1000, 2000 and 3000 level. The remaining requirements can be met by following courses in different subject/subjects. Not more than 12 credits are allowed from the supplementary courses.
+
+IV. E grades should not appear within the minimum number of credits required.
+
+V. Obtain a GPA of at least 2.00
+
+Note:
+(i) Students who fulfill all the above requirements may apply for the award of the B.Sc. Degree.
+
+(ii) A student who has not fulfilled any of the above requirements may repeat the course units in order to fulfill the requirements.",Aysha/UOP_FofSci_HB_2023_2024.pdf,23,,Aysha,,
+AYSHA_085,What is the GPA range for a Second Class (Lower Division) award?,Answerable,eligibility,GPA of 3.00 - 3.29,Aysha/UOP_FofSci_HB_2023_2024.pdf,27,,Aysha,,
+AYSHA_086,Who is the Assistant Registrar of the Faculty of Science?,Answerable,Definition,"Assistant Registrar
+Ms. D. M. I. N. J. Dissanayake",Aysha/UOP_FofSci_HB_2022_2023.pdf,7,,Aysha,,
+AYSHA_087,What are the grades and grade points?,Answerable,table lookup or multiple passages,"Grade	Grade Point
+A+	4.0
+A	4.0
+A-	3.7
+B+	3.3
+B	3.0
+B-	2.7
+C+	2.3
+C	2.0
+C-	1.7
+D+	1.3
+D	1.0
+E	0.0",Aysha/UOP_FofSci_HB_2022_2023.pdf,15,,Aysha,,
+AYSHA_088,What is the Savitri and Nimal Gunatilleke Scholarship for Excellence in Ecology?,Answerable,explanation,"This Scholarship is awarded annually to a 4000 level student who has recorded the best performance in the subjects of BOT2012, BOT2022, BOT2082, and BOT3052 and also passed all the courses at the first available attempt to the satisfaction of the Faculty Board of Science.",Aysha/UOP_FofSci_HB_2022_2023.pdf,29,,Aysha,,
+AYSHA_089,What are the specialized areas that students can specialize in?,Answerable,Definition,"Power High Voltage and Energy Systems Engineering
+Communication and Information Engineering
+Electronics and Instrumentation Engineering
+Control, Robotics and Automation Engineering
+Biomedical Engineering
+Artificial Intelligence, Machine Learning and Signal Processing",Aysha/UOP_FEng_HB_2024.pdf,9,"The department provides basic courses for all engineering undergraduates on the principles of Electrical and Electronic 
+Engineering, in appropriate depth, to acquire essential fundamentals, and also it offers several advanced courses to the 
+specializing students in the areas of, 
+• Power High Voltage and Energy Systems Engineering 
+• Communication and Information Engineering  
+• Electronics and Instrumentation Engineering 
+• Control, Robotics and Automation Engineering  
+• Biomedical Engineering  
+• Artificial Intelligence, Machine Learning and Signal Processing. ",Aysha,,
+AYSHA_090,What grading method and grade points are followed?,Answerable,table lookup or multiple passages,"Marks	Grade	Grade Points
+≥ 85	A+	4.0
+80 - 84	A	4.0
+75 - 79	A-	3.7
+70 - 74	B+	3.3
+65 - 69	B	3.0
+60 - 64	B-	2.7
+55 - 59	C+	2.3
+50 - 54	C	2.0
+45 - 49	C-	1.7
+40 - 44	D+	1.3
+35 - 39	D	1.0
+< 35	E	0.0",Aysha/UOP_FEng_HB_2024.pdf,37,,Aysha,,
+AYSHA_091,What is the Dean’s List and what are the eligibility requirements?,Answerable,eligibility,"The Dean’s List is an award to students who have shown academic excellence within a given academic year.
+
+A student who is eligible to be included in the Dean’s List shall have:
+
+a. Registered and completed courses of at least 15 credits each obtaining pass grades in the two semesters of the academic year concerned, of which at least a total of 21 credits should be from courses that are usually counted for the GPA calculations.
+
+b. Attained a GPA of not less than 3.70 from all the courses offered in the two semesters that are usually counted for the GPA calculation.
+
+Those who are selected to be in the Dean’s List will be awarded a certificate and their names with their qualifications will be published on the Faculty web page.
+
+The preliminary selection to the Dean’s List will be conducted by the Scholarship Committee of the Faculty of Engineering and the final list will be decided by the Faculty Board of the Faculty of Engineering.
+
+Selection will be made within the first month of a new academic year.",Aysha/UOP_FEng_HB_2024.pdf,38,,Aysha,,
+AYSHA_092,What specializations are available in the BScEng (Hons) degree programme?,Answerable,Definition,"Chemical and Process Engineering
+Civil Engineering
+Computer Engineering
+Electrical and Electronic Engineering
+Manufacturing and Industrial Engineering
+Mechanical Engineering",Aysha/UOP_FEng_HB_2023.pdf,1,"The four-year full-time BScEng Hons degree programme at the Faculty of Engineering comprises a common first semester and Specialization Programmes in the remaining seven semesters. A student can pursue studies in one of the following fields of specialization:
+
+Chemical and Process Engineering
+Civil Engineering
+Computer Engineering
+Electrical and Electronic Engineering
+Manufacturing and Industrial Engineering
+Mechanical Engineering",Aysha,,
+AYSHA_093,What is the website URL for academic staff details of the Department of Engineering Management?,Answerable,Definition,https://people.ce.pdn.ac.lk/staff/academic/,Aysha/UOP_FEng_HB_2023.pdf,11,,Aysha,,
+AYSHA_094,What is the examination fee for a repeat examination?,Answerable,Definition,Fee payable for repeat exam is Rs. 500.00.,Aysha/UOP_FEng_HB_2023.pdf,22,"The undergraduate student is not required to pay any fees for the first attempt of an End-of-Semester examination. Fees are 
+payable for subsequent attempts of End-of-Semester examinations of the semesters. Fee payble for repeat exam is Rs. 
+500.00. 
+** The fees payable are reviewed by the Faculty and the rates that apply will be announced at the beginning of each              
+semester.",Aysha,,
+AYSHA_095,What is the punishment for possession of unauthorized documents or items during an examination?,Answerable,Definition,Any candidate who violates Examination Rule shall be deemed guilty of the offence of possession of unauthorized documents/items and his/her candidature for the examinations of that semester shall be cancelled and he/she shall be prohibited from sitting any examination of this university for a period varying from 1 - 5 semesters.,Aysha/UOP_FEng_HB_2023.pdf,69,,Aysha,,
+AYSHA_096,Who was the Head of the Department of Information Technology in 2020?,Answerable,Definition,"Mr. S.C. Premaratne
+Head, Department of Information Technology",Aysha/UOM_FIT_HB_2020.pdf,8,,Aysha,,
+AYSHA_097,"How long is the industrial training, and how is it assessed?",Answerable,procedure,"24 - week long and Industrial training is assessed through,
+• staff visits to the organization,
+• a daily diary,
+• a report compiled by the student, and
+• an oral examination.",Aysha/UOM_FIT_HB_2020.pdf,28,"Industrial training is intended to introduce students to the application of the acquired knowledge in the industrial environment and to prepare students for the future. This is a 24-week long internship in a recognized organization in the IT field. Industrial training is assessed through,
+• staff visits to the organization,
+• a daily diary,
+• a report compiled by the student, and
+• an oral examination.
+
+Industrial training is a Non-GPA compulsory module for both Bachelor of Science Honors in Information Technology (BScHons (IT)) and Bachelor of Science Honors in Information Technology and Management (BScHons (IT&M)) degree programmes.",Aysha,,
+AYSHA_098,What is the course title of the course with code IN 2500?,Answerable,table lookup or multiple passages,Essentials of Computer Communication,Aysha/UOM_FIT_HB_2020.pdf,32,,Aysha,,
+AYSHA_099,What is the population of Mars in 2035?,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_100,Which university will have the highest GPA in 2050?,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_101,What is the exact salary of the Vice Chancellor? ,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_102,What is the university’s secret Wi-Fi password?,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_103,What is the course title of the course with code AB 1234?,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_104,What is the capital city of Japan?,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_105,Is the university library open right now?,needs clarification,,,,,,Aysha,,
+AYSHA_106,What are the things a student should bring to the examination hall?,needs clarification,,,,,,Aysha,,
+AYSHA_107,How many people can be seated in the library at once?,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_108,Which student society has the most members?,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_109,Which degree programme gives the highest-paying jobs?,Unanswerable or Ambiguous,,,,,,Aysha,,
+AYSHA_110,What is the most popular degree programme in the university?,Unanswerable or Ambiguous,,,,,,Aysha,,
+HALEEMA_111,What is the eligibility requirement for the Honours Degree in Physics at the University of Sri Jayewardenepura?,Answerable,eligibility,Students should take a minimum of 20 credits for the Physics subject and obtain a minimum GPA of 3.00 for the Physics subject and a minimum GPA of 2.00 for each of the other two subjects.,Haleema/UJP_PS-2026.pdf,12,"In order to follow an Honours Degree programme in Physics, students should take a minimum of 20 credits for the Physics subject and should obtain a minimum GPA of 3.00 (published by the department) for the Physics subject and a minimum GPA of 2.00 for the each of the other two subjects.",Haleema,,
+HALEEMA_112,What is the mission of the Faculty of Computing at the University of Sri Jayewardenepura?,Answerable,Definition,"To continue functioning as the forefront faculty in interdisciplinary research, education in computing and in peripheral disciplines, thereby generating vibrant impact and benefits to all.
+",Haleema/UJP_FC-2014.pdf,3,"To continue functioning as the forefront faculty in interdisciplinary research, education in computing and in peripheral disciplines, thereby generating vibrant impact and benefits to all.",Haleema,,
+HALEEMA_113,Who is the current Vice-Chancellor of Uva Wellassa University?,Answerable,Definition, Prof. Jayantha Lal Ratnasekera,Haleema/UW_managenment_2018.pdf,43,Vice Chancellor Prof. Jayantha Lal Ratnasekera,Haleema,,
+HALEEMA_114,Who is the current Dean of the Faculty of Medicine at Uva Wellassa University?,Answerable,Definition,Snr. Prof. Muditha Vidanapathirana,Haleema/UW_MS-2025.pdf,7,"Snr.Prof.Muditha Vidanapathirana MBBs (Col), Pg.DLM, MD, MA- Criminology, FFFLM (UK) Chair Professor of Forensic Medicine Founder Dean, Faculty of Medicine, Uva Wellassa University",Haleema,,
+HALEEMA_115,What is the minimum grade required to pass the Industrial Training course unit in the Faculty of Technology at the University of Sri Jayewardenepura?,Answerable,eligibility,"A minimum grade of ""C""",Haleema/UJP_FOT-2026_2024-25.pdf,41,"The minimum grade to pass industrial training is ""C"".",Haleema,,
+HALEEMA_116,"What is the motto of the Eastern University, Sri Lanka?",Answerable,Definition," ""PER ARDUA AD SCIENTIAM"": Knowledge Through Hard Work",Haleema/UE-FS-2022-2023.pdf,8,"The motto is ""PER ARDUA AD SCIENTIAM"": Knowledge Through Hard Work.",Haleema,,
+HALEEMA_117,"Who is the current Bursar of the Eastern University, Sri Lanka?",Answerable,Definition,Mr. M. M. M. Fareez,Haleema/UE-FS-2022-2023.pdf,11,Mr. M. M. M. Fareez is the present Bursar of EUSL.,Haleema,,
+HALEEMA_118,"Who is the current Registrar of the Eastern University, Sri Lanka?",Answerable,Definition,Mr. A. Pahirathan,Haleema/UE-FS-2022-2023.pdf,10,Mr. A. Pahirathan is the present Registrar of EUSL.,Haleema,,
+HALEEMA_119,"Who is the current Director of the Swami Vipulananda Institute of Aesthetic Studies (SVIAS) at the Eastern University, Sri Lanka?",Answerable,Definition,Prof. (Mrs.) F. B. Kennedy,Haleema/UE-FS-2022-2023.pdf,9,The present Director is Prof. (Mrs.) F. B. Kennedy.,Haleema,,
+HALEEMA_120,"Who is the current Rector of the Trincomalee Campus at the Eastern University, Sri Lanka?",Answerable,Definition,Prof (Mrs). C. G. Devadasan,Haleema/UE-FS-2022-2023.pdf,9,The present Rector is Prof (Mrs). C. G. Devadasan.,Haleema,,
+HALEEMA_121,"What is the mission of the Faculty of Science, University of Kelaniya?",Answerable,explanation,"To produce highly motivated graduates and postgraduates capable of making a significant contribution towards national development and the well being of mankind, to conduct research and provide advice and consultancy services in various scientific disciplines to foster a better understanding of the environment for sustainable use and conservation of natural resources.",vithusan/UOK_FS_HB_2024_2025.pdf,3,"Mission of the Faculty of Science: The Mission of the Faculty of Science of the University of Kelaniya is to produce highly motivated graduates and postgraduates capable of making a significant contribution towards national development and the well being of mankind, to conduct research and provide advice and consultancy services in various scientific disciplines to foster a better understanding of the environment for sustainable use and conservation of natural resources.",Haleema,,
+HALEEMA_122,"What is the minimum attendance requirement for laboratory course units to obtain a grade better than ""C""?",Answerable,eligibility,80%,vithusan/UOK_FS_HB_2024_2025.pdf,19,"If the attendance of a student at a laboratory course unit is between 50% - 79%, the best grade obtainable by a student for that course unit will be 'C', and if the attendance of a student at a laboratory course unit is less than 50%, the best grade obtainable by the student will be 'D'.",Haleema,,
+HALEEMA_123,Who is the Dean of the Faculty of Humanities at the University of Kelaniya?,Answerable,Definition,Dr. U. Sudath Senarath,vithusan/UOK_FH_HB_2024_2025.pdf,2,"Dean Dr. U. Sudath Senarath BA (Kel'ya), MPhil (Kel'ya), PhD (Kel'ya)",Haleema,,
+HALEEMA_124,What is the duration of the internship opportunity provided in the Software Engineering (SENG) degree programme?,Answerable,procedure,Six months,vithusan/UOK_FS_HB_2024_2025.pdf,13,"An internship opportunity of six months will provide necessary industry exposure to the students to enhance their technical knowledge, skills, and professional practices.",Haleema,,
+HALEEMA_125,What is the minimum GPA requirement to apply for the BSc Hons Degree Programme in Computer Science?,Answerable,eligibility,3,vithusan/UOK_FS_HB_2024_2025.pdf,15,A student should have obtained a GPA of 3-00 or higher and grades of C or better in the compulsory course units for the Years of study 1 and 2 in Computer Science.,Haleema,,
+HALEEMA_126,What is the name of the degree programme offered by the Department of Project Management at the University of Vavuniya?,Answerable,Definition,Bachelor of Business Management Honours in Project Management,vithusan/UOV_FBS_HB_2023_2024.pdf	,21,The Department of Project Management which was established in 2021 offers Bachelor of Business Management Honours in Project Management.,Haleema,,
+HALEEMA_127,"What is the maximum number of attempts a student can sit for an examination of a course unit at the University of Vavuniya, Faculty of Applied Science?",Answerable,exception,Three times,vithusan/UOV_FAS_HB_2024_2025.pdf,41,"A student will not be allowed to resist a course unit or a component of a course unit more than two times. Thus, a student appears for a course unit or a component at a maximum three times.",Haleema,,
+HALEEMA_128,What is the name of the degree programme offered by the Department of Information and Communication Technology at the University of Vavuniya?,Answerable,Definition,Bachelor of Information and Communication Technology Honours Degree,vithusan/UOV_FTS_HB_2024_2025.pdf,13,The Designator of the Degree shall be 'Bachelor of Information and Communication Technology Honours Degree' - BICT Honours.,Haleema,,
+HALEEMA_129,"What is the minimum attendance requirement for theory and practical classes at the University of Vavuniya, Faculty of Technological Studies?",Answerable,eligibility,80%,vithusan/UOV_FTS_HB_2024_2025.pdf,23,"""Attendance at 80% of theory and practical classes is compulsory. Those who do not satisfy the attendance requirement for the course unit will not be allowed to sit for end semester examinations.",Haleema,,
+HALEEMA_130,Who is the Vice-Chancellor of the University of Vavuniya?,Answerable,Definition,Snr. Prof. A. Atputharajah,vithusan/UOV_FTS_HB_2024_2025.pdf,10,Vice Chancellor Snr Prof. A. Atputharajah,Haleema,,
+HALEEMA_131,"What is the procedure for a student who is unable to sit for an End-semester Examination on medical grounds at the University of Vavuniya, Faculty of Applied Science?",Answerable,procedure,"Submit a medical certificate to the Assistant Registrar of the Faculty, certified by the University medical officer, within 14 days from the last date of the examination.",vithusan/UOV_FAS_HB_2024_2025.pdf,40,"The students who failed to appear for an End Semester Examination of a course unit or a component of a course unit on medical grounds are requested to submit a medical certificate to the Assistant Registrar of the Faculty, certified by the University medical officer, within 14 days from the last date of the examination.",Haleema,,
+HALEEMA_132,What is the vision of the Faculty of Technological Studies at the University of Vavuniya?,Answerable,procedure,"Create a world-class Technical Education system; incorporates continuous improvement, student-centred engagement, applied research and technological innovation.",vithusan/UOV_FTS_HB_2024_2025.pdf,9,"The Vision of the Faculty of Technological Studies is: Create a world-class Technical Education system; incorporates continuous improvement, student-centred engagement, applied research and technological innovation.",Haleema,,
+HALEEMA_133,What is the name of the degree programme offered by the Department of Marketing Management at the University of Kelaniya that focuses on digital marketing?,Answerable,Definition,Bachelor of Business Management Honours in Digital Marketing,vithusan/UOK_FCMS_HB_2024_2025.pdf	,119,Bachelor of Business Management Honours in Digital Marketing,Haleema,,
+HALEEMA_134,"What is the procedure for a student who fails to obtain the required number of credit passes at the University of Vavuniya, Faculty of Business Studies?",Answerable,procedure,May proceed to the following year of study and may repeat the failed courses at subsequent end semester examination.,vithusan/UOV_FBS_HB_2023_2024.pdf,33,Candidates who have failed to obtain the required number of credit passes may proceed to the following year of study and may repeat the failed courses at subsequent end semester examination,Haleema,,
+HALEEMA_135,"What is the mission of the Faculty of Engineering, University of Peradeniya?",Answerable,explanation,"To acquire, promote, develop and disseminate knowledge of engineering sciences and its application to improve the quality of life and, in particular, to equip present and future generations with skills and attitudes to attain competence as professional engineers, and to interact with industry and community for sustainable development of humankind.",aysha/UOP_FEng_HB_2024.pdf,10,"The Mission of the Faculty of Engineering is to acquire, promote, develop and disseminate knowledge of engineering sciences and its application to improve the quality of life and, in particular, to equip present and future generations with skills and attitudes to attain competence as professional engineers, and to interact with industry and community for sustainable development of humankind.",Haleema,,
+HALEEMA_136,"What is the minimum grade required to earn credit in any course at the Faculty of Engineering, University of Peradeniya?",Answerable,eligibility,A grade C.,aysha/UOP_FEng_HB_2024.pdf,45,"Normally, the minimum required grade to earn credit in any course shall be a grade C.",Haleema,,
+HALEEMA_137,"What is the minimum overall GPA required to be awarded the Degree of Bachelor of the Science of Engineering Honours at the Faculty of Engineering, University of Peradeniya?",Answerable,eligibility,A minimum GPA of 2.00.,aysha/UOP_FEng_HB_2024.pdf,46,7.1 Successful completion of the Degree Programme in Engineering within the stipulated period with a minimum GPA of 2.00,Haleema,,
+HALEEMA_138,"What is the medium of instruction for all courses of study offered by the Faculty of Science, University of Peradeniya?",Answerable,Definition,English.,aysha/UOP_FofSci_HB_2024_2025.pdf,5,"With the introduction of the Course Unit System, the medium of instruction for all course of study offered by the Faculty was confined to English.",Haleema,,
+HALEEMA_139,"What are the three main areas covered by the Civil Engineering curriculum at the Faculty of Engineering, University of Peradeniya?",Answerable,Definition,"Materials and Structural Engineering, Geotechnical and Transportation Engineering, and Water Resources and Environmental Engineering.",aysha/UOP_FEng_HB_2024.pdf,21,The Civil Engineering curriculum covers a wide range of courses in three main areas: Materials and Structural Engineering... Geotechnical and Transportation Engineering... Water Resources and Environmental Engineering...,Haleema,,
+HALEEMA_140,What is the primary function of the Professional Development Centre (PDC) at UCSC?,Answerable,explanation," To enhance the professional attributes of internal undergraduate students, create opportunities for skills and professional network development, and assist in finding internships.",aysha/UCSC_HB_2024.pdf,41,"The Professional Development Centre (PDC) of the University of Colombo School of Computing (UCSC) is focused on enhancing the professional attributes of internal undergraduate students... The PDC plays a crucial role in creating opportunities for students to develop their skills and professional networks... Also, the PDC assists students in finding internships...",Haleema,,
+HALEEMA_141,What is the name of the alumni association of the Department of Textile & Apparel Engineering?,Answerable,Definition,Moratuwa University Textile Association (MUTA),aysha/UOM_DepTextileAndApparelEngineering_HB__2020.pdf,43,The Moratuwa University Textile Association is the alumni association of the Department.,Haleema,,
+HALEEMA_142,What is the minimum requirement to be admitted to the B.Design degree programme at the University of Moratuwa?,Answerable,eligibility,"Good GCE A Level results and a knack for creativity and interest in Design, plus passing an aptitude test.",aysha/UOM_DepTextileAndApparelEngineering_HB__2020.pdf,45,The minimum requirement to be admitted to this course is good GCE A Level results and a knack for creativity and interest in Design. The University of Moratuwa holds an Aptitude Test in an attempt to evaluate the creative thinking abilities of the applicants.,Haleema,,
+HALEEMA_143,What is the duration of the M.Sc. programme in Textile and Clothing Management offered by the Department of Textile and Apparel Engineering?,Answerable,Definition,Part-time,aysha/UOM_DepTextileAndApparelEngineering_HB__2020.pdf,6,The Department also offers a part time M. Sc. programme in Textile and Clothing Management and research degrees leading to M. Phil. and Ph. D qualifications.,Haleema,,
+HALEEMA_144, What are the four focus areas for the BSc Engineering Honours curriculum in Textile & Apparel Engineering?,Answerable,Definition,"01. Textile Engineering, 02. Apparel Engineering, 03. Colouoration & Finishing of Textile, 04. Technical textile.",aysha/UOM_DepTextileAndApparelEngineering_HB__2020.pdf,54,The Textile & Apparel Engineering curriculum is developed to award four focus areas are mentioned below. 01. Textile Engineering 02. Apparel Engineering 03. Colouoration & Finishing of Textile 04. Technical textile,Haleema,,
+HALEEMA_145,"What are the three main categories of courses offered by the Faculty of Engineering, University of Peradeniya?",Answerable,Definition,"Core courses, Technical Elective courses, and General Elective courses.",aysha/UOP_FEng_HB_2024.pdf,44,"The Degree Programme shall comprise Core, Technical Elective and General Elective courses and a mandatory Industrial Training course, as prescribed and recommended by the Faculty Board and approved by the Senate.",Haleema,,
+HALEEMA_146,"What is the role of the Senior Assistant Registrar in the Faculty of Science, University of Peradeniya?",Answerable,Definition,Ms. D. M. I. N. J. Dissanayake,aysha/UOP_FofSci_HB_2024_2025.pdf,14,Senior Assistant Registrar Ms. D. M. I. N. J. Dissanayake,Haleema,,
+HALEEMA_147,What is the name of the gold medal awarded annually to the BSc Engineering student of the Department of Textile & Apparel Engineering obtaining the best overall GPA of 3.8 or more?,Answerable,Definition,The Hirdaramani Memorial Trust Gold Medal,aysha/UOM_DepTextileAndApparelEngineering_HB__2020.pdf,53,The Hirdaramani Memorial Trust Gold Medal is awarded annually to the BSc Engineering student of the Department obtaining the best overall GPA of 3.8 or more.,Haleema,,
+HALEEMA_148,What is the exact date of the Graduation Fashion Show 2020 at the Department of Textile and Apparel Engineering?,Unanswerable or Ambiguous,Definition,"The handbook mentions the ""Graduation Fashion Show"" as an annual event but does not provide a specific date for the 2020 show.",aysha/UOM_DepTextileAndApparelEngineering_HB__2020.pdf,46,"The Graduate Fashion Show is a gala event of the year to stage the final outcome of the students of the B. Design (FD & PD) programme."" No specific date is given.",Haleema,,
+HALEEMA_149,"What is the penalty for a student who fails to maintain 80% attendance at the Faculty of Engineering, University of Peradeniya, without a valid reason?",Unanswerable or Ambiguous,explanation,"The handbook states that 80% attendance is required and that absence without approval results in a grade E, but it does not specify a separate ""penalty"" beyond this. It also does not detail the exact process for reporting excessive absence beyond stating that the instructor should report it to the Head of the Department.",aysha/UOP_FEng_HB_2024.pdf,44,"To be considered to have satisfactorily followed a course, a student is required to have at least 
+80% course participation... When absence from classes of a course is not approved, the course will be graded E."" No additional penalty is mentioned.",Haleema,,
+HALEEMA_150," What is the maximum number of attempts a student can take to pass a course unit at the Faculty of Science, University of Peradeniya?",Unanswerable or Ambiguous,eligibility,he provided handbooks do not specify a maximum number of attempts for passing a course unit. They only mention that a student may repeat a course unit to improve their grade (maximum grade C) and that the degree must be completed within a certain period.,"aysha/UOP_FofSci_HB_2024_2025.pdf
+Physical PDF Page(s): 28",28,"""A student who obtains grades of C, D, D or E for a course unit may repeat that course unit by sitting the final examination, in order to improve his/her grade. The maximum grade given shall be a grade C."" No maximum attempt limit is stated.",Haleema,,
+HALEEMA_151," What is the deadline for submitting the final research project report at the University of Sri Jayewardenepura?
+",Unanswerable or Ambiguous,eligibility,,,,,Haleema,,
+HALEEMA_152,What is the hostel fee per month for male students at Uva Wellassa University?,Unanswerable or Ambiguous,eligibility,"The PDF only mentions annual hostel fees: Rs. 5,000 for in-house and Rs. 3,500 for outside accommodations.",,,,Haleema,,
+HALEEMA_153," What is the exact scholarship amount and eligibility criteria for the Mahapola Scholarship at the Eastern University, Sri Lanka?",Unanswerable or Ambiguous,eligibility,"The Eastern University handbook mentions the Mahapola scholarship programme and Bursary scheme as sources of financial assistance, but it does not provide the exact scholarship amount or the detailed eligibility criteria. It only states that further information may be obtained from the Students Affairs Department (SAD).",Haleema/UE-FS-2022-2023.pdf,12,The Mahapola scholarship programme and the Bursary scheme are the two major sources that provide financial assistance to the University students. Further information regarding this may be obtained from the SAD.,Haleema,,
+HALEEMA_154,What is the exact deadline for submitting the final research project report for the Bachelor of Information and Communication Technology Honours degree at the University of Sri Jayewardenepura?,Unanswerable or Ambiguous,procedure,"The Faculty of Computing handbook mentions that the Individual Research Project is offered in the fourth year and spans both semesters, but it does not specify the exact deadline for submitting the final report.",Haleema/UJP_FC-2014.pdf,25 (Year 4: Semester I and II),"The Individual Research Project will be offered as an annual course unit in the fourth year. The course will span both the 1st and 2nd semesters; however, the total credit allocation of 8 credits will be assigned to the fourth year second semester."" (No specific submission deadline is mentioned.)",Haleema,,
+HALEEMA_155,What is the exact monthly stipend amount provided to PhD students at the University of Sri Jayewardenepura?,Unanswerable or Ambiguous,eligibility,"The Faculty of Graduate Studies handbook mentions that students may apply for research grants and scholarships, but it does not specify the exact monthly stipend amount provided to PhD students. It only states that eligible students may apply for competitive research grants.",Haleema/ UJP-FGS-2017.pdf,"60 (Section - Research Grants and Opportunities)
+"," ""Eligible students may apply for competitive research grants offered by national funding agencies, international collaborations, and university research councils. These grants are designed to support postgraduate research expenses..."" No monthly stipend amount is mentioned.",Haleema,,
+HALEEMA_156,"What is the exact penalty for a student who is caught using unauthorized materials during an examination at the Faculty of Technology, Wayamba University of Sri Lanka?
+",Unanswerable or Ambiguous,exception,"The Faculty of Technology handbook states that ""General Rules and Regulations for Examinations"" are articulated in Examination Guidelines and Procedures published by the Examinations Division, but it does not specify the exact penalty for using unauthorized materials. It only refers students to a separate document that is not included in the provided PDF.",Haleema/UW-FTS-2020_2021.pdf, 23 (Section 5.15.2 - Procedure)," ""All rules and regulations, offenses, and punishments pertaining to examinations of the University are articulated in Examination Guidelines and Procedures published by the Examinations Division. Students are advised to be well aware of them."" No specific penalty is mentioned.
+",Haleema,,
+HALEEMA_157,What is the exact deadline for applying for the Bachelor of Science Honours degree programme at the University of Sri Jayewardenepura?,Unanswerable or Ambiguous,procedure,"he Faculty of Applied Sciences handbook mentions that students must apply for the Honours degree programme at the end of the third year, but it does not specify the exact deadline for submitting the application. It only states that applications must be submitted indicating preferred discipline.",Haleema/UJP-FAS_2026.pdf,155,"""At the end of the third year, students interested in the programme are required to submit an application indicating their preferred discipline."" No specific deadline is mentioned.",Haleema,,
+HALEEMA_158,What is the exact maximum number of students that can be admitted to the Bachelor of Science Honours in Computer Science programme at the University of Sri Jayewardenepura?,Unanswerable or Ambiguous,eligibility,The Faculty of Computing handbook mentions that the intake is limited but does not specify the exact maximum number of students for the BComp (Hons) in Computer Science programme. It only states that there are three degree programmes with a common intake.,Haleema/UJP_FC-2014.pdf,7-8,"""In order to cater global demand for skill-workforce, FoC has design and offers unique and very first three Bachelor of Computing Honours Degree Programs in Sri Lanka..."" No exact maximum number is mentioned.",Haleema,,
+HALEEMA_159,"What is the exact procedure for a student to withdraw from a course unit at the Eastern University, Sri Lanka?",Unanswerable or Ambiguous,procedure,"The Faculty of Science handbook mentions a ""Symbol W"" for withdrawal from a course unit within the first two weeks of registration, but it does not specify the exact procedure (e.g., form submission, approval process) for withdrawing from a course unit.",Haleema/UE-FS-2022-2023.pdf,46,"""Symbol W: Withdrawal from a course unit within the first two weeks of registration is allowed provided that the minimum credit requirement is not violated."" No specific procedure is mentioned.",Haleema,,
+HALEEMA_160,"What is the exact amount of the Vice Chancellor's award at Uva Wellassa University?
+",Unanswerable or Ambiguous,eligibility," The Faculty of Animal Science and Export Agriculture handbook mentions that the Vice Chancellor's award is offered annually for the best academic performance, but it does not specify the exact amount or value of the award.",Haleema/UW_Agri-2019.pdf,225,"""Vice Chancellor's awards are offered annually for the students in each degree programme for their best academic performance, at the General Convocation."" No exact amount is mentioned.",Haleema,,

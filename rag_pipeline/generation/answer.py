@@ -1,23 +1,26 @@
 """Build inspectable LangChain messages without reading benchmark answers."""
 
 import json
+import os
 import re
 from hashlib import sha256
 from pathlib import Path
 
+import tiktoken
 from langchain_core.prompts import ChatPromptTemplate
-from transformers import PreTrainedTokenizerFast
 
 from ..common.config import ROOT, within
 from ..common.load_corpus import digest_json, file_hash, require
+
+SUPPORTED_MODELS = {'gpt-4o-mini'}
 
 
 def load_settings(path):
     settings = json.loads(Path(path).read_text())
     require(settings['schema_version'] == 1, 'Unsupported generation configuration')
-    require(settings['provider'] == 'groq' and settings['account_tier'] == 'free'
-            and settings['paid_budget'] == 0, 'Only the declared zero-paid-budget Groq experiment is supported')
-    require(settings['model_id'] == 'qwen/qwen3.8-27b' and settings['reasoning_effort'] == 'none',
+    require(settings['provider'] == 'openai' and settings['account_tier'] == 'paid',
+            'Only the declared OpenAI paid-account experiment is supported')
+    require(settings['model_id'] in SUPPORTED_MODELS,
             'A different model requires a new tokenizer/capability decision')
     for key in ('max_output_tokens', 'max_total_tokens', 'token_count_margin', 'timeout_seconds',
                 'max_attempts', 'requests_per_minute', 'tokens_per_minute', 'requests_per_day', 'tokens_per_day'):
@@ -25,38 +28,51 @@ def load_settings(path):
     require(0 < settings['temperature'] <= 2 and 0 < settings['top_p'] <= 1, 'Invalid decoding settings')
     require(type(settings['seed']) is int, 'Seed must be an integer')
     require(settings['max_total_tokens'] <= 131072, 'Model context limit exceeded')
-    require(settings['requests_per_minute'] <= 30 and settings['tokens_per_minute'] <= 8000
-            and settings['requests_per_day'] <= 1000 and settings['tokens_per_day'] <= 200000,
-            'Configured limits exceed the verified free-plan limits')
+    # Ceilings stay well under this account's observed OpenAI limits (5000 RPM /
+    # 2,000,000 TPM for gpt-4o-mini) so a misconfiguration cannot silently rely
+    # on headroom we have not verified.
+    require(settings['requests_per_minute'] <= 3000 and settings['tokens_per_minute'] <= 1500000
+            and settings['requests_per_day'] <= 200000 and settings['tokens_per_day'] <= 20000000,
+            'Configured limits exceed the verified OpenAI paid-tier ceiling')
     require(settings['pilot_question_ids'] and len(set(settings['pilot_question_ids'])) == len(settings['pilot_question_ids']),
             'Pilot IDs must be nonempty and unique')
     return settings
 
 
 class GeneratorTokenizer:
-    """Load only the pinned tokenizer and chat template, never model weights.
+    """Count tokens with the pinned, hash-verified o200k_base tiktoken encoding.
 
-    Groq may serialize chat differently. The local count is an estimate with a
-    safety margin; the provider's returned usage is recorded as authoritative.
+    OpenAI's exact chat-packaging overhead is not published for every model;
+    we use the long-standing OpenAI-cookbook formula (tokens_per_message
+    overhead plus a fixed reply-primer). The local count is an estimate with
+    a safety margin; the provider's returned usage is recorded as authoritative.
     """
 
     def __init__(self, settings):
         identity = settings['tokenizer']
         folder = within(ROOT, identity['directory'])
         manifest = json.loads((folder / 'manifest.json').read_text())
-        for key in ('repository', 'revision', 'files'):
+        for key in ('encoding_name', 'source_url', 'cache_key', 'model_id', 'tokens_per_message', 'reply_primer_tokens'):
             require(manifest[key] == identity[key], 'Tokenizer manifest differs from the pinned configuration')
-        for name, expected in identity['files'].items():
-            require(file_hash(within(folder, name)) == expected, 'Generator tokenizer checksum differs')
-        self.tokenizer = PreTrainedTokenizerFast(tokenizer_file=str(folder / 'tokenizer.json'),
-                                               chat_template=(folder / 'chat_template.jinja').read_text())
+        require(file_hash(within(folder, manifest['cache_key'])) == identity['cache_key_sha256'],
+                'Generator tokenizer checksum differs')
+        # Point tiktoken at the local, pre-verified cache so loading the
+        # encoding never depends on a live network request.
+        os.environ['TIKTOKEN_CACHE_DIR'] = str(folder)
+        self.encoding = tiktoken.encoding_for_model(manifest['model_id'])
+        require(self.encoding.name == manifest['encoding_name'], 'Unexpected tiktoken encoding resolved')
+        self.tokens_per_message = manifest['tokens_per_message']
+        self.reply_primer_tokens = manifest['reply_primer_tokens']
 
     def count(self, text):
-        return len(self.tokenizer.encode(text, add_special_tokens=False))
+        return len(self.encoding.encode(text, disallowed_special=()))
 
     def count_messages(self, messages):
-        return len(self.tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True,
-                                                      enable_thinking=False))
+        total = self.reply_primer_tokens
+        for message in messages:
+            total += self.tokens_per_message
+            total += self.count(message['role']) + self.count(message['content'])
+        return total
 
 
 def prepare_request(context, settings, tokens, prompt, trial_id, implementation_hash):
@@ -78,11 +94,11 @@ def prepare_request(context, settings, tokens, prompt, trial_id, implementation_
     reservation = prompt_tokens + settings['max_output_tokens'] + settings['token_count_margin']
     require(reservation <= settings['max_total_tokens'], 'Full prompt exceeds the generator budget; no truncation performed')
     payload = {'model': settings['model_id'], 'messages': messages, 'temperature': settings['temperature'],
-               'top_p': settings['top_p'], 'seed': settings['seed'], 'max_tokens': settings['max_output_tokens'],
-               'reasoning_effort': settings['reasoning_effort'], 'n': 1, 'stream': False, 'stop': None}
+               'top_p': settings['top_p'], 'seed': settings['seed'],
+               'max_completion_tokens': settings['max_output_tokens'], 'n': 1, 'stream': False}
     identity = {'payload': payload, 'trial_id': trial_id, 'prompt_version': settings['prompt_version'],
                 'tokenizer': settings['tokenizer'], 'implementation_hash': implementation_hash,
-                'provider_url': 'https://api.groq.com/openai/v1/chat/completions'}
+                'provider_url': 'https://api.openai.com/v1/chat/completions'}
     return {'schema_version': 1, 'question_id': context['question_id'], 'method': context['method'],
             'question_sha256': context['question_sha256'], 'corpus_hash': context['corpus_hash'],
             'context_hash': digest_json(context), 'request_key': digest_json(identity), 'identity': identity,

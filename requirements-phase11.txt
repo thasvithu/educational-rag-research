@@ -1,0 +1,4 @@
+# Offline metrics use the existing NumPy/LangChain stack. Judge calls are optional.
+-r requirements-phase10.txt
+ragas==0.2.6
+datasets==3.2.0

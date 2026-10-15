@@ -12,16 +12,15 @@
     "pooling": "content_mean_l2"
   },
   "generation": {
-    "provider": "groq",
-    "integration": "ChatGroq",
-    "account_tier": "free",
-    "paid_budget": 0,
-    "model_id": "qwen/qwen3.8-27b",
+    "provider": "openai",
+    "integration": "ChatOpenAI",
+    "account_tier": "paid",
+    "model_id": "gpt-4o-mini",
     "temperature": 1e-08,
     "max_output_tokens": 512,
     "timeout_seconds": 60,
     "max_retries": 2,
-    "api_key_environment_variable": "GROQ_API_KEY"
+    "api_key_environment_variable": "OPENAI_API_KEY"
   },
   "benchmark": {
     "development_pilot": "data/benchmark/pilot.jsonl",

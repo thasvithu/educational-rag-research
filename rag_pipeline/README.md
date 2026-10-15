@@ -1,4 +1,4 @@
-# RAG pipeline — corpus preparation through grounded answers
+# RAG pipeline — corpus preparation through provisional evaluation
 
 Phase 1 supplies the common foundation for the five chunking methods: a verified
 corpus loader, exact source references, eligible text regions, a chunk record
@@ -13,7 +13,22 @@ Phase 7 embeds the four completed chunk corpora using a shared batched encoder.
 Phase 8 creates contextual vectors at the exact fixed-size boundaries.
 Phase 9 indexes all five methods and saves pilot retrieval and budgeted contexts.
 Phase 10 turns those contexts into traceable, cited answers through Groq.
+Phase 11 adds offline provisional evaluation and human answer-review templates.
 The roadmap is in the project's `PLAN.md` when available.
+
+## Phase 11: provisional evaluation
+
+The offline evaluator scores saved pilot evidence coverage, keeps missing answers
+visible, and exports human review templates. It does not score the 153 imported
+drafts or claim final research findings. See the [Phase 11 status and guide](docs/phase11_status.md).
+
+```bash
+.venv/bin/python -m rag_pipeline evaluate --run-id phase11_check_new --provisional
+```
+
+No API calls occur. Answer correctness remains unscored until human judgments
+are supplied. RAGAS has an explicit-client adapter; live judge integration and
+final benchmark evaluation remain pending.
 
 ## Phase 10: grounded answer generation
 
@@ -280,3 +295,16 @@ of tables, formulas, or image content. Phase 2's narrow model probe has run;
 all five chunking/vector paths and shared retrieval are implemented. Phase 10
 adds a small live generation pilot. Benchmark review/freezing and controlled
 evaluation remain for Phase 11; development examples are not final findings.
+
+
+## Visual research explorer
+
+The [Streamlit explorer](../research_gui/README.md) connects the saved outputs of
+Phases 1–10. It includes PDF/text inspection, source-aligned chunk comparisons,
+semantic and late diagnostics, vector inspection, ranked versus packed evidence,
+and saved answers with citation-source navigation. Use it to review development
+examples before final benchmark evaluation. No model calls are made by the UI.
+
+## Team question-sheet import
+
+The [draft CSV importer](docs/question_sheet_import.md) preserves the original sheet, records exclusions and links matching evidence to exact source pages. The 6 October intake contains 153 drafts; it does not assign test questions or approve/freeze annotations.

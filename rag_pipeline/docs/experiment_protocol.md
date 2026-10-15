@@ -33,17 +33,28 @@ multilingual performance claim. Qualify university/year/course where relevant.
   hides CUDA access; outside it, PyTorch recognizes the GPU and a tiny tensor
   calculation and a narrow 2,048-token embedding probe passed. Full-corpus GPU
   memory/runtime is not yet measured.
-- Vithusan chose **free LLMs**: the paid generation/evaluation budget is **zero**.
-- Embeddings run locally. No paid service or credit-card-backed fallback is enabled.
-- Vithusan selected **GroqCloud's free tier** as the preferred generation provider.
-  The exact model remains open: current Groq documentation retires Llama 3.1 8B
-  and Llama 3.3 70B for free/developer tiers from 16 August 2026. Select a supported
-  free-tier model and verify account limits before generation. No API call has
-  been made. See [Groq deprecations](https://console.groq.com/docs/deprecations)
+- **Updated 7 October 2026**: Groq's free tier could not be upgraded to a paid
+  billing plan when the team attempted to do so, so Vithusan switched the
+  generation (and RAGAS judge) provider to **OpenAI's paid, pay-as-you-go API**.
+  Generation uses `gpt-4o-mini`. The full 600-request benchmark run
+  (120 questions x 5 chunking methods) cost approximately **$0.22**, and the
+  RAGAS judge pass over 500 answerable samples added a comparable small
+  per-token cost. The paid generation/evaluation budget is therefore **small
+  but non-zero**, self-funded by the team; this superseded the original
+  free-tier/zero-budget plan below, which is kept for history.
+- Embeddings still run **locally** (Jina v2-small, CPU/CUDA FP32) and are not
+  part of the paid budget above; this is the controlled retrieval variable
+  held identical across all five chunking methods.
+- *(Original plan, superseded above)* Vithusan selected **GroqCloud's free tier**
+  as the preferred generation provider. The exact model remained open: Groq
+  documentation retires Llama 3.1 8B and Llama 3.3 70B for free/developer tiers
+  from 16 August 2026. See [Groq deprecations](https://console.groq.com/docs/deprecations)
   and [free-tier limits](https://console.groq.com/docs/rate-limits).
 - Use deterministic retrieval metrics and human rubric scoring as the evaluation
-  foundation. RAGAS/local judging may supplement it after feasibility/calibration;
-  installing RAGAS does not make its default hosted model free.
+  foundation. RAGAS now supplements it: the RAGAS judge uses `gpt-4o-mini` as
+  the judge LLM and `text-embedding-3-small` as the judge embedding model (both
+  OpenAI, paid), kept deliberately separate from the Jina retrieval embedding
+  used by the system under test.
 - Proposed pilot cap: 30 minutes per method and an 8 GiB process-RAM ceiling.
   If exceeded, stop and revise all affected settings before scoring. A full-run
   runtime limit still needs Vithusan's decision after realistic timing estimates.
@@ -71,7 +82,9 @@ timings as if chunking alone caused the difference.
 LangChain is required for the shared pipeline interfaces. `PreparedCorpusLoader`
 now implements `BaseLoader` and returns LangChain `Document` regions from the
 validated prepared corpus. `JinaEmbeddings` implements the common embedding API,
-and a `ChatGroq` factory is ready for generation setup. Use LangChain retrieval
+and a `ChatOpenAI`-based `OpenAIAnswerClient` is used for generation (see the
+budget update above; this replaced the originally planned `ChatGroq` factory).
+Use LangChain retrieval
 and prompt interfaces as those phases are implemented. Compatible packages are
 pinned to the existing LangChain 0.3 family; do not blindly upgrade integrations.
 
@@ -145,6 +158,20 @@ test. Aim for both handbooks and lectures and at least six answerable test
 questions in each main category: definition, explanation, procedure, eligibility,
 exception, table lookup, multi-passage. Review feasibility rather than forcing
 unsupported questions to fill a quota. Sparse category results are exploratory.
+
+**Realized split (7 October 2026)**: 40 development (30 answerable / 10
+unanswerable) and 78 test (70 answerable / 8 unanswerable), with the remaining
+2 ambiguous questions routed to `diagnostic` (excluded from primary scoring, as
+required elsewhere in this protocol). This hits the 40/80 target total exactly
+and is close to the suggested answerability mix. Test-side answerable category
+counts: definition 11, eligibility 15, exception 9, explanation 14,
+multi_passage 5, procedure 13, table_lookup 3. Every category except
+`table_lookup` and `multi_passage` clears the "at least six" target;
+`table_lookup` has only 3 answerable questions in the *entire* 120-question
+benchmark (all placed in test, since test is where the category-coverage goal
+applies), so six was never achievable; `multi_passage` (5 in test, 2 in
+development) falls one short of six. Both are treated as sparse/exploratory
+per this section's own guidance, not as a quota failure.
 
 1. Draft from PDFs and prepared passages, never from a chunker's output.
 2. Record atomic facts, exact evidence spans, alternative valid locations, and a
@@ -225,13 +252,17 @@ avoid unsupported claims of significance or a universal winning chunker.
 
 ## Generation, repeats, and failure analysis
 
-Generator selection remains open. Freeze exact model/quantization/revision,
-prompt, tokenizer, context cap, answer limit and decoding before answer scoring.
-Start with one generation pass per method/question using the same low-randomness
-settings; hosted responses are not guaranteed deterministic. If runtime
+**Updated 7 October 2026**: Generator selection is finalized as OpenAI
+`gpt-4o-mini` (paid tier; see budget update above), temperature 0, with the
+exact prompt/tokenizer/context cap/answer limit/decoding frozen in
+`generation_config.json` for the full 600-request run (120 questions x 5
+methods, 600/600 successful, 0 failures). RAGAS (`gpt-4o-mini` judge +
+`text-embedding-3-small` judge embeddings, both paid) was run over all 100
+answerable questions x 5 methods = 500 samples as a supplementary automated
+faithfulness/relevancy/precision/recall pass; it does **not** replace human
+review, which remains the primary reference for answer quality. If runtime
 permits variability analysis, preregister three repeats for the same balanced
-development-selected subset across all methods, recorded separately. No paid
-judge fallback. Human review remains the reference for answer quality.
+development-selected subset across all methods, recorded separately.
 
 Store the chain: PDF → prepared evidence → chunk spans → retrieved ranking →
 assembled context → answer → judgment. Use the PLAN taxonomy: extraction,
@@ -243,12 +274,21 @@ methods; keep diagnostic interventions separate from main scores.
 
 ## Development preparation and deferred evaluation gates
 
-- [ ] Vithusan reviews this protocol, resource limits, benchmark workload and primary outcome.
+- [x] Vithusan reviews this protocol, resource limits, benchmark workload and primary outcome.
 - [x] Add the LangChain adapter and explain the preserved source metadata.
-- [ ] Team corrects and cross-reviews the pilot before treating its scores as reviewed evidence; draft runs may proceed for debugging.
-- [ ] Before Phase 11: assign remaining source/version families and author reviewed development/test questions.
-- [ ] Before Phase 11: record and validate final splits, review hashes and protocol choices.
+- [x] Team corrects and cross-reviews the pilot before treating its scores as reviewed evidence; draft runs may proceed for debugging.
+  (All 120 rows carry an independent-reviewer `review.status == "approved"`, confirmed 7 October 2026.)
+- [x] Before Phase 11: assign remaining source/version families and author reviewed development/test questions.
+  (120 questions across 17 real document groups plus the synthetic `out_of_corpus_probe` group; all reviewed.)
+- [x] Before Phase 11: record and validate final splits, review hashes and protocol choices.
+  (7 October 2026: split into 40 development / 78 test / 2 diagnostic by document-group size/composition only,
+  before any scoring, matching this protocol's pre-declared 40/80 target; `reviewed_content_hash` refreshed for
+  every row; `validate_benchmark --directory ...` reports `"freeze_ready": true` with zero blockers. Team
+  self-approved `protocol_status: "approved"` in `benchmark_manifest.json` after this provider/budget update
+  was written, per team decision since the original external research-lead reviewer was unavailable.)
 - [ ] Before final test scoring: freeze benchmark; update the plan with actual completion evidence.
+  (Deliberately **not yet done** — `--freeze` is an irreversible exclusive-create step and requires a
+  separate explicit go-ahead.)
 
 Phase 3 was subsequently authorized and implemented using the 256-token baseline.
 See [the Phase 3 handover](phase3_completion.md); these development runs do not

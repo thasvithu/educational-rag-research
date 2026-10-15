@@ -75,17 +75,17 @@ class LangChainModelTests(unittest.TestCase):
         adapter.model.assert_not_called()
         self.assertIs(adapter.tokenizer.call_args.kwargs["truncation"], False)
 
-    def test_groq_requires_an_explicit_model(self):
+    def test_openai_requires_an_explicit_model(self):
         # Phase 10 selects a model in the real config; an unset config still fails.
         with patch("rag_pipeline.generation.model_adapter.json.loads") as loads:
             loads.return_value = {"schema_version": 1, "generation": {
-                "provider": "groq", "integration": "ChatGroq", "account_tier": "free", "paid_budget": 0,
-                "api_key_environment_variable": "GROQ_API_KEY", "model_id": None}}
+                "provider": "openai", "integration": "ChatOpenAI", "account_tier": "paid",
+                "api_key_environment_variable": "OPENAI_API_KEY", "model_id": None}}
             with self.assertRaisesRegex(ValueError, "Choose an available"):
                 create_chat_model()
 
-    def test_groq_client_construction_is_offline(self):
-        with patch.dict(os.environ, {"GROQ_API_KEY": "offline-test-key"}):
+    def test_openai_client_construction_is_offline(self):
+        with patch.dict(os.environ, {"OPENAI_API_KEY": "offline-test-key"}):
             with patch("httpx.Client.send", side_effect=AssertionError("Network forbidden")):
                 client = create_chat_model("offline-model-fixture")
                 self.assertEqual(client.model_name, "offline-model-fixture")
